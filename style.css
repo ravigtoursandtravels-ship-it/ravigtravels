@@ -1,0 +1,987 @@
+/* ------------------------------------------------
+   Ravi G Travels — Enhanced Premium UI (style.css)
+   Upgraded Colors • Better Shadows • Clean Animations
+---------------------------------------------------*/
+
+:root{
+  --brand: #43c3cf;
+  --brand-dark: #0b737a;
+  --brand-light: #aaf1f7;
+  --dark: #0b1c20;
+  --muted: #5c757a;
+  --card-bg: rgba(255,255,255,0.97);
+  --shadow-soft: 0 10px 28px rgba(0,0,0,0.09);
+  --shadow-medium: 0 14px 32px rgba(0,0,0,0.12);
+  --shadow-hover: 0 16px 40px rgba(0,0,0,0.16);
+}
+
+/* Base */
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+  margin:0;
+  padding-top: 90px; /* FIXED HEADER PUSH */
+  background: linear-gradient(180deg,#f9ffff 0,#eefafa 100%);
+  color:var(--dark);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Top phone bar */
+.top-phone-bar{
+  background:#0b737a;
+  color:#fff;
+  font-size:14px;
+  padding:7px 0;
+  text-align:center;
+  letter-spacing:.3px;
+}
+.top-phone-bar a{color:#fff;text-decoration:none}
+
+/* HEADER — Animated background */
+.site-header {
+  background: linear-gradient(
+      135deg,
+      rgba(11, 115, 122, 0.22),
+      rgba(11, 115, 122, 0.10),
+      rgba(255, 255, 255, 0.65)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 14px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  box-shadow: 0 4px 20px rgba(11, 115, 122, 0.25);
+  transition: all 0.3s ease;
+}
+
+@keyframes headerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* HEADER ALIGNMENT FIX — CLEANEST VERSION */
+.navbar-logo-wrap {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.navbar-logo-wrap .logo {
+  width: 80px;
+  height: 80px;
+  padding: 0px !important; /* as you asked */
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(11,115,122,0.25);
+  object-fit: contain;
+}
+
+/* Brand block */
+.brand-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--brand-dark);
+  white-space: nowrap;
+}
+
+.brand-phones {
+  font-size: 13px;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-phones a {
+  color: var(--brand-dark);
+  text-decoration: none;
+}
+
+.brand-phones .divider {
+  color: var(--brand-dark);
+}
+
+/* Toggler */
+.navbar-toggler {
+  margin-left: auto;
+  margin-right: 6px;
+  background: rgba(0,0,0,0.06);
+  border-radius: 8px;
+  padding: 5px 8px;
+  border: none;
+}
+
+/* MOBILE RESPONSIVE — iPhone SE, SE2, SE3 READY */
+@media (max-width: 480px) {
+
+  .navbar-logo-wrap .logo {
+    width: 45px !important;
+    height: 45px !important;
+    margin-left: 12px;
+  }
+
+  .brand-title {
+    font-size: 25px;
+    margin-right: 12px;
+  }
+
+  .brand-phones {
+    font-size: 12px;
+  }
+}
+
+/* SUPER SMALL SCREENS — 320px width */
+@media (max-width: 360px) {
+
+  .navbar-logo-wrap .logo {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .brand-title {
+    font-size: 25px;
+    margin-right: 12px;
+  }
+
+  .brand-phones {
+    font-size: 11px;
+  }
+}
+
+/* NAV LINKS */
+.nav-link {
+  color: var(--dark);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-size: 15px;
+  transition: 0.25s ease;
+}
+.nav-link:hover,
+.nav-link.active{
+  color:var(--brand) !important;
+  text-shadow:0 0 4px rgba(67,195,207,0.3);
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    padding-left: 12px;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+}
+
+/* Floating Shapes */
+.float-shapes{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+}
+.shape{position:absolute;opacity:.18;filter:blur(6px);mix-blend-mode:screen}
+.shape.circle.c1{
+  width:260px;height:260px;border-radius:50%;
+  background:var(--brand-dark);left:-80px;top:28%;
+  box-shadow:0 0 40px rgba(11,115,122,0.50);
+  animation:floatY 12s ease-in-out infinite;
+}
+.shape.circle.c2{
+  width:160px;height:160px;border-radius:50%;
+  background:linear-gradient(180deg,var(--brand-dark),var(--brand));
+  right:-60px;top:8%;
+  box-shadow:0 0 36px rgba(67,195,207,0.36);
+  animation:floatX 11s linear infinite;
+}
+.shape.dot.d1{
+  width:18px;height:18px;border-radius:50%;
+  background:#006c75;left:68%;top:18%;
+  box-shadow:0 0 20px rgba(0,108,117,0.45);
+  animation:floatY 6s ease-in-out infinite;
+}
+.shape.line.l1{
+  width:300px;height:3px;
+  background:linear-gradient(90deg,var(--brand-dark),transparent);
+  left:10%;bottom:18%;opacity:.24;
+  box-shadow:0 0 22px rgba(11,115,122,0.38);
+  transform:rotate(-8deg);
+  animation:sideShift 16s linear infinite;
+}
+
+@keyframes floatY{0%{transform:translateY(0)}50%{transform:translateY(-28px)}100%{transform:translateY(0)}}
+@keyframes floatX{0%{transform:translateX(0)}50%{transform:translateX(32px)}100%{transform:translateX(0)}}
+@keyframes sideShift{0%{transform:translateX(0)}50%{transform:translateX(45px)}100%{transform:translateX(0)}}
+/* ==========================================
+   EXTRA SMALL SCREEN FIX (iPhone SE, 320px)
+   ========================================== */
+@media (max-width: 360px) {
+
+  /* Smaller Logo */
+  .navbar-logo-wrap .logo {
+    width: 32px !important;
+    height: 32px !important;
+    padding: px !important;
+  }
+
+  /* Smaller brand text */
+  .brand-mobile-text strong {
+    font-size: 14px !important;
+  }
+  .brand-mobile-text small a {
+    font-size: 12px !important;
+  }
+
+  /* Reduce top spacing (avoid huge gap) */
+  body {
+    padding-top: 100px !important;
+  }
+
+  /* Fix floating buttons */
+  .bottom-floating {
+    gap: 6px !important;
+    bottom: 12px !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .bf-btn {
+    padding: 6px 10px !important;
+    border-radius: 8px !important;
+    font-size: 12px !important;
+  }
+
+  .bf-btn.call i,
+  .bf-btn.wa i {
+    font-size: 13px !important;
+  }
+}
+
+/* Hero Section */
+.hero{
+  padding:90px 0 50px;text-align:center;position:relative;z-index:1;
+}
+.hero-title{font-size:36px;font-weight:800;color:var(--dark)}
+.hero-lead{max-width:800px;margin:0 auto 18px;color:var(--muted);font-size:17px;line-height:1.6}
+
+/* About Section */
+.about-home p{
+  max-width:900px;
+  margin:14px auto;
+  color:#3a5053;
+  font-size:17px;
+  line-height:1.72;
+}
+
+/* Booking Form */
+.booking-section{padding:30px 0 60px}
+.booking-wrap {
+  border-radius: 18px;
+  padding: 12px;
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 28px rgba(11,115,122,0.25);
+  border: 1px solid rgba(11,115,122,0.2);
+}
+
+.booking-header,
+.booking-form {
+  background:var(--card-bg);
+  padding:20px;
+  border-radius:14px;
+  box-shadow: 0 0 22px rgba(11, 115, 122, 0.30) !important;
+  border: 1px solid rgba(11, 115, 122, 0.25);
+}
+
+.form-label{font-weight:700;font-size:13px;margin-bottom:6px;color:#1d3235}
+
+/* Accommodation Toggle */
+.accom-switch{display:inline-flex;align-items:center;gap:8px}
+.accom-input{position:absolute;left:-9999px}
+.accom-toggle{
+  width:54px;height:32px;border-radius:999px;background:#e6f6f6;display:inline-block;position:relative;cursor:pointer;transition:all .22s;
+}
+.accom-toggle .accom-knob{
+  width:26px;height:26px;background:#fff;border-radius:50%;position:absolute;left:3px;top:3px;transition:.22s
+}
+.accom-input:checked + .accom-toggle{background:linear-gradient(90deg,var(--brand-dark),var(--brand))}
+.accom-input:checked + .accom-toggle .accom-knob{transform:translateX(22px)}
+
+/* Bottom Floating Bar */
+.bottom-floating {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 16px;
+  display: flex;
+  gap: 12px;
+  background: none !important;
+  box-shadow: none !important;
+  z-index: 999;
+}
+
+@media (min-width: 768px) {
+  .bottom-floating {
+    left: auto;
+    right: 20px;
+    transform: none;
+  }
+}
+
+.bf-btn{padding:8px 12px;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none}
+.bf-btn.call{background:#111;color:#fff}
+.bf-btn.wa{background:#25d366;color:#fff}
+
+/* Footer */
+.site-footer{background:#0b737a;color:#d7e9ea;padding:36px 0}
+.footer-links{list-style:none;margin:0;padding:0}
+.footer-links li{margin-bottom:6px}
+.footer-links a{color:#cbeff0;text-decoration:none;font-weight:500}
+.footer-links a:hover{text-decoration:underline;color:var(--brand)}
+
+/* Responsive */
+@media(max-width:991px){
+  .booking-header{order:2}
+  .booking-form{order:1}
+}
+/* ============================================
+   FLOATING BUTTON FIX FOR VERY SMALL SCREENS
+   Works perfectly on iPhone SE / 320px width
+===============================================*/
+@media (max-width: 360px) {
+  .bottom-floating {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    bottom: 14px !important;
+    gap: 8px !important;
+  }
+
+  .bf-btn {
+    flex-direction: column; /* icon up, text down */
+    align-items: center;
+    justify-content: center;
+    width: 100px;             /* fixed width */
+    height: 40px;            /* perfect circle feel */
+    border-radius: 14px;
+    padding: 15px 20px;
+    font-size: 12px !important;
+    line-height: 14px;
+  }
+
+  .bf-btn i {
+    font-size: 18px !important;
+    margin-bottom: 3px;
+  }
+
+  .bf-btn.call {
+    background: #000;
+  }
+
+  .bf-btn.wa {
+    background: #25d366;
+  }
+}
+.btn-whatsapp {
+  background: #25d366;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.4px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.25s ease;
+}
+
+.btn-whatsapp i {
+  font-size: 20px;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5c;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(37, 211, 102, 0.45);
+}
+
+.btn-whatsapp:active {
+  transform: translateY(-1px);
+}
+/* ================================
+      AUTO-SCROLLING REVIEW MARQUEE
+================================ */
+.reviews-marquee-section {
+  padding: 50px 0;
+  background: #f4fdfd;
+}
+
+.reviews-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 18px;
+  animation: scrollMarquee 38s linear infinite;
+}
+
+.marquee-card {
+  min-width: 260px;
+  max-width: 260px;
+  background: #ffffffea;
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 6px 20px rgba(11,115,122,0.14);
+  border: 1px solid rgba(11,115,122,0.12);
+  font-size: 15px;
+  line-height: 1.55;
+  color: #234;
+  flex-shrink: 0;
+}
+
+.marquee-card span {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand-dark);
+}
+
+/* Smooth infinite scroll */
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Pause on hover (desktop only) */
+.reviews-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Smaller screens (iPhone SE, 320px) */
+@media (max-width: 360px) {
+  .marquee-card {
+    min-width: 210px;
+    max-width: 210px;
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+}
+/* ================================
+      GOOGLE RATING CARD
+================================ */
+.google-rating-box {
+  background: #ffffffdd;
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  padding: 20px 24px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+  border: 1px solid rgba(11,115,122,0.10);
+}
+
+.google-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.rating-number {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--brand-dark);
+  line-height: 1;
+}
+
+.rating-stars {
+  font-size: 22px;
+  color: #fcbf00;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.rating-sub {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #355;
+}
+
+/* ================================
+      AUTO-SCROLLING MARQUEE
+================================ */
+.reviews-marquee-section {
+  padding: 50px 0;
+  background: #f4fdfd;
+}
+
+.reviews-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 18px;
+  animation: scrollMarquee 10s linear infinite;
+}
+
+.marquee-card {
+  min-width: 260px;
+  max-width: 260px;
+  background: #ffffffea;
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 6px 20px rgba(11,115,122,0.14);
+  border: 1px solid rgba(11,115,122,0.12);
+  font-size: 15px;
+  line-height: 1.55;
+  color: #234;
+  flex-shrink: 0;
+}
+
+.marquee-card span {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand-dark);
+}
+
+@keyframes scrollMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Pause on hover (desktop) */
+.reviews-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* iPhone SE / small screens */
+@media (max-width: 360px) {
+  .google-rating-box {
+    padding: 16px 18px;
+  }
+  .google-logo {
+    width: 50px;
+  }
+  .rating-number {
+    font-size: 38px;
+  }
+  .marquee-card {
+    min-width: 200px;
+  }
+}
+/* =====================================================
+      TWO SMALL INFO CARDS (SINCE 2018 / 500+ TRIPS)
+===================================================== */
+
+.stats-box-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 14px;
+  padding: 14px 22px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(11,115,122,0.18);
+  border: 1px solid rgba(11,115,122,0.15);
+  animation: floatPulse 2s ease-in-out infinite;
+  backdrop-filter: blur(8px);
+  min-width: 140px;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--brand-dark);
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #345;
+  margin-top: 3px;
+  letter-spacing: 0.3px;
+}
+
+/* Animated floating effect */
+@keyframes floatPulse {
+  0% { transform: translateY(0); box-shadow: 0 6px 20px rgba(11,115,122,0.18); }
+  50% { transform: translateY(-6px); box-shadow: 0 10px 26px rgba(11,115,122,0.28); }
+  100% { transform: translateY(0); box-shadow: 0 6px 20px rgba(11,115,122,0.18); }
+}
+
+/* iPhone SE fix */
+@media (max-width: 360px) {
+  .stat-card {
+    min-width: 120px;
+    padding: 12px 18px;
+  }
+  .stat-value { font-size: 22px; }
+  .stat-label { font-size: 12px; }
+}
+/* SERVICE BOX GRID */
+.service-box {
+  background: rgba(255,255,255,0.85);
+  padding: 22px 18px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgba(11,115,122,0.25);
+  box-shadow: 0 6px 22px rgba(11,115,122,0.18);
+  transition: 0.3s;
+  animation: shineGlow 4s infinite ease-in-out;
+  height: 100%;
+}
+
+.service-box .icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: var(--brand-dark);
+}
+
+.service-box h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin-bottom: 6px;
+}
+
+.service-box p {
+  font-size: 14px;
+  color: #334;
+  line-height: 1.5;
+}
+
+/* Hover */
+.service-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(11,115,122,0.30);
+}
+
+/* Soft glowing border animation */
+@keyframes shineGlow {
+  0% { border-color: rgba(11,115,122,0.15); }
+  50% { border-color: rgba(67,195,207,0.45); }
+  100% { border-color: rgba(11,115,122,0.15); }
+}
+.terms-box h4 {
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.terms-box p,
+.terms-box ul li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #2e3b3c;
+}
+
+.terms-box ul {
+  margin-left: 14px;
+}
+/* ABOUT PAGE – PREMIUM SHINING CARDS */
+.about-page-section .about-card {
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid rgba(11,115,122,0.25);
+  box-shadow: 0 0 26px rgba(11,115,122,0.28),
+              inset 0 0 18px rgba(11,115,122,0.12);
+  height: 100%;                  /* === FIX SAME HEIGHT === */
+  transition: 0.3s ease;
+}
+
+.about-page-section .about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 36px rgba(11,115,122,0.45),
+              inset 0 0 22px rgba(11,115,122,0.18);
+}
+
+.about-page-section h4 {
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin-bottom: 10px;
+}
+
+.about-page-section ul {
+  padding-left: 18px;
+}
+
+.about-page-section li {
+  margin-bottom: 6px;
+  color: #06383a;
+  font-weight: 500;
+}
+body.terms-page {
+  background: linear-gradient(180deg,#f9ffff 0,#eefafa 100%) !important;
+
+
+}
+
+.terms-page .hero-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--brand-dark);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.terms-box {
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  border: 1px solid rgba(11,115,122,0.25);
+  box-shadow: 0 0 26px rgba(11,115,122,0.28),
+              inset 0 0 18px rgba(11,115,122,0.12);
+  animation: fadeUp 0.5s ease;
+}
+
+.terms-box h4 {
+  margin-top: 22px;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.terms-box h2 {
+  color: var(--dark);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.terms-box p,
+.terms-box ul li {
+  font-size: 16px;
+  color: #1a3034;
+  line-height: 1.65;
+}
+
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(20px) }
+  to   { opacity:1; transform:translateY(0)   }
+}
+/* Hourly Package Tabs */
+.package-tabs {
+  gap: 12px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(11,115,122,0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.25s;
+  backdrop-filter: blur(6px);
+}
+
+.tab-btn.active {
+  background: linear-gradient(90deg, var(--brand-dark), var(--brand));
+  color: white;
+  box-shadow: 0 0 18px rgba(11,115,122,0.35);
+  transform: translateY(-2px);
+}
+
+/* Hourly Cards Same Glowing Border */
+.hour-card {
+  border: 1px solid rgba(11,115,122,0.3);
+  box-shadow: 0 0 24px rgba(11,115,122,0.15);
+  transition: 0.25s;
+}
+
+.hour-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 32px rgba(11,115,122,0.30);
+}
+
+/* =========================================
+   TOUR PACKAGES — CUSTOM PAGE CSS
+   Matches your aqua-glass premium theme
+========================================= */
+
+/* Tabs */
+.package-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.pkg-tab {
+  padding: 10px 22px;
+  border-radius: 12px;
+  border: 1px solid rgba(11,115,122,0.28);
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.pkg-tab.active {
+  background: linear-gradient(90deg, var(--brand-dark), var(--brand));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 6px 16px rgba(11,115,122,0.28);
+}
+
+/* Left Form Blocks */
+.form-box {
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(11,115,122,0.25);
+  box-shadow: 0 8px 24px rgba(11,115,122,0.18);
+}
+
+/* Right Price Box */
+.price-box {
+  padding: 26px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(11,115,122,0.25);
+  box-shadow: 0 8px 26px rgba(11,115,122,0.25);
+}
+
+.price-value {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--brand-dark);
+  margin-top: 10px;
+}
+
+/* Accommodation iOS Switch */
+.switch-accom {
+  position: relative;
+  width: 60px;
+  height: 32px;
+  display: inline-block;
+}
+
+.switch-accom input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #d7eeee;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  transition: .3s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(90deg, var(--brand-dark), var(--brand));
+}
+
+input:checked + .slider:before {
+  transform: translateX(28px);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .price-box {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .pkg-tab {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}
+.info-box {
+  background: rgba(255,255,255,0.55);
+  border-radius: 16px;
+  padding: 18px 20px;
+  border: 1px solid rgba(11,115,122,0.25);
+  box-shadow: 0 8px 26px rgba(11,115,122,0.18);
+  backdrop-filter: blur(10px);
+}
+
+.info-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.info-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #153b40;
+}
+
+.info-list li {
+  margin-bottom: 4px;
+}
+.info-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* Green tick */
+.inc-icon {
+  color: #0c8a00; /* green */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Red X */
+.exc-icon {
+  color: #d00000; /* red */
+  font-weight: bold;
+  font-size: 18px;
+}
