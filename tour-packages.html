@@ -229,38 +229,49 @@ body {
       </div>
 
       <!-- ACCOMMODATION -->
+  
+      <!-- ACCOMMODATION -->
       <div class="form-box" id="accomBox" style="display:none;">
-        <h5>Accommodation (Optional) Click to enable</h5>
-        <label class="switch-accom">
-          <input type="checkbox" id="accomToggle">
-          <span class="slider"></span>
-        </label>
 
-        <div class="row mt-2">
-          <div class="col-6">
-            <label>Hotel Type</label>
-            <select id="accomHotel" class="form-select">
-              <option value="2star">2-Star</option>
-              <option value="3star">3-Star</option>
-            </select>
-          </div>
+      <h5>Accommodation (Optional) Click to enable</h5>
 
-          <div class="col-6">
-            <label>Occupancy</label>
-            <select id="accomOccupancy" class="form-select">
-              <option value="double">Double</option>
-              <option value="triple">Triple</option>
-            </select>
-          </div>
+      <!-- Toggle (always visible when accomBox appears) -->
+      <label class="switch-accom">
+        <input type="checkbox" id="accomToggle">
+        <span class="slider"></span>
+      </label>
+
+    </div>
+
+    <!-- SEPARATE CONTAINER (hidden until toggle ON) -->
+    <div class="form-box mt-3 accom-container" id="accomContainer" style="display:none;">
+
+      <div class="row mt-2">
+        <div class="col-6">
+          <label>Hotel Type</label>
+          <select id="accomHotel" class="form-select">
+            <option value="2star">2-Star</option>
+            <option value="3star">3-Star</option>
+          </select>
         </div>
 
-        <div class="row mt-2">
-          <div class="col-12">
-            <label>Rooms</label>
-            <input type="number" id="accomRooms" class="form-control" min="1" max="20" value="1">
-          </div>
+        <div class="col-6">
+          <label>Occupancy</label>
+          <select id="accomOccupancy" class="form-select">
+            <option value="double">Double</option>
+            <option value="triple">Triple</option>
+          </select>
         </div>
       </div>
+
+      <div class="row mt-2">
+        <div class="col-12">
+          <label>Rooms</label>
+          <input type="number" id="accomRooms" class="form-control" min="1" max="20" value="1">
+        </div>
+      </div>
+
+    </div>
 
     </div>
 
@@ -459,11 +470,27 @@ body {
   <a class="bf-btn call" href="tel:+919944165207"><i class="fa fa-phone"></i> Call</a>
   <a class="bf-btn wa" id="quickWA"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 </div>
+<script>
+const accomToggleBtn = document.getElementById("accomToggle");
+const accomContainer = document.getElementById("accomContainer");
 
+accomToggleBtn.addEventListener("change", () => {
+if (accomToggleBtn.checked) {
+  accomContainer.style.display = "block";  // show the container
+} else {
+  accomContainer.style.display = "none";   // hide the container
+}
+
+// call your existing price update function
+updatePriceAndUI();
+});
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 <script src="main.js"></script>
 <script src="tour-package.js"></script>
 </body>
 </html>
+
 
