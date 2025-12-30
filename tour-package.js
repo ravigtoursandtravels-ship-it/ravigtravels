@@ -17,7 +17,7 @@ const packagesByDays = {
   1: {
     "Coimbatore Local – 100km": {
       km: "100 km",
-      prices: { "Sedan": 2800, "Innova": 3800, "Crysta": 4500, "TT 14": 5500, "TT 18": 6000, "Urbania": 9000 },
+      prices: { "Sedan (4+1)": 2800, "Innova (7+1)": 3800, "Crysta (7+1)": 4500, "Tempo Traveller 14-Seater": 5500, "Tempo Traveller 18-Seater": 6000, "Urbania 12-Seater/16-Seater": 9000 },
       nights: 0,
       itinerary: [
         "Day 1: GD Car Museum, Perur Temple, Isha Yoga Center, Marudhamalai Temple, VOC Park Zoo — Return Coimbatore"
@@ -26,7 +26,7 @@ const packagesByDays = {
 
     "Coimbatore → Palani – 250km": {
       km: "250 km",
-      prices: { "Sedan": 4500, "Innova": 6000, "Crysta": 7400, "TT 14": 8500, "TT 18": 9500, "Urbania": 14000 },
+      prices: { "Sedan (4+1)": 4500, "Innova (7+1)": 6000, "Crysta (7+1)": 7400, "Tempo Traveller 14-Seater": 8500, "Tempo Traveller 18-Seater": 9500, "Urbania 12-Seater/16-Seater": 14000 },
       nights: 0,
       itinerary: [
         "Day 1: Palani Temple, Thiru Avinankudi Temple, Kanniyamman Temple, Local shopping, Hill views — Return Coimbatore"
@@ -35,7 +35,7 @@ const packagesByDays = {
 
     "Coimbatore → Guruvayur – 350km": {
       km: "350 km",
-      prices: { "Sedan": 6500, "Innova": 8500, "Crysta": 9500, "TT 14": 11500, "TT 18": 12500, "Urbania": 18000 },
+      prices: { "Sedan (4+1)": 6500, "Innova (7+1)": 8500, "Crysta (7+1)": 9500, "Tempo Traveller 14-Seater": 11500, "Tempo Traveller 18-Seater": 12500, "Urbania 12-Seater/16-Seater": 18000 },
       nights: 0,
       itinerary: [
         "Day 1: Guruvayur Temple, Mammiyoor Temple, Parthasarathy Temple, Punnathur Elephant Sanctuary, Local shopping — Return Coimbatore"
@@ -44,7 +44,7 @@ const packagesByDays = {
 
     "Coimbatore → TopSlip – 300km": {
       km: "300 km",
-      prices: { "Sedan": 5000, "Innova": 7000, "Crysta": 8500, "TT 14": 11000, "TT 18": 12000, "Urbania": 17000 },
+      prices: { "Sedan (4+1)": 5000, "Innova (7+1)": 7000, "Crysta (7+1)": 8500, "Tempo Traveller 14-Seater": 11000, "Tempo Traveller 18-Seater": 12000, "Urbania 12-Seater/16-Seater": 17000 },
       nights: 0,
       itinerary: [
         "Day 1: TopSlip Forest, Masaniamman Temple, Elephant feeding camp, Valparai viewpoints (optional), Monkey Falls — Return Coimbatore"
@@ -53,7 +53,7 @@ const packagesByDays = {
 
     "Coimbatore → Ooty – 300km": {
       km: "300 km",
-      prices: { "Sedan": 5500, "Innova": 8000, "Crysta": 9500, "TT 14": 11500, "TT 18": 13000, "Urbania": 18000 },
+      prices: { "Sedan (4+1)": 5500, "Innova (7+1)": 8000, "Crysta (7+1)": 9500, "Tempo Traveller 14-Seater": 11500, "Tempo Traveller 18-Seater": 13000, "Urbania 12-Seater/16-Seater": 18000 },
       nights: 0,
       itinerary: [
         "Day 1: Ooty Lake, Rose Garden, Botanical Garden, Doddabetta Peak, Tea Factory — Return to Coimbatore"
@@ -65,7 +65,7 @@ const packagesByDays = {
   2: {
     "Coimbatore → Ooty → Coonoor – 350km": {
       km: "350 km",
-      prices: { "Sedan": 7500, "Innova": 11000, "Crysta": 12500, "TT 14": 15000, "TT 18": 17000, "Urbania": 25000 },
+      prices: { "Sedan (4+1)": 7500, "Innova (7+1)": 11000, "Crysta (7+1)": 12500, "Tempo Traveller 14-Seater": 15000, "Tempo Traveller 18-Seater": 17000, "Urbania 12-Seater/16-Seater": 25000 },
       nights: 1,
       itinerary: [
         "Day 1: Ooty Lake, Botanical Garden, Rose Garden, Tea Factory, Doddabetta Peak — Overnight in Ooty",
@@ -75,7 +75,7 @@ const packagesByDays = {
 
     "Coimbatore → Kodaikanal – 500km": {
       km: "500 km",
-      prices: { "Sedan": 9000, "Innova": 12500, "Crysta": 14500, "TT 14": 18000, "TT 18": 20000, "Urbania": 29500 },
+      prices: { "Sedan (4+1)": 9000, "Innova (7+1)": 12500, "Crysta (7+1)": 14500, "Tempo Traveller 14-Seater": 18000, "Tempo Traveller 18-Seater": 20000, "Urbania 12-Seater/16-Seater": 29500 },
       nights: 1,
       itinerary: [
         "Day 1: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Upper Lake View — Overnight",
@@ -85,7 +85,7 @@ const packagesByDays = {
 
     "Coimbatore → Valparai – 350km": {
       km: "350 km",
-      prices: { "Sedan": 8000, "Innova": 11000, "Crysta": 13500, "TT 14": 15000, "TT 18": 18000, "Urbania": 26000 },
+      prices: { "Sedan (4+1)": 8000, "Innova (7+1)": 11000, "Crysta (7+1)": 13500, "Tempo Traveller 14-Seater": 15000, "Tempo Traveller 18-Seater": 18000, "Urbania 12-Seater/16-Seater": 26000 },
       nights: 1,
       itinerary: [
         "Day 1: Loam’s Viewpoint, Monkey Falls, Tea Estates View, Nallamudi Viewpoint, Balaji Temple — Overnight",
@@ -95,7 +95,7 @@ const packagesByDays = {
 
     "Coimbatore → Munnar – 500km": {
       km: "500 km",
-      prices: { "Sedan": 9500, "Innova": 12500, "Crysta": 15000, "TT 14": 19000, "TT 18": 21000, "Urbania": 31000 },
+      prices: { "Sedan (4+1)": 9500, "Innova (7+1)": 12500, "Crysta (7+1)": 15000, "Tempo Traveller 14-Seater": 19000, "Tempo Traveller 18-Seater": 21000, "Urbania 12-Seater/16-Seater": 31000 },
       nights: 1,
       itinerary: [
         "Day 1: Tea Gardens, Flower Garden, Photo Point, Attukal Waterfalls, Hydel Park — Overnight",
@@ -105,7 +105,7 @@ const packagesByDays = {
 
     "Coimbatore → Mysore – 550km": {
       km: "550 km",
-      prices: { "Sedan": 11000, "Innova": 15000, "Crysta": 18000, "TT 14": 22000, "TT 18": 24000, "Urbania": 34000 },
+      prices: { "Sedan (4+1)": 11000, "Innova (7+1)": 15000, "Crysta (7+1)": 18000, "Tempo Traveller 14-Seater": 22000, "Tempo Traveller 18-Seater": 24000, "Urbania 12-Seater/16-Seater": 34000 },
       nights: 1,
       itinerary: [
         "Day 1: Mysore Palace, Chamundi Hills, Zoo, Jaganmohan Palace, Local Market — Overnight",
@@ -115,7 +115,7 @@ const packagesByDays = {
 
     "Coimbatore → Cochin – 500km": {
       km: "500 km",
-      prices: { "Sedan": 10000, "Innova": 13500, "Crysta": 15000, "TT 14": 18000, "TT 18": 20000, "Urbania": 30000 },
+      prices: { "Sedan (4+1)": 10000, "Innova (7+1)": 13500, "Crysta (7+1)": 15000, "Tempo Traveller 14-Seater": 18000, "Tempo Traveller 18-Seater": 20000, "Urbania 12-Seater/16-Seater": 30000 },
       nights: 1,
       itinerary: [
         "Day 1: Fort Kochi Beach, Chinese Fishing Nets, Mattancherry Palace, Jew Town, Marine Drive — Overnight",
@@ -128,7 +128,7 @@ const packagesByDays = {
   3: {
     "Coimbatore → Ooty – 350km": {
       km: "350 km",
-      prices: { "Sedan": 9500, "Innova": 13500, "Crysta": 16000, "TT 14": 18500, "TT 18": 21500, "Urbania": 32000 },
+      prices: { "Sedan (4+1)": 9500, "Innova (7+1)": 13500, "Crysta (7+1)": 16000, "Tempo Traveller 14-Seater": 18500, "Tempo Traveller 18-Seater": 21500, "Urbania 12-Seater/16-Seater": 32000 },
       nights: 2,
       itinerary: [
         "Day 1: Ooty Lake, Rose Garden, Botanical Garden, Doddabetta Peak, Tea Factory — Overnight",
@@ -139,7 +139,7 @@ const packagesByDays = {
 
     "Coimbatore → Kodaikanal – 550km": {
       km: "550 km",
-      prices: { "Sedan": 11000, "Innova": 15500, "Crysta": 18000, "TT 14": 22000, "TT 18": 25000, "Urbania": 37000 },
+      prices: { "Sedan (4+1)": 11000, "Innova (7+1)": 15500, "Crysta (7+1)": 18000, "Tempo Traveller 14-Seater": 22000, "Tempo Traveller 18-Seater": 25000, "Urbania 12-Seater/16-Seater": 37000 },
       nights: 2,
       itinerary: [
         "Day 1: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Upper Lake View — Overnight",
@@ -150,7 +150,7 @@ const packagesByDays = {
 
     "Coimbatore → Valparai & Athirapally – 500km": {
       km: "500 km",
-      prices: { "Sedan": 11500, "Innova": 15500, "Crysta": 18000, "TT 14": 21000, "TT 18": 24500, "Urbania": 36000 },
+      prices: { "Sedan (4+1)": 11500, "Innova (7+1)": 15500, "Crysta (7+1)": 18000, "Tempo Traveller 14-Seater": 21000, "Tempo Traveller 18-Seater": 24500, "Urbania 12-Seater/16-Seater": 36000 },
       nights: 2,
       itinerary: [
         "Day 1: Loam’s Viewpoint, Monkey Falls, Tea Estates, Tiger Valley, Balaji Temple — Overnight",
@@ -161,7 +161,7 @@ const packagesByDays = {
 
     "Coimbatore → Munnar – 550km": {
       km: "550 km",
-      prices: { "Sedan": 12000, "Innova": 16000, "Crysta": 18500, "TT 14": 22500, "TT 18": 26500, "Urbania": 38000 },
+      prices: { "Sedan (4+1)": 12000, "Innova (7+1)": 16000, "Crysta (7+1)": 18500, "Tempo Traveller 14-Seater": 22500, "Tempo Traveller 18-Seater": 26500, "Urbania 12-Seater/16-Seater": 38000 },
       nights: 2,
       itinerary: [
         "Day 1: Tea Gardens, Hydel Park, Attukal Waterfalls, Blossom Park, Photo Point — Overnight",
@@ -172,7 +172,7 @@ const packagesByDays = {
 
     "Coimbatore → Madurai → Rameshwaram – 900km": {
       km: "900 km",
-      prices: { "Sedan": 16000, "Innova": 21500, "Crysta": 24500, "TT 14": 29000, "TT 18": 32000, "Urbania": 48000 },
+      prices: { "Sedan (4+1)": 16000, "Innova (7+1)": 21500, "Crysta (7+1)": 24500, "Tempo Traveller 14-Seater": 29000, "Tempo Traveller 18-Seater": 32000, "Urbania 12-Seater/16-Seater": 48000 },
       nights: 2,
       itinerary: [
         "Day 1: Madurai — Meenakshi Amman Temple, Thirumalai Nayakar Palace, Alagar Temple, Gandhi Museum, Market — Overnight",
@@ -183,7 +183,7 @@ const packagesByDays = {
 
     "Coimbatore → Vagamon – 700km": {
       km: "700 km",
-      prices: { "Sedan": 14500, "Innova": 18500, "Crysta": 21500, "TT 14": 29000, "TT 18": 32500, "Urbania": 48000 },
+      prices: { "Sedan (4+1)": 14500, "Innova (7+1)": 18500, "Crysta (7+1)": 21500, "Tempo Traveller 14-Seater": 29000, "Tempo Traveller 18-Seater": 32500, "Urbania 12-Seater/16-Seater": 48000 },
       nights: 2,
       itinerary: [
         "Day 1: Vagamon Meadows, Kurisumala, Pine Forest, Suicide Point, Tea Estates — Overnight",
@@ -197,7 +197,7 @@ const packagesByDays = {
   4: {
     "Coimbatore → Ooty – 400km": {
       km: "400 km",
-      prices: { "Sedan": 12500, "Innova": 16500, "Crysta": 20000, "TT 14": 23500, "TT 18": 26500, "Urbania": 41000 },
+      prices: { "Sedan (4+1)": 12500, "Innova (7+1)": 16500, "Crysta (7+1)": 20000, "Tempo Traveller 14-Seater": 23500, "Tempo Traveller 18-Seater": 26500, "Urbania 12-Seater/16-Seater": 41000 },
       nights: 3,
       itinerary: [
         "Day 1: Ooty Lake, Botanical Garden, Rose Garden, Doddabetta Peak, Tea Factory — Overnight",
@@ -209,7 +209,7 @@ const packagesByDays = {
 
     "Coimbatore → Kodaikanal – 550km": {
       km: "550 km",
-      prices: { "Sedan": 13500, "Innova": 18500, "Crysta": 21500, "TT 14": 26000, "TT 18": 29000, "Urbania": 44000 },
+      prices: { "Sedan (4+1)": 13500, "Innova (7+1)": 18500, "Crysta (7+1)": 21500, "Tempo Traveller 14-Seater": 26000, "Tempo Traveller 18-Seater": 29000, "Urbania 12-Seater/16-Seater": 44000 },
       nights: 3,
       itinerary: [
         "Day 1: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Upper Lake — Overnight",
@@ -221,7 +221,7 @@ const packagesByDays = {
 
     "Coimbatore → Munnar – 550km": {
       km: "550 km",
-      prices: { "Sedan": 14500, "Innova": 19000, "Crysta": 22000, "TT 14": 27000, "TT 18": 30000, "Urbania": 45000 },
+      prices: { "Sedan (4+1)": 14500, "Innova (7+1)": 19000, "Crysta (7+1)": 22000, "Tempo Traveller 14-Seater": 27000, "Tempo Traveller 18-Seater": 30000, "Urbania 12-Seater/16-Seater": 45000 },
       nights: 3,
       itinerary: [
         "Day 1: Tea Gardens, Flower Garden, Hydel Park, Attukal Waterfalls, Viewpoints — Overnight",
@@ -233,7 +233,7 @@ const packagesByDays = {
 
     "Coimbatore → Ooty → Mysore → Bangalore – 1100km": {
       km: "1100 km",
-      prices: { "Sedan": 21000, "Innova": 29000, "Crysta": 33000, "TT 14": 42000, "TT 18": 46000, "Urbania": 64000 },
+      prices: { "Sedan (4+1)": 21000, "Innova (7+1)": 29000, "Crysta (7+1)": 33000, "Tempo Traveller 14-Seater": 42000, "Tempo Traveller 18-Seater": 46000, "Urbania 12-Seater/16-Seater": 64000 },
       nights: 3,
       itinerary: [
         "Day 1: Ooty — Lake, Botanical Garden, Doddabetta, Tea Factory — Overnight",
@@ -245,7 +245,7 @@ const packagesByDays = {
 
     "Coimbatore → Kodaikanal → Madurai – 800km": {
       km: "800 km",
-      prices: { "Sedan": 17000, "Innova": 22500, "Crysta": 26000, "TT 14": 31000, "TT 18": 34500, "Urbania": 51000 },
+      prices: { "Sedan (4+1)": 17000, "Innova (7+1)": 22500, "Crysta (7+1)": 26000, "Tempo Traveller 14-Seater": 31000, "Tempo Traveller 18-Seater": 34500, "Urbania 12-Seater/16-Seater": 51000 },
       nights: 3,
       itinerary: [
         "Day 1: Kodaikanal sightseeing — Coaker’s Walk, Bryant Park, Kodai Lake — Overnight",
@@ -257,7 +257,7 @@ const packagesByDays = {
 
     "Coimbatore → Mysore → Coorg – 1000 km": {
       km: "1000 km",
-      prices: { "Sedan": 19000, "Innova": 26500, "Crysta": 30500, "TT 14": 39000, "TT 18": 43000, "Urbania": 61000 },
+      prices: { "Sedan (4+1)": 19000, "Innova (7+1)": 26500, "Crysta (7+1)": 30500, "Tempo Traveller 14-Seater": 39000, "Tempo Traveller 18-Seater": 43000, "Urbania 12-Seater/16-Seater": 61000 },
       nights: 3,
       itinerary: [
         "Day 1: Mysore — Palace, Chamundi Hills, Zoo — Overnight",
@@ -272,7 +272,7 @@ const packagesByDays = {
   5: {
     "Coimbatore → Ooty → Coonoor → Mudhumalai – 500km": {
       km: "500 km",
-      prices: { "Sedan": 15500, "Innova": 21000, "Crysta": 24500, "TT 14": 29000, "TT 18": 32000, "Urbania": 50000 },
+      prices: { "Sedan (4+1)": 15500, "Innova (7+1)": 21000, "Crysta (7+1)": 24500, "Tempo Traveller 14-Seater": 29000, "Tempo Traveller 18-Seater": 32000, "Urbania 12-Seater/16-Seater": 50000 },
       nights: 4,
       itinerary: [
         "Day 1: Ooty Lake, Rose Garden, Botanical Garden, Doddabetta, Tea Factory — Overnight",
@@ -285,7 +285,7 @@ const packagesByDays = {
 
     "Coimbatore → Ooty → Wayanad – 800 km": {
       km: "800 km",
-      prices: { "Sedan": 18500, "Innova": 25000, "Crysta": 29000, "TT 14": 35000, "TT 18": 39000, "Urbania": 59000 },
+      prices: { "Sedan (4+1)": 18500, "Innova (7+1)": 25000, "Crysta (7+1)": 29000, "Tempo Traveller 14-Seater": 35000, "Tempo Traveller 18-Seater": 39000, "Urbania 12-Seater/16-Seater": 59000 },
       nights: 4,
       itinerary: [
         "Day 1: Ooty sightseeing — Lake, Garden, Peaks, Tea Factory — Overnight",
@@ -298,7 +298,7 @@ const packagesByDays = {
 
     "Coimbatore → Ooty → Kodaikanal – 800 km": {
       km: "800 km",
-      prices: { "Sedan": 18500, "Innova": 25000, "Crysta": 29000, "TT 14": 35000, "TT 18": 39000, "Urbania": 59000 },
+      prices: { "Sedan (4+1)": 18500, "Innova (7+1)": 25000, "Crysta (7+1)": 29000, "Tempo Traveller 14-Seater": 35000, "Tempo Traveller 18-Seater": 39000, "Urbania 12-Seater/16-Seater": 59000 },
       nights: 4,
       itinerary: [
         "Day 1: Ooty — Gardens, Lake, Peak, Tea Factory — Overnight",
@@ -311,7 +311,7 @@ const packagesByDays = {
 
     "Coimbatore → Ooty → Munnar – 900 km": {
       km: "900 km",
-      prices: { "Sedan": 19500, "Innova": 26500, "Crysta": 30500, "TT 14": 36500, "TT 18": 41000, "Urbania": 61000 },
+      prices: { "Sedan (4+1)": 19500, "Innova (7+1)": 26500, "Crysta (7+1)": 30500, "Tempo Traveller 14-Seater": 36500, "Tempo Traveller 18-Seater": 41000, "Urbania 12-Seater/16-Seater": 61000 },
       nights: 4,
       itinerary: [
         "Day 1: Ooty sightseeing — Lake, Garden, Peak, Tea Factory — Overnight",
@@ -324,7 +324,7 @@ const packagesByDays = {
 
     "Coimbatore → Kodaikanal → Madurai → Rameshwaram – 1200 km": {
       km: "1200 km",
-      prices: { "Sedan": 23000, "Innova": 30500, "Crysta": 35500, "TT 14": 42000, "TT 18": 47000, "Urbania": 68500 },
+      prices: { "Sedan (4+1)": 23000, "Innova (7+1)": 30500, "Crysta (7+1)": 35500, "Tempo Traveller 14-Seater": 42000, "Tempo Traveller 18-Seater": 47000, "Urbania 12-Seater/16-Seater": 68500 },
       nights: 4,
       itinerary: [
         "Day 1: Kodaikanal — Coaker’s Walk, Bryant Park, Lake, Moir Point — Overnight",
@@ -337,7 +337,7 @@ const packagesByDays = {
 
     "Coimbatore → Ooty → Coorg → Mysore – 1200 km": {
       km: "1200 km",
-      prices: { "Sedan": 22500, "Innova": 32000, "Crysta": 36000, "TT 14": 46000, "TT 18": 51000, "Urbania": 72500 },
+      prices: { "Sedan (4+1)": 22500, "Innova (7+1)": 32000, "Crysta (7+1)": 36000, "Tempo Traveller 14-Seater": 46000, "Tempo Traveller 18-Seater": 51000, "Urbania 12-Seater/16-Seater": 72500 },
       nights: 4,
       itinerary: [
         "Day 1: Ooty sightseeing — Garden, Lake, Peak, Tea Factory — Overnight",
