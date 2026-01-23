@@ -92,6 +92,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tripTypeUI();
 
+  /* ---------- Convert YYYY-MM-DD → DD-MM-YYYY ---------- */
+  function formatDateDMY(dateStr) {
+    if (!dateStr) return "";
+    const [year, month, day] = dateStr.split("-");
+    return `${day}-${month}-${year}`;
+  }
+
+
   /* Min date setup */
   const today = new Date().toISOString().split("T")[0];
   document.getElementById("pickupDate").min = today;
@@ -250,11 +258,15 @@ Name: ${data.name}
 Phone: ${data.phone}
 Pickup: ${data.pickup}
 Drop: ${data.drop}
-${trip === "round" && data.intermediate ? `Intermediate: ${data.intermediate}\n` : ""}
+${trip === "round" && data.intermediate ? `Intermediate: ${data.intermediate}` : ""}
 
-Pickup Date: ${data.pickupDate}
+Pickup Date: ${formatDateDMY(data.pickupDate)}
 Pickup Time: ${formatTo12(data.pickupTime)}
-${trip === "round" && data.dropDate ? `Drop Date: ${data.dropDate} ${formatTo12(data.dropTime)}\n` : ""}
+${trip === "round" && data.dropDate ?
+  `Drop Date: ${formatDateDMY(data.dropDate)} ${formatTo12(data.dropTime)}`
+  : ""
+}
+
 
 Passengers: ${data.passengers}
 Accommodation: ${trip === "round" ? data.accommodation : "No"}
