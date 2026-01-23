@@ -833,6 +833,44 @@ function formatDateTimeAMPM(dateTimeStr) {
   return `${day}/${month}/${year}, ${hour}:${minute} ${ampm}`;
 }
 
+
+/* =========================================================
+   Block Past Pickup Date & Time (datetime-local)
+========================================================= */
+(function blockPastPickupDateTime() {
+
+  const pickupInput = document.getElementById("pickupDateTime");
+  if (!pickupInput) return;
+
+  function updateMinDateTime() {
+    const now = new Date();
+
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    const hour = String(now.getHours()).padStart(2, "0");
+    const minute = String(now.getMinutes()).padStart(2, "0");
+
+    // yyyy-MM-ddTHH:mm (required format)
+    const minDateTime = `${year}-${month}-${day}T${hour}:${minute}`;
+
+    pickupInput.min = minDateTime;
+
+    // If user already selected an older datetime → reset it
+    if (pickupInput.value && pickupInput.value < minDateTime) {
+      pickupInput.value = "";
+    }
+  }
+
+  // Initial run
+  updateMinDateTime();
+
+  // Update every minute (in case page stays open)
+  setInterval(updateMinDateTime, 60000);
+
+})();
+
+
 /* =========================================================
    Confirm Booking (Modal) → WhatsApp
 ========================================================= */
