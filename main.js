@@ -1,6 +1,3 @@
-/* -------------------------------
-   MAIN.JS — FINAL WORKING VERSION
-   ------------------------------- */
 
 /* ---------- Smooth Scroll ---------- */
 function scrollToBooking() {
@@ -138,13 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
     input.value = input.value.replace(/[^0-9]/g, "");
   }
 
-  // Restrict passenger count to max 18
-  function limitPassengers(input) {
-    let v = parseInt(input.value || "1");
-    if (v < 1) v = 1;
-    if (v > 18) v = 18;
-    input.value = v;
-  }
+
 
   /* Attach live listeners */
   document.addEventListener("DOMContentLoaded", () => {
@@ -174,10 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
       numbersOnly(document.getElementById("phone"));
     });
 
-    // Passengers → max 18
-    document.getElementById("passengers").addEventListener("input", () => {
-      limitPassengers(document.getElementById("passengers"));
-    });
+
 
   });
 
@@ -206,7 +194,6 @@ document.addEventListener("DOMContentLoaded", () => {
       pickupTime: document.getElementById("pickupTime").value,
       dropDate: document.getElementById("dropDate").value,
       dropTime: document.getElementById("dropTime").value,
-      passengers: document.getElementById("passengers").value,
       vehicle: document.getElementById("vehicle").value,
       additional: document.getElementById("additional").value,
       accommodation: accom.checked ? "Yes" : "No"
@@ -243,10 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    if (data.passengers > 18) {
-      alert("Max 18 passengers allowed.");
-      return;
-    }
+
 
     /* Build WhatsApp Message */
     const msg =
@@ -266,9 +250,6 @@ ${trip === "round" && data.dropDate ?
   `Drop Date: ${formatDateDMY(data.dropDate)} ${formatTo12(data.dropTime)}`
   : ""
 }
-
-
-Passengers: ${data.passengers}
 Accommodation: ${trip === "round" ? data.accommodation : "No"}
 Vehicle: ${data.vehicle}
 
