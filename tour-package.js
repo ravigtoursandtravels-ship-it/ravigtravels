@@ -54,7 +54,7 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 7500, "Innova (7+1)": 11000, "Crysta (7+1)": 12500, "Tempo Traveller 14-Seater": 15000, "Tempo Traveller 18-Seater": 17000, "Urbania 12-Seater/16-Seater": 25000 },
       nights: 1,
       itinerary: [
-        "Day 1: Ooty Lake, Botanical Garden, Rose Garden, Tea Factory, Doddabetta Peak — Overmight Stay in Ooty",
+        "Day 1: Ooty Lake, Botanical Garden, Rose Garden, Tea Factory, Doddabetta Peak — Overnight Stay in Ooty",
         "Day 2: Coonoor – Sim’s Park, Dolphin’s Nose, Lamb’s Rock, Tea Garden Viewpoint, Wellington Market — Return Coimbatore"
       ]
     },
@@ -64,7 +64,7 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 9000, "Innova (7+1)": 12500, "Crysta (7+1)": 14500, "Tempo Traveller 14-Seater": 18000, "Tempo Traveller 18-Seater": 20000, "Urbania 12-Seater/16-Seater": 29500 },
       nights: 1,
       itinerary: [
-        "Day 1: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Upper Lake View — Overmight Stay",
+        "Day 1: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Upper Lake View — Overnight Stay",
         "Day 2: Pine Forest, Pillar Rocks, Guna Caves, Chocolate Factory, Kurinji Andavar Temple — Return Coimbatore"
       ]
     },
@@ -74,7 +74,7 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 8000, "Innova (7+1)": 11000, "Crysta (7+1)": 13500, "Tempo Traveller 14-Seater": 15000, "Tempo Traveller 18-Seater": 18000, "Urbania 12-Seater/16-Seater": 26000 },
       nights: 1,
       itinerary: [
-        "Day 1: Loam’s Viewpoint, Monkey Falls, Tea Estates View, Nallamudi Viewpoint, Balaji Temple — Overmight Stay",
+        "Day 1: Loam’s Viewpoint, Monkey Falls, Tea Estates View, Nallamudi Viewpoint, Balaji Temple — Overnight Stay",
         "Day 2: Chinna Kallar Falls, Tiger Valley, Aliyar Dam Park, Udumalpet viewpoints — Return Coimbatore"
       ]
     },
@@ -84,7 +84,7 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 9500, "Innova (7+1)": 12500, "Crysta (7+1)": 15000, "Tempo Traveller 14-Seater": 19000, "Tempo Traveller 18-Seater": 21000, "Urbania 12-Seater/16-Seater": 31000 },
       nights: 1,
       itinerary: [
-        "Day 1: Tea Gardens, Flower Garden, Photo Point, Attukal Waterfalls, Hydel Park — Overmight Stay",
+        "Day 1: Tea Gardens, Flower Garden, Photo Point, Attukal Waterfalls, Hydel Park — Overnight Stay",
         "Day 2: Eravikulam National Park, Mattupetty Dam, Echo Point, Kundala Lake, Tea Museum — Return Coimbatore"
       ]
     },
@@ -94,7 +94,7 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 11000, "Innova (7+1)": 15000, "Crysta (7+1)": 18000, "Tempo Traveller 14-Seater": 22000, "Tempo Traveller 18-Seater": 24000, "Urbania 12-Seater/16-Seater": 34000 },
       nights: 1,
       itinerary: [
-        "Day 1: Mysore Palace, Chamundi Hills, Zoo, Jaganmohan Palace, Local Market — Overmight Stay",
+        "Day 1: Mysore Palace, Chamundi Hills, Zoo, Jaganmohan Palace, Local Market — Overnight Stay",
         "Day 2: Brindavan Gardens, St. Philomena Church, Sand Museum, Rail Museum, Return Journey — Return Coimbatore"
       ]
     },
@@ -104,7 +104,7 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 10000, "Innova (7+1)": 13500, "Crysta (7+1)": 15000, "Tempo Traveller 14-Seater": 18000, "Tempo Traveller 18-Seater": 20000, "Urbania 12-Seater/16-Seater": 30000 },
       nights: 1,
       itinerary: [
-        "Day 1: Fort Kochi Beach, Chinese Fishing Nets, Mattancherry Palace, Jew Town, Marine Drive — Overmight Stay",
+        "Day 1: Fort Kochi Beach, Chinese Fishing Nets, Mattancherry Palace, Jew Town, Marine Drive — Overnight Stay",
         "Day 2: Lulu Mall, Hill Palace Museum, Cherai Beach, Local shopping — Return Coimbatore"
       ]
     }
@@ -117,8 +117,8 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 9500, "Innova (7+1)": 13500, "Crysta (7+1)": 16000, "Tempo Traveller 14-Seater": 18500, "Tempo Traveller 18-Seater": 21500, "Urbania 12-Seater/16-Seater": 32000 },
       nights: 2,
       itinerary: [
-        "Day 1: Ooty Lake, Rose Garden, Botanical Garden, Doddabetta Peak, Tea Factory — Overmight Stay",
-        "Day 2: Pykara Lake, Pykara Falls, Wenlock Downs, Shooting Spot, 9th Mile — Overmight Stay",
+        "Day 1: Ooty Lake, Rose Garden, Botanical Garden, Doddabetta Peak, Tea Factory — Overnight Stay",
+        "Day 2: Pykara Lake, Pykara Falls, Wenlock Downs, Shooting Spot, 9th Mile — Overnight Stay",
         "Day 3: Coonoor: Sim's Park, Dolphin’s Nose, Lamb's Rock, Tea Garden, Coonoor Lake — Return Coimbatore"
       ]
     },
@@ -128,8 +128,8 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 11000, "Innova (7+1)": 15500, "Crysta (7+1)": 18000, "Tempo Traveller 14-Seater": 22000, "Tempo Traveller 18-Seater": 25000, "Urbania 12-Seater/16-Seater": 37000 },
       nights: 2,
       itinerary: [
-        "Day 1: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Upper Lake View — Overmight Stay",
-        "Day 2: Pine Forest, Guna Caves, Pillar Rocks, Devil's Kitchen, Kurinji Temple — Overmight Stay",
+        "Day 1: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Upper Lake View — Overnight Stay",
+        "Day 2: Pine Forest, Guna Caves, Pillar Rocks, Devil's Kitchen, Kurinji Temple — Overnight Stay",
         "Day 3: Silver Cascade, Vattakanal Viewpoint, Shopping — Return Coimbatore"
       ]
     },
@@ -139,8 +139,8 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 11500, "Innova (7+1)": 15500, "Crysta (7+1)": 18000, "Tempo Traveller 14-Seater": 21000, "Tempo Traveller 18-Seater": 24500, "Urbania 12-Seater/16-Seater": 36000 },
       nights: 2,
       itinerary: [
-        "Day 1: Loam’s Viewpoint, Monkey Falls, Tea Estates, Tiger Valley, Balaji Temple — Overmight Stay",
-        "Day 2: Nallamudi Viewpoint, Chinna Kallar Falls, Valparai Sightseeing — Overmight Stay",
+        "Day 1: Loam’s Viewpoint, Monkey Falls, Tea Estates, Tiger Valley, Balaji Temple — Overnight Stay",
+        "Day 2: Nallamudi Viewpoint, Chinna Kallar Falls, Valparai Sightseeing — Overnight Stay",
         "Day 3: Athirapally Waterfalls, Vazhachal Falls, Charpa Falls — Return Coimbatore"
       ]
     },
@@ -150,8 +150,8 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 12000, "Innova (7+1)": 16000, "Crysta (7+1)": 18500, "Tempo Traveller 14-Seater": 22500, "Tempo Traveller 18-Seater": 26500, "Urbania 12-Seater/16-Seater": 38000 },
       nights: 2,
       itinerary: [
-        "Day 1: Tea Gardens, Hydel Park, Attukal Waterfalls, Blossom Park, Photo Point — Overmight Stay",
-        "Day 2: Eravikulam National Park, Mattupetty Dam, Echo Point, Kundala Lake, Elephant Camp — Overmight Stay",
+        "Day 1: Tea Gardens, Hydel Park, Attukal Waterfalls, Blossom Park, Photo Point — Overnight Stay",
+        "Day 2: Eravikulam National Park, Mattupetty Dam, Echo Point, Kundala Lake, Elephant Camp — Overnight Stay",
         "Day 3: Tea Museum, Shopping, Viewpoints — Return Coimbatore"
       ]
     },
@@ -161,8 +161,8 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 16000, "Innova (7+1)": 21500, "Crysta (7+1)": 24500, "Tempo Traveller 14-Seater": 29000, "Tempo Traveller 18-Seater": 32000, "Urbania 12-Seater/16-Seater": 48000 },
       nights: 2,
       itinerary: [
-        "Day 1: Madurai — Meenakshi Amman Temple, Thirumalai Nayakar Palace, Alagar Temple, Gandhi Museum, Market — Overmight Stay",
-        "Day 2: Rameshwaram — Ramanathaswamy Temple, Agni Theertham, APJ House, Pamban Bridge, Dhanushkodi — Overmight Stay",
+        "Day 1: Madurai — Meenakshi Amman Temple, Thirumalai Nayakar Palace, Alagar Temple, Gandhi Museum, Market — Overnight Stay",
+        "Day 2: Rameshwaram — Ramanathaswamy Temple, Agni Theertham, APJ House, Pamban Bridge, Dhanushkodi — Overnight Stay",
         "Day 3: Return via Devipattinam / sightseeing — Return Coimbatore"
       ]
     },
@@ -172,8 +172,8 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 14500, "Innova (7+1)": 18500, "Crysta (7+1)": 21500, "Tempo Traveller 14-Seater": 29000, "Tempo Traveller 18-Seater": 32500, "Urbania 12-Seater/16-Seater": 48000 },
       nights: 2,
       itinerary: [
-        "Day 1: Vagamon Meadows, Kurisumala, Pine Forest, Suicide Point, Tea Estates — Overmight Stay",
-        "Day 2: Murugan Mala, Vagamon Lake, Thangalpara, Scenic Viewpoints, Adventure Park — Overmight Stay",
+        "Day 1: Vagamon Meadows, Kurisumala, Pine Forest, Suicide Point, Tea Estates — Overnight Stay",
+        "Day 2: Murugan Mala, Vagamon Lake, Thangalpara, Scenic Viewpoints, Adventure Park — Overnight Stay",
         "Day 3: Return sightseeing & departure — Return Coimbatore"
       ]
     }
@@ -186,9 +186,9 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 12500, "Innova (7+1)": 16500, "Crysta (7+1)": 20000, "Tempo Traveller 14-Seater": 23500, "Tempo Traveller 18-Seater": 26500, "Urbania 12-Seater/16-Seater": 41000 },
       nights: 3,
       itinerary: [
-        "Day 1: Ooty Lake, Botanical Garden, Rose Garden, Doddabetta Peak, Tea Factory — Overmight Stay",
-        "Day 2: Pykara Lake, Pykara Falls, 9th Mile, Wenlock Downs, Shooting Spot — Overmight Stay",
-        "Day 3: Coonoor – Sim's Park, Dolphin's Nose, Lamb's Rock, Tea Gardens, Wellington Market — Overmight Stay",
+        "Day 1: Ooty Lake, Botanical Garden, Rose Garden, Doddabetta Peak, Tea Factory — Overnight Stay",
+        "Day 2: Pykara Lake, Pykara Falls, 9th Mile, Wenlock Downs, Shooting Spot — Overnight Stay",
+        "Day 3: Coonoor – Sim's Park, Dolphin's Nose, Lamb's Rock, Tea Gardens, Wellington Market — Overnight Stay",
         "Day 4: Local shopping, viewpoints — Return Coimbatore"
       ]
     },
@@ -198,9 +198,9 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 13500, "Innova (7+1)": 18500, "Crysta (7+1)": 21500, "Tempo Traveller 14-Seater": 26000, "Tempo Traveller 18-Seater": 29000, "Urbania 12-Seater/16-Seater": 44000 },
       nights: 3,
       itinerary: [
-        "Day 1: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Upper Lake — Overmight Stay",
-        "Day 2: Pine Forest, Guna Caves, Pillar Rocks, Kurinji Temple, Silent Valley View — Overmight Stay",
-        "Day 3: Vattakanal Viewpoint, Silver Cascade, Dolphin Nose (optional), Bear Shola Falls — Overmight Stay",
+        "Day 1: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Upper Lake — Overnight Stay",
+        "Day 2: Pine Forest, Guna Caves, Pillar Rocks, Kurinji Temple, Silent Valley View — Overnight Stay",
+        "Day 3: Vattakanal Viewpoint, Silver Cascade, Dolphin Nose (optional), Bear Shola Falls — Overnight Stay",
         "Day 4: Chocolate factory, Shopping — Return Coimbatore"
       ]
     },
@@ -210,9 +210,9 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 14500, "Innova (7+1)": 19000, "Crysta (7+1)": 22000, "Tempo Traveller 14-Seater": 27000, "Tempo Traveller 18-Seater": 30000, "Urbania 12-Seater/16-Seater": 45000 },
       nights: 3,
       itinerary: [
-        "Day 1: Tea Gardens, Flower Garden, Hydel Park, Attukal Waterfalls, Viewpoints — Overmight Stay",
-        "Day 2: Eravikulam National Park, Mattupetty Dam, Echo Point, Kundala Lake, Elephant Ride — Overmight Stay",
-        "Day 3: Top Station, Gap Road Viewpoint, Tea Museum, Local explorations — Overmight Stay",
+        "Day 1: Tea Gardens, Flower Garden, Hydel Park, Attukal Waterfalls, Viewpoints — Overnight Stay",
+        "Day 2: Eravikulam National Park, Mattupetty Dam, Echo Point, Kundala Lake, Elephant Ride — Overnight Stay",
+        "Day 3: Top Station, Gap Road Viewpoint, Tea Museum, Local explorations — Overnight Stay",
         "Day 4: Shopping & departure — Return Coimbatore"
       ]
     },
@@ -222,9 +222,9 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 21000, "Innova (7+1)": 29000, "Crysta (7+1)": 33000, "Tempo Traveller 14-Seater": 42000, "Tempo Traveller 18-Seater": 46000, "Urbania 12-Seater/16-Seater": 64000 },
       nights: 3,
       itinerary: [
-        "Day 1: Ooty — Lake, Botanical Garden, Doddabetta, Tea Factory — Overmight Stay",
-        "Day 2: Mysore — Palace, Chamundi Hills, Market, Zoo — Overmight Stay",
-        "Day 3: Bangalore — Cubbon Park, MG Road, Lalbagh, Shopping — Overmight Stay",
+        "Day 1: Ooty — Lake, Botanical Garden, Doddabetta, Tea Factory — Overnight Stay",
+        "Day 2: Mysore — Palace, Chamundi Hills, Market, Zoo — Overnight Stay",
+        "Day 3: Bangalore — Cubbon Park, MG Road, Lalbagh, Shopping — Overnight Stay",
         "Day 4: Return sightseeing & departure — Return Coimbatore"
       ]
     },
@@ -234,9 +234,9 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 17000, "Innova (7+1)": 22500, "Crysta (7+1)": 26000, "Tempo Traveller 14-Seater": 31000, "Tempo Traveller 18-Seater": 34500, "Urbania 12-Seater/16-Seater": 51000 },
       nights: 3,
       itinerary: [
-        "Day 1: Kodaikanal sightseeing — Coaker’s Walk, Bryant Park, Kodai Lake — Overmight Stay",
-        "Day 2: Pine Forest, Pillar Rocks, Kurinji Temple, Vattakanal Viewpoint — Overmight Stay",
-        "Day 3: Madurai — Meenakshi Temple, Palace, Alagar Temple, Market — Overmight Stay",
+        "Day 1: Kodaikanal sightseeing — Coaker’s Walk, Bryant Park, Kodai Lake — Overnight Stay",
+        "Day 2: Pine Forest, Pillar Rocks, Kurinji Temple, Vattakanal Viewpoint — Overnight Stay",
+        "Day 3: Madurai — Meenakshi Temple, Palace, Alagar Temple, Market — Overnight Stay",
         "Day 4: Return sightseeing & departure — Return Coimbatore"
       ]
     },
@@ -246,9 +246,9 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 19000, "Innova (7+1)": 26500, "Crysta (7+1)": 30500, "Tempo Traveller 14-Seater": 39000, "Tempo Traveller 18-Seater": 43000, "Urbania 12-Seater/16-Seater": 61000 },
       nights: 3,
       itinerary: [
-        "Day 1: Mysore — Palace, Chamundi Hills, Zoo — Overmight Stay",
-        "Day 2: Coorg — Abbey Falls, Raja’s Seat, Coffee Plantations, Viewpoints — Overmight Stay",
-        "Day 3: Golden Temple, Mandalpatti Jeep Safari, Coorg Local — Overmight Stay",
+        "Day 1: Mysore — Palace, Chamundi Hills, Zoo — Overnight Stay",
+        "Day 2: Coorg — Abbey Falls, Raja’s Seat, Coffee Plantations, Viewpoints — Overnight Stay",
+        "Day 3: Golden Temple, Mandalpatti Jeep Safari, Coorg Local — Overnight Stay",
         "Day 4: Return sightseeing & departure — Return Coimbatore"
       ]
     }
@@ -261,10 +261,10 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 15500, "Innova (7+1)": 21000, "Crysta (7+1)": 24500, "Tempo Traveller 14-Seater": 29000, "Tempo Traveller 18-Seater": 32000, "Urbania 12-Seater/16-Seater": 50000 },
       nights: 4,
       itinerary: [
-        "Day 1: Ooty Lake, Rose Garden, Botanical Garden, Doddabetta, Tea Factory — Overmight Stay",
-        "Day 2: Pykara Lake, Pykara Falls, 6th Mile, 9th Mile, Wenlock Downs — Overmight Stay",
-        "Day 3: Coonoor — Sim's Park, Dolphin’s Nose, Lamb’s Rock, Tea Gardens, Coonoor Lake — Overmight Stay",
-        "Day 4: Mudumalai Safari, Theppakadu Elephant Camp, Bandipur crossing, Viewpoints — Overmight Stay",
+        "Day 1: Ooty Lake, Rose Garden, Botanical Garden, Doddabetta, Tea Factory — Overnight Stay",
+        "Day 2: Pykara Lake, Pykara Falls, 6th Mile, 9th Mile, Wenlock Downs — Overnight Stay",
+        "Day 3: Coonoor — Sim's Park, Dolphin’s Nose, Lamb’s Rock, Tea Gardens, Coonoor Lake — Overnight Stay",
+        "Day 4: Mudumalai Safari, Theppakadu Elephant Camp, Bandipur crossing, Viewpoints — Overnight Stay",
         "Day 5: Return sightseeing & departure — Return Coimbatore"
       ]
     },
@@ -274,10 +274,10 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 18500, "Innova (7+1)": 25000, "Crysta (7+1)": 29000, "Tempo Traveller 14-Seater": 35000, "Tempo Traveller 18-Seater": 39000, "Urbania 12-Seater/16-Seater": 59000 },
       nights: 4,
       itinerary: [
-        "Day 1: Ooty sightseeing — Lake, Garden, Peaks, Tea Factory — Overmight Stay",
-        "Day 2: Coonoor — Sim’s Park, Lamb’s Rock, Dolphin’s Nose — Overmight Stay",
-        "Day 3: Wayanad — Pookode Lake, Lakkidi Viewpoint, Chain Tree — Overmight Stay",
-        "Day 4: Edakkal Caves, Soochipara Falls, Banasura Sagar Dam — Overmight Stay",
+        "Day 1: Ooty sightseeing — Lake, Garden, Peaks, Tea Factory — Overnight Stay",
+        "Day 2: Coonoor — Sim’s Park, Lamb’s Rock, Dolphin’s Nose — Overnight Stay",
+        "Day 3: Wayanad — Pookode Lake, Lakkidi Viewpoint, Chain Tree — Overnight Stay",
+        "Day 4: Edakkal Caves, Soochipara Falls, Banasura Sagar Dam — Overnight Stay",
         "Day 5: Return sightseeing & departure — Return Coimbatore"
       ]
     },
@@ -287,10 +287,10 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 18500, "Innova (7+1)": 25000, "Crysta (7+1)": 29000, "Tempo Traveller 14-Seater": 35000, "Tempo Traveller 18-Seater": 39000, "Urbania 12-Seater/16-Seater": 59000 },
       nights: 4,
       itinerary: [
-        "Day 1: Ooty — Gardens, Lake, Peak, Tea Factory — Overmight Stay",
-        "Day 2: Ooty → Kodaikanal transfer & local leisure — Overmight Stay",
-        "Day 3: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Silent Valley — Overmight Stay",
-        "Day 4: Pine Forest, Guna Caves, Pillar Rocks, Kurinji Temple — Overmight Stay",
+        "Day 1: Ooty — Gardens, Lake, Peak, Tea Factory — Overnight Stay",
+        "Day 2: Ooty → Kodaikanal transfer & local leisure — Overnight Stay",
+        "Day 3: Coaker's Walk, Bryant Park, Kodai Lake, Moir Point, Silent Valley — Overnight Stay",
+        "Day 4: Pine Forest, Guna Caves, Pillar Rocks, Kurinji Temple — Overnight Stay",
         "Day 5: Return sightseeing & departure — Return Coimbatore"
       ]
     },
@@ -300,10 +300,10 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 19500, "Innova (7+1)": 26500, "Crysta (7+1)": 30500, "Tempo Traveller 14-Seater": 36500, "Tempo Traveller 18-Seater": 41000, "Urbania 12-Seater/16-Seater": 61000 },
       nights: 4,
       itinerary: [
-        "Day 1: Ooty sightseeing — Lake, Garden, Peak, Tea Factory — Overmight Stay",
-        "Day 2: Coonoor — Sim’s Park, Dolphin’s Nose, Lamb’s Rock — Overmight Stay",
-        "Day 3: Munnar arrival — Tea Gardens, Blossom Park, Attukal Falls — Overmight Stay",
-        "Day 4: Eravikulam, Mattupetty, Echo Point, Kundala Lake — Overmight Stay",
+        "Day 1: Ooty sightseeing — Lake, Garden, Peak, Tea Factory — Overnight Stay",
+        "Day 2: Coonoor — Sim’s Park, Dolphin’s Nose, Lamb’s Rock — Overnight Stay",
+        "Day 3: Munnar arrival — Tea Gardens, Blossom Park, Attukal Falls — Overnight Stay",
+        "Day 4: Eravikulam, Mattupetty, Echo Point, Kundala Lake — Overnight Stay",
         "Day 5: Return sightseeing & departure — Return Coimbatore"
       ]
     },
@@ -313,10 +313,10 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 23000, "Innova (7+1)": 30500, "Crysta (7+1)": 35500, "Tempo Traveller 14-Seater": 42000, "Tempo Traveller 18-Seater": 47000, "Urbania 12-Seater/16-Seater": 68500 },
       nights: 4,
       itinerary: [
-        "Day 1: Kodaikanal — Coaker’s Walk, Bryant Park, Lake, Moir Point — Overmight Stay",
-        "Day 2: Pine Forest, Guna Caves, Pillar Rocks, Kurinji Temple — Overmight Stay",
-        "Day 3: Madurai — Meenakshi Temple, Palace, Gandhi Museum — Overmight Stay",
-        "Day 4: Rameshwaram — Temple, Dhanushkodi, Pamban, APJ House — Overmight Stay",
+        "Day 1: Kodaikanal — Coaker’s Walk, Bryant Park, Lake, Moir Point — Overnight Stay",
+        "Day 2: Pine Forest, Guna Caves, Pillar Rocks, Kurinji Temple — Overnight Stay",
+        "Day 3: Madurai — Meenakshi Temple, Palace, Gandhi Museum — Overnight Stay",
+        "Day 4: Rameshwaram — Temple, Dhanushkodi, Pamban, APJ House — Overnight Stay",
         "Day 5: Return sightseeing & departure — Return Coimbatore"
       ]
     },
@@ -326,10 +326,10 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 22500, "Innova (7+1)": 32000, "Crysta (7+1)": 36000, "Tempo Traveller 14-Seater": 46000, "Tempo Traveller 18-Seater": 51000, "Urbania 12-Seater/16-Seater": 72500 },
       nights: 4,
       itinerary: [
-        "Day 1: Ooty sightseeing — Garden, Lake, Peak, Tea Factory — Overmight Stay",
-        "Day 2: Coonoor — Sim’s Park, Lamb’s Rock, Tea Gardens — Overmight Stay",
-        "Day 3: Coorg — Abbey Falls, Raja’s Seat, Coffee Plantations — Overmight Stay",
-        "Day 4: Mysore — Palace, Zoo, Chamundi Hill, Brindavan Garden — Overmight Stay",
+        "Day 1: Ooty sightseeing — Garden, Lake, Peak, Tea Factory — Overnight Stay",
+        "Day 2: Coonoor — Sim’s Park, Lamb’s Rock, Tea Gardens — Overnight Stay",
+        "Day 3: Coorg — Abbey Falls, Raja’s Seat, Coffee Plantations — Overnight Stay",
+        "Day 4: Mysore — Palace, Zoo, Chamundi Hill, Brindavan Garden — Overnight Stay",
         "Day 5: Return sightseeing & departure — Return Coimbatore"
       ]
     }
