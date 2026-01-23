@@ -486,6 +486,46 @@ body {
   <a class="bf-btn call" href="tel:+919944165207"><i class="fa fa-phone"></i> Call</a>
   <a class="bf-btn wa" id="quickWA"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 </div>
+
+<!-- BOOKING DETAILS MODAL -->
+<div class="modal fade" id="bookingModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Enter Trip Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="mb-2">
+          <label class="form-label">Pickup Location</label>
+          <input type="text" id="pickupLocation" class="form-control" placeholder="Eg: Coimbatore Railway Station">
+        </div>
+
+        <div class="mb-2">
+      <label class="form-label">Pickup Date & Time</label>
+      <input type="datetime-local" id="pickupDateTime" class="form-control">
+    </div>
+
+
+        <div class="mb-2">
+          <label class="form-label">Drop Location</label>
+          <input type="text" id="dropLocation" class="form-control" placeholder="Eg: Ooty Bus Stand">
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-success" id="confirmBooking">
+          <i class="fab fa-whatsapp"></i> Send WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 const accomToggleBtn = document.getElementById("accomToggle");
 const accomContainer = document.getElementById("accomContainer");
@@ -506,6 +546,6 @@ updatePriceAndUI();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 <script src="main.js"></script>
 <script src="tour-package.js"></script>
+
 </body>
 </html>
-
