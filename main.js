@@ -247,9 +247,11 @@ ${trip === "round" && data.intermediate ? `Intermediate: ${data.intermediate}` :
 Pickup Date: ${formatDateDMY(data.pickupDate)}
 Pickup Time: ${formatTo12(data.pickupTime)}
 ${trip === "round" && data.dropDate ?
-  `Drop Date: ${formatDateDMY(data.dropDate)} ${formatTo12(data.dropTime)}`
+  `Drop Date: ${formatDateDMY(data.dropDate)}
+Drop Time: ${formatTo12(data.dropTime)}`
   : ""
 }
+
 Accommodation: ${trip === "round" ? data.accommodation : "No"}
 Vehicle: ${data.vehicle}
 
@@ -273,3 +275,4 @@ window.addEventListener("scroll", () => {
   header.style.transform = curr > lastScroll ? "translateY(-120px)" : "translateY(0)";
   lastScroll = curr;
 });
+
