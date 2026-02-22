@@ -129,8 +129,9 @@ h1,h2,h3,h4,h5,h6{ font-weight: 600; }
   width:100%;
   z-index:20;
 
-  background: var(--dark);
-  color: var(--white);
+  background: var(--white);
+  color: var(--black);
+
 
   padding: 14px 0;
   border-bottom: 1px solid rgba(255,255,255,0.10);
@@ -164,7 +165,7 @@ h1,h2,h3,h4,h5,h6{ font-weight: 600; }
 .brand-title{
   font-size: 30px;
   font-weight: 600;
-  color: var(--white);
+  color: var(--black);
   white-space: nowrap;
 }
 .brand-phones{
@@ -184,10 +185,10 @@ h1,h2,h3,h4,h5,h6{ font-weight: 600; }
 .navbar-toggler{
   margin-left:auto;
   margin-right:6px;
-  background: rgba(255,255,255,0.10);
+  background: black;
   border-radius:10px;
   padding:6px 10px;
-  border: 1px solid rgba(255,255,255,0.16);
+  border: 1px solid black;
 }
 
 /* Bootstrap toggler icon visibility on dark header */
@@ -195,37 +196,52 @@ h1,h2,h3,h4,h5,h6{ font-weight: 600; }
   filter: invert(1);
   opacity: .9;
 }
+/* ================================
+   PREMIUM NAV FOR WHITE BACKGROUND
+   ================================ */
 
-/* Nav links on dark */
 .nav-link{
-  color: rgba(255,255,255,0.88);
+  position: relative;
+  color: #000;
   font-size: 15px;
   letter-spacing: .25px;
-  position: relative;
-  transition: transform .2s ease, opacity .2s ease, color .2s ease;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: color .25s ease, transform .2s ease;
+  z-index: 1;
 }
-.nav-link:hover,
-.nav-link.active{
-  color: var(--white);
-  transform: translateY(-1px);
-}
-.nav-link::after{
+
+/* Background animation layer */
+.nav-link::before{
   content:"";
   position:absolute;
-  left:0;
-  bottom:-6px;
-  width:0%;
-  height:2px;
-  background: var(--cyan-line);
-  box-shadow: 0 0 10px rgba(0,254,254,0.25);
-  transition: width .25s ease;
+  inset:0;
+  border-radius: 10px;
+  background: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s ease;
+  z-index:-1;
 }
-.nav-link:hover::after,
-.nav-link.active::after{ width:100%; }
 
-@media (max-width:768px){
-  .navbar-nav{ width:100%; padding-left:12px; }
-  .navbar-nav .nav-item{ width:100%; }
+/* Hover */
+.nav-link:hover{
+  color:#fff;
+  transform: translateY(-1px);
+}
+
+.nav-link:hover::before{
+  transform: scaleX(1);
+}
+
+/* Active */
+.nav-link.active{
+  color:#fff;
+}
+
+.nav-link.active::before{
+  transform: scaleX(1);
+}
 }
 
 /* ------------------------------------------------------------
@@ -551,38 +567,36 @@ input:focus,select:focus,textarea:focus{
   transform: translateY(0);
   box-shadow: 0 10px 24px rgba(0,0,0,0.14);
 }
-
 /* ------------------------------------------------------------
-   ✅ BOTTOM FLOATING CALL + WHATSAPP (TRUE BOTTOM CENTER)
+   PREMIUM BOTTOM FLOATING BAR (UPGRADED)
 ------------------------------------------------------------ */
+
 .bottom-floating{
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  right: auto;
-  bottom: 14px;
+  bottom: 18px;
 
   display:flex;
-  gap: 12px;
-  z-index: 999;
+  gap: 14px;
   align-items:center;
 
-  background: rgba(255,255,255,0.94);
-  border: 1px solid rgba(0,0,0,0.12);
-  border-radius: 18px;
-  padding: 8px;
+  padding: 10px;
+  border-radius: 22px;
 
-  box-shadow: 0 14px 30px rgba(0,0,0,0.14);
+  background: rgba(15,18,22,0.92);   /* dark glass */
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.22),
+    0 0 0 1px rgba(255,255,255,0.06);
+
+  z-index: 9999;
 }
 
+/* REMOVE old cyan border */
 .bottom-floating::before{
-  content:"";
-  position:absolute;
-  inset:-1px;
-  border-radius: inherit;
-  border: 1px solid var(--cyan-border);
-  pointer-events:none;
-  opacity:.75;
+  display:none;
 }
 
 /* Buttons */
@@ -590,42 +604,47 @@ input:focus,select:focus,textarea:focus{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap: 8px;
+  gap:8px;
 
-  padding: 12px 20px;
-  border-radius: 14px;
+  padding: 12px 22px;
+  border-radius: 16px;
 
-  font-size: 15px;
+  font-size:15px;
+  font-weight:500;
   text-decoration:none;
-  white-space: nowrap;
+  white-space:nowrap;
 
-  background: var(--black);
-  color: var(--white);
-
-  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
-  transition: transform .22s ease, box-shadow .22s ease;
+  transition: all .25s ease;
 }
+
+/* CALL BUTTON */
+.bf-btn.call{
+  background:#ffffff;
+  color:#000;
+  box-shadow: 0 8px 20px rgba(255,255,255,0.15);
+}
+
+/* WHATSAPP BUTTON */
+.bf-btn.wa{
+  background:#00fefe;
+  color:#000;
+  box-shadow: 0 8px 25px rgba(0,254,254,0.35);
+}
+
+/* Hover */
 .bf-btn:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.16);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.25);
 }
+
+/* Active */
 .bf-btn:active{
   transform: translateY(0);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
-.bf-btn i{ font-size: 18px; }
-
-/* Desktop: keep bottom-center (as you requested) */
-@media (min-width:768px){
-  .bottom-floating{
-    bottom: 20px;
-    padding: 10px;
-  }
-  .bf-btn{ padding: 14px 24px; font-size: 16px; }
-  .bf-btn i{ font-size: 20px; }
+.bf-btn i{
+  font-size:18px;
 }
-
 /* ------------------------------------------------------------
    GOOGLE RATING + REVIEWS
 ------------------------------------------------------------ */
@@ -1118,3 +1137,17 @@ body.terms-page{ background: var(--white); }
   text-decoration-color:#00fefe;
   text-underline-offset:3px;
 }
+
+
+
+
+/* BG FX canvas should never affect layout */
+#bgFxCanvas{
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Keep normal content above it */
+body{ position: relative; }
