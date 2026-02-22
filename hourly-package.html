@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17792009825"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17792009825"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17792009825');
+  </script>
 
-  gtag('config', 'AW-17792009825');
-</script>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hourly Package – Ravi G Tours and Travels</title>
@@ -33,9 +33,9 @@
     <div class="brand-block">
       <div class="brand-title">Ravi G Tours and Travels</div>
       <div class="brand-phones">
-        <a href="tel:+919944165207" style="text-decoration:none;color:inherit;">📞 99441 65207</a>
+        <a href="tel:+919944165207" style="text-decoration:none;color:inherit;"> 99441 65207</a>
         <span class="divider">|</span>
-        <a href="tel:+919994467675" style="text-decoration:none;color:inherit;">📞 99944 67675</a>
+        <a href="tel:+919994467675" style="text-decoration:none;color:inherit;"> 99944 67675</a>
       </div>
     </div>
 
@@ -73,12 +73,8 @@
 
     <!-- TABS -->
     <div class="package-tabs d-flex justify-content-center mb-4">
-      <div class="tab-btn active" data-tab="8">
-        8 Hrs / 80 Km
-      </div>
-      <div class="tab-btn" data-tab="10">
-        10 Hrs / 100 Km
-      </div>
+      <div class="tab-btn active" data-tab="8">8 Hrs / 80 Km</div>
+      <div class="tab-btn" data-tab="10">10 Hrs / 100 Km</div>
     </div>
 
     <!-- PACKAGES GRID -->
@@ -93,9 +89,9 @@
   </div>
 </section>
 
+
 <!-- Footer -->
   <footer class="site-footer py-4">
-
 
         <!-- Footer Quick Links -->
         <div class="container mt-5 mb-4">
@@ -157,67 +153,8 @@
 
           </div>
 
-          <!-- Divider -->
-          <hr class="my-4">
 
-          <!-- EXTRA SECTION -->
-          <h3 class="fw-bold mb-3">More South India Destinations</h3>
-
-          <div class="row">
-
-            <!-- Column A -->
-            <div class="col-6 col-md-3 mb-3">
-              <ul class="list-unstyled footer-links">
-                <li><a href="index.html">Pondicherry</a></li>
-                <li><a href="index.html">Mahabalipuram</a></li>
-                <li><a href="index.html">Vellore</a></li>
-                <li><a href="index.html">Trichy</a></li>
-                <li><a href="index.html">Thanjavur</a></li>
-                <li><a href="index.html">Salem</a></li>
-              </ul>
-            </div>
-
-            <!-- Column B -->
-            <div class="col-6 col-md-3 mb-3">
-              <ul class="list-unstyled footer-links">
-                <li><a href="index.html">Bekal</a></li>
-                <li><a href="index.html">Guruvayur</a></li>
-                <li><a href="index.html">Trivandrum</a></li>
-                <li><a href="index.html">Kollam</a></li>
-                <li><a href="index.html">Vagamon</a></li>
-                <li><a href="index.html">Marayoor</a></li>
-              </ul>
-            </div>
-
-            <!-- Column C -->
-            <div class="col-6 col-md-3 mb-3">
-              <ul class="list-unstyled footer-links">
-                <li><a href="index.html">Chitradurga</a></li>
-                <li><a href="index.html">Jog Falls</a></li>
-                <li><a href="index.html">Udupi</a></li>
-                <li><a href="index.html">Murudeshwar</a></li>
-                <li><a href="index.html">Gokarna</a></li>
-                <li><a href="index.html">Karwar</a></li>
-              </ul>
-            </div>
-
-            <!-- Column D -->
-            <div class="col-6 col-md-3 mb-3">
-              <ul class="list-unstyled footer-links">
-                <li><a href="index.html">Tirupati</a></li>
-                <li><a href="index.html">Horsley Hills</a></li>
-                <li><a href="index.html">Nellore</a></li>
-                <li><a href="index.html">Anantapur</a></li>
-                <li><a href="index.html">Seshachalam Hills</a></li>
-                <li><a href="index.html">Vijayawada</a></li>
-              </ul>
-            </div>
-
-          </div>
-
-        </div>
-    <hr>
-
+<hr>
     <div class="container">
       <div class="row gy-3">
         <div class="col-md-4">
@@ -259,17 +196,75 @@
     </div>
   </footer>
 
-
 <!-- Floating Buttons -->
 <div class="bottom-floating">
   <a class="bf-btn call" href="tel:+919944165207"><i class="fa fa-phone"></i> Call</a>
   <a class="bf-btn wa" href="#" id="quickWA"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 </div>
 
+<!-- ============ HOURLY BOOK NOW MODAL ============ -->
+<div class="hp-modal" id="hpModal" aria-hidden="true">
+  <div class="hp-modal__backdrop" data-close="1"></div>
+
+  <div class="hp-modal__panel" role="dialog" aria-modal="true" aria-labelledby="hpModalTitle">
+    <div class="hp-modal__head">
+      <div>
+        <div class="hp-modal__title" id="hpModalTitle">Book Hourly Package</div>
+        <div class="hp-modal__sub" id="hpPkgLine">Vehicle • Package</div>
+      </div>
+      <button type="button" class="hp-modal__close" data-close="1" aria-label="Close">✕</button>
+    </div>
+
+    <form class="hp-modal__form" id="hpBookForm">
+      <input type="hidden" id="hpVehicle">
+      <input type="hidden" id="hpHours">
+      <input type="hidden" id="hpKm">
+      <input type="hidden" id="hpPrice">
+      <input type="hidden" id="hpExHr">
+      <input type="hidden" id="hpPerKm">
+
+      <div class="hp-grid">
+        <div>
+          <label class="hp-label" for="hpName">Name</label>
+          <input class="hp-input" id="hpName" required placeholder="Your name">
+        </div>
+
+        <div>
+          <label class="hp-label" for="hpPhone">Phone</label>
+          <input class="hp-input" id="hpPhone" required inputmode="numeric" placeholder="10-digit number">
+        </div>
+
+        <div class="hp-span-2">
+          <label class="hp-label" for="hpPickup">Pickup Location</label>
+          <input class="hp-input" id="hpPickup" required placeholder="Pickup place / landmark">
+        </div>
+
+        <div>
+          <label class="hp-label" for="hpDate">Pickup Date</label>
+          <input class="hp-input" type="date" id="hpDate" required>
+        </div>
+
+        <div>
+          <label class="hp-label" for="hpTime">Pickup Time</label>
+          <input class="hp-input" type="time" id="hpTime" required>
+        </div>
+      </div>
+
+      <div class="hp-actions">
+        <button type="button" class="hp-btn hp-btn--ghost" data-close="1">Cancel</button>
+        <button type="submit" class="hp-btn hp-btn--primary">Continue to WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Scripts (only once) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+<script src="main.js"></script>
 
 <script>
-// PRICE DATA
+/* ========= PRICE DATA ========= */
 const pkg8 = [
   {name:"Swift Dzire", cat:"Sedan", price:2800, exHr:300, km:13},
   {name:"Toyota Etios", cat:"Sedan", price:2800, exHr:300, km:13},
@@ -288,60 +283,180 @@ const pkg10 = [
   {name:"Tempo Traveller A/C", cat:"TT 12/14 Seater", price:5500, exHr:500, km:20},
 ];
 
+/* ========= RENDER ========= */
 function renderPackages(data, hours, km) {
   const container = document.getElementById("packageGrid");
   container.innerHTML = "";
 
   data.forEach(v => {
-    const html = `
-    <div class="col-md-4">
-      <div class="hour-card about-card p-4 text-center">
-        <h4>${v.name}</h4>
-        <p class="text-muted">${v.cat}</p>
-        <hr>
-        <p><strong>${hours} Hrs / ${km} KM:</strong> ₹${v.price}</p>
-        <p><strong>Extra Hour:</strong> ₹${v.exHr}</p>
-        <p><strong>Per Km:</strong> ₹${v.km}</p>
+    container.innerHTML += `
+      <div class="col-md-4">
+        <div class="hour-card about-card p-4 text-center popup">
+          <h4>${v.name}</h4>
+          <p class="text-muted">${v.cat}</p>
+          <hr>
+          <p><strong>${hours} Hrs / ${km} KM:</strong> ₹${v.price}</p>
+          <p><strong>Extra Hour:</strong> ₹${v.exHr}</p>
+          <p><strong>Per Km:</strong> ₹${v.km}</p>
 
-        <a href="https://wa.me/919944165207?text=${encodeURIComponent(
-          `Hourly Package Booking:
-Vehicle: ${v.name}
-Package: ${hours} Hrs / ${km} Km
-Price: ₹${v.price}
-Extra Hour: ₹${v.exHr}
-Per Km: ₹${v.km}
-Please confirm availability.`)}"
-        class="tab-btn active" target="_blank">
-          Book Now
-        </a>
+          <button type="button"
+            class="book-now-btn"
+            data-vehicle="${v.name}"
+            data-hours="${hours}"
+            data-km="${km}"
+            data-price="${v.price}"
+            data-exhr="${v.exHr}"
+            data-perkm="${v.km}">
+            Book Now
+          </button>
+        </div>
       </div>
-    </div>`;
-    container.innerHTML += html;
+    `;
   });
+
+  bindHourlyBookButtons();
 }
 
-// DEFAULT: 8-hour
+/* DEFAULT */
 renderPackages(pkg8, 8, 80);
 
-// TAB SWITCH
-document.querySelectorAll(".tab-btn").forEach(btn => {
+/* TAB SWITCH (ONLY tabs) */
+document.querySelectorAll(".package-tabs .tab-btn").forEach(btn => {
   btn.addEventListener("click", () => {
-
-    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".package-tabs .tab-btn").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
 
     const tab = btn.getAttribute("data-tab");
-
-    if (tab == "10") renderPackages(pkg10, 10, 100);
+    if (tab === "10") renderPackages(pkg10, 10, 100);
     else renderPackages(pkg8, 8, 80);
   });
 });
+
+/* ========= MODAL + WHATSAPP ========= */
+const HP_WA_NUMBER = "919944165207";
+
+function todayISO(){
+  const d = new Date();
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth()+1).padStart(2,"0");
+  const dd = String(d.getDate()).padStart(2,"0");
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+function openHpModal(payload){
+  const modal = document.getElementById("hpModal");
+  modal.classList.add("is-open");
+  modal.setAttribute("aria-hidden","false");
+
+  // disable previous dates
+  const dateEl = document.getElementById("hpDate");
+  dateEl.min = todayISO();
+  if (!dateEl.value) dateEl.value = todayISO();
+
+  document.getElementById("hpPkgLine").textContent =
+    `${payload.vehicle} • ${payload.hours} Hrs / ${payload.km} Km • ₹${payload.price}`;
+
+  document.getElementById("hpVehicle").value = payload.vehicle;
+  document.getElementById("hpHours").value = payload.hours;
+  document.getElementById("hpKm").value = payload.km;
+  document.getElementById("hpPrice").value = payload.price;
+  document.getElementById("hpExHr").value = payload.exHr;
+  document.getElementById("hpPerKm").value = payload.perKm;
+
+  setTimeout(() => document.getElementById("hpName").focus(), 50);
+}
+
+function closeHpModal(){
+  const modal = document.getElementById("hpModal");
+  modal.classList.remove("is-open");
+  modal.setAttribute("aria-hidden","true");
+}
+
+function bindHourlyBookButtons(){
+  document.querySelectorAll(".book-now-btn").forEach(btn => {
+    if (btn.dataset.bound === "1") return;
+    btn.dataset.bound = "1";
+
+    btn.addEventListener("click", () => {
+      openHpModal({
+        vehicle: btn.dataset.vehicle || "",
+        hours: btn.dataset.hours || "",
+        km: btn.dataset.km || "",
+        price: btn.dataset.price || "",
+        exHr: btn.dataset.exhr || "",
+        perKm: btn.dataset.perkm || ""
+      });
+    });
+  });
+}
+
+/* Close modal */
+document.getElementById("hpModal").addEventListener("click", (e) => {
+  if (e.target && e.target.dataset && e.target.dataset.close === "1") closeHpModal();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeHpModal();
+});
+
+/* Submit -> WhatsApp */
+document.getElementById("hpBookForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("hpName").value.trim();
+  const phone = document.getElementById("hpPhone").value.trim();
+  const pickup = document.getElementById("hpPickup").value.trim();
+  const date = document.getElementById("hpDate").value;
+  const time24 = document.getElementById("hpTime").value;
+
+  function convertTo12Hour(timeStr){
+    if (!timeStr) return "";
+
+    let [hours, minutes] = timeStr.split(":");
+    hours = parseInt(hours, 10);
+
+    const ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    hours = hours ? hours : 12; // 0 becomes 12
+
+    return `${hours}:${minutes} ${ampm}`;
+  }
+
+  const time = convertTo12Hour(time24);
+
+  const digits = phone.replace(/\D/g,"");
+  if (digits.length < 10){
+    alert("Please enter a valid 10-digit phone number.");
+    return;
+  }
+
+  const vehicle = document.getElementById("hpVehicle").value;
+  const hours = document.getElementById("hpHours").value;
+  const km = document.getElementById("hpKm").value;
+  const price = document.getElementById("hpPrice").value;
+  const exHr = document.getElementById("hpExHr").value;
+  const perKm = document.getElementById("hpPerKm").value;
+
+  const msg =
+`Hourly Package Booking
+Name: ${name}
+Phone: ${digits}
+Pickup Location: ${pickup}
+Pickup Date: ${date}
+Pickup Time: ${time}
+
+Vehicle: ${vehicle}
+Package: ${hours} Hrs / ${km} Km
+Price: ₹${price}
+Extra Hour: ₹${exHr}
+Per Km: ₹${perKm}
+
+Please confirm availability.`;
+
+  const waUrl = `https://wa.me/${HP_WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+  closeHpModal();
+  window.open(waUrl, "_blank");
+});
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-<script src="main.js"></script>
-<script src="tour-package.js"></script>
 
 </body>
 </html>
-
