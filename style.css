@@ -1108,3 +1108,13 @@ body.terms-page{ background: var(--white); }
   margin: 0 0 10px 0 !important;
   line-height: 1.6 !important;
 }
+.footer-credit{
+  color:#00fefe !important;
+  font-weight:600;
+  text-decoration:none;
+}
+.footer-credit:hover{
+
+  text-decoration-color:#00fefe;
+  text-underline-offset:3px;
+}
