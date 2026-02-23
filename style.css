@@ -554,6 +554,7 @@ input:focus,select:focus,textarea:focus{
 }
 .btn-whatsapp:hover{
   transform: translateY(-2px);
+  background-color: #ffbd59;
   box-shadow: 0 16px 40px rgba(0,0,0,0.18);
 }
 
@@ -937,25 +938,241 @@ body.terms-page{ background: var(--white); }
       PRICE BOX STYLE (₹ 0)
       ========================================================= */
 
-   .price-value,
-   #priceValue,
-   #finalPrice,
-   #totalPrice,
-   .route-price,
-   .price-amount{
-     display: inline-block !important;
+      /* =========================================================
+         PRICE PILL (₹0) — compact width
+         ========================================================= */
+      .price-value,
+      #priceValue,
+      #finalPrice,
+      #totalPrice,
+      .route-price,
+      .price-amount{
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
 
-     background-color: #282829 !important;
-     color: #FFBD59 !important;
+        width: fit-content !important;      /* ✅ shrink to content */
+        min-width: 0 !important;            /* ✅ remove forced width */
+        padding: 6px 14px !important;       /* ✅ smaller box */
+        border-radius: 12px !important;
 
-     padding: 10px 22px !important;
-     border-radius: 12px !important;
+        background: #282829 !important;
+        color: #FFBD59 !important;
 
-     min-width: 120px;              /* keeps it balanced */
-     text-align: center !important;
+        font-weight: 700 !important;
+        font-size: 24px !important;
+        line-height: 1 !important;
 
-     font-weight: 600 !important;
-     font-size: 25px;               /* adjust if needed */
+        box-shadow: 0 8px 20px rgba(0,0,0,0.18) !important;
+      }
 
-     box-shadow: 0 8px 20px rgba(0,0,0,0.18);
-   }
+      /* If you want it even tighter on phones */
+      @media (max-width:480px){
+        .price-value,
+        #priceValue,
+        #finalPrice,
+        #totalPrice,
+        .route-price,
+        .price-amount{
+          padding: 5px 12px !important;
+          font-size: 22px !important;
+        }
+      }
+
+      /* =========================================================
+         CENTER THE PRICE PILL (₹0)
+         ========================================================= */
+
+      /* 1) Make the wrapper center its content */
+      .price-box,
+      .price-wrap,
+      .price-container,
+      .price-row,
+      #priceBox,
+      #priceWrap{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+
+      /* 2) Ensure the pill has no left push */
+      .price-value,
+      #priceValue,
+      #finalPrice,
+      #totalPrice,
+      .route-price,
+      .price-amount{
+        margin: 0 auto !important;
+      }
+      /* =========================================================
+   BOOK NOW BUTTON — bigger + always visible
+   ========================================================= */
+.book-now-btn,
+#bookNowBtn,
+.bookNowBtn{
+  display: flex !important;
+  width: 100% !important;
+
+  min-height: 48px !important;      /* ✅ bigger tap area */
+  padding: 14px 16px !important;
+  margin-top: 14px !important;
+
+  border-radius: 14px !important;
+  border: 1px solid rgba(0,0,0,0.14) !important;
+
+  background: #FFBD59 !important;   /* ✅ gold */
+  color: #282829 !important;        /* ✅ dark text */
+
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  letter-spacing: .3px !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-shadow: 0 12px 26px rgba(255,189,89,0.35) !important;
+  cursor: pointer !important;
+}
+
+.book-now-btn:hover,
+#bookNowBtn:hover,
+.bookNowBtn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(255,189,89,0.45) !important;
+}
+
+
+
+/* =========================================================
+   FLOATING BAR BUTTON COLORS
+   ========================================================= */
+
+/* CALL BUTTON — GOLD */
+.bottom-floating .bf-btn.call{
+  background: #FFBD59 !important;
+  color: #282829 !important;
+  box-shadow: 0 8px 25px rgba(255,189,89,0.40) !important;
+  border: none !important;
+}
+
+/* CALL Hover */
+.bottom-floating .bf-btn.call:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255,189,89,0.55) !important;
+}
+
+/* WHATSAPP BUTTON — OFFICIAL GREEN */
+.bottom-floating .bf-btn.wa{
+  background: #25D366 !important;   /* native WhatsApp green */
+  color: #111111 !important;
+  box-shadow: 0 8px 25px rgba(37,211,102,0.40) !important;
+  border: none !important;
+}
+
+/* WhatsApp Hover */
+.bottom-floating .bf-btn.wa:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(37,211,102,0.55) !important;
+}
+/* =========================================================
+   REMOVE BLACK WRAPPER BACKGROUND
+   ========================================================= */
+
+.bottom-floating{
+  background: transparent !important;   /* remove black bg */
+  backdrop-filter: none !important;     /* remove blur */
+  box-shadow: none !important;          /* remove outer shadow */
+  padding: 0 !important;                /* remove extra spacing */
+}
+
+/* =========================================================
+   NAVIGATION FONT SIZE INCREASE
+   ========================================================= */
+
+.nav-link{
+  font-size: 15px !important;   /* was 15px */
+  padding: 10px 16px !important;
+  font-weight: 600 !important;
+}
+
+
+/* Mobile nav adjustment */
+@media (max-width:480px){
+  .nav-link{
+    font-size: 16px !important;
+  }
+}
+/* =========================================================
+   FORM FONT SIZE INCREASE
+   ========================================================= */
+
+/* Labels */
+.form-label,
+.hp-label{
+  font-size: 15px !important;   /* was 13px */
+  font-weight: 600 !important;
+}
+
+/* Inputs */
+input,
+select,
+textarea,
+.hp-input{
+  font-size: 16px !important;   /* was default 14px */
+  padding: 12px 14px !important;
+}
+
+/* Placeholder text */
+input::placeholder,
+textarea::placeholder{
+  font-size: 15px;
+}
+
+/* =========================================================
+   PLACEHOLDER COLOR (Clean Premium Grey)
+   ========================================================= */
+
+input::placeholder,
+textarea::placeholder{
+  color: #7a858c !important;   /* soft grey */
+  opacity: 1 !important;       /* prevent faded look */
+  font-size: 15px;
+}
+/* =========================================================
+   FORM FIELD HEIGHT FIX (Choose Package / Select Vehicle)
+   ========================================================= */
+
+/* Make the whole field taller */
+.booking-form select,
+.booking-form input,
+.booking-form textarea,
+select,
+input,
+textarea{
+  min-height: 52px !important;     /* ✅ increases box height */
+  padding: 12px 16px !important;   /* ✅ better spacing */
+  font-size: 16px !important;
+  border-radius: 14px !important;
+}
+
+/* Fix dropdown arrow alignment (some browsers) */
+select{
+  padding-right: 44px !important;  /* ✅ space for arrow */
+}
+
+/* Optional: labels slightly bigger */
+.form-label{
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
+
+/* Mobile: slightly taller for touch */
+@media (max-width:480px){
+  select,
+  input,
+  textarea{
+    min-height: 54px !important;
+    font-size: 16px !important;
+  }
+}
