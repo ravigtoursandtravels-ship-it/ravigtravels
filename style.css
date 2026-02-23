@@ -1176,3 +1176,25 @@ select{
     font-size: 16px !important;
   }
 }
+.mine{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#FFBD59;
+  text-align:center;
+  padding:10px 0;
+  font-weight:700;
+  font-size:16px;
+  z-index:9999;
+letter-spacing: 2px;
+}
+
+:root{
+  --topbar-h: 40px;
+  --header-h: 90px;
+}
+
+body{
+  padding-top: calc(var(--topbar-h) + var(--header-h)) !important;
+}
