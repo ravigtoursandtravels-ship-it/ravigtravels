@@ -168,7 +168,7 @@ h1,h2,h3,h4,h5,h6{ font-weight: 600; }
   background: var(--white);
   color: var(--dark);
 
-  padding: 14px 0;
+  padding: 8px 0;
   border-bottom: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 10px 22px rgba(0,0,0,0.08);
 
@@ -1319,7 +1319,7 @@ text-align: center;
 
 .booking-section{
   background:
-  
+
     url("images/Beach.jpg");
   background-size: cover;
   background-position: center;
