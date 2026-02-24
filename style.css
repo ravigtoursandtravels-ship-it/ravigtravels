@@ -1483,3 +1483,14 @@ text-align: center;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+/* Remove default list dots */
+.info-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.info-list li {
+  list-style: none !important;
+  margin-bottom: 6px;
+}
