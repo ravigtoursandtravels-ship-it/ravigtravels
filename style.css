@@ -1318,9 +1318,7 @@ text-align: center;
 }
 
 .booking-section{
-  background:
-
-    url("images/beach.webp");
+  background:url("images/Beach.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1401,93 +1399,87 @@ text-align: center;
   transform: translateY(-4px) scale(1.05); /* pop up */
   box-shadow: 0 16px 40px rgba(37,211,102,0.55);
 }
-
-
-/* =========================================================
-   HERO H1 — PREMIUM 3D PILL (RESPONSIVE, MOBILE SAFE)
-   Use with: <h1 class="hero-title hero-highlight">...</h1>
-   ========================================================= */
-
 .hero-title.hero-highlight{
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   max-width: 100%;
-  white-space: normal;
   text-align: center;
+  white-space: normal;
 
-  padding: 10px 26px;
+  padding: 12px 28px;
   border-radius: 999px;
 
-  /* Responsive size: never huge on mobile */
-  font-size: clamp(16px, 4.4vw, 34px) !important;
-  line-height: 1.15 !important;
+  font-size: clamp(18px, 3.8vw, 40px) !important;
+  line-height: 1.12 !important;
   font-weight: 900 !important;
   letter-spacing: .2px;
 
-  /* Premium colors */
-  color: #1b1f24;
-  background: linear-gradient(180deg, #ffd78a 0%, #ffbd59 45%, #f3a93a 100%);
+  /* Stronger contrast */
+  color: #111418;
 
-  /* 3D depth + crisp edge */
-  border: 1px solid rgba(40,40,41,0.22);
+  background: linear-gradient(
+    180deg,
+    #ffe6b8 0%,
+    #ffd27c 18%,
+    #ffbd59 55%,
+    #f0a83a 100%
+  );
+
+  border: 1px solid rgba(40,40,41,0.28);
+
+  /* Cleaner depth (no haze stacking) */
   box-shadow:
-    0 18px 40px rgba(0,0,0,0.22),        /* depth shadow */
-    0 6px 0 rgba(0,0,0,0.18),            /* hard “base” for 3D */
-    inset 0 2px 0 rgba(255,255,255,0.65),/* top highlight */
-    inset 0 -10px 18px rgba(0,0,0,0.10); /* bottom shading */
+    0 18px 44px rgba(0,0,0,0.22),
+    0 6px 0 rgba(0,0,0,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.35),  /* reduced */
+    inset 0 -8px 14px rgba(0,0,0,0.10);    /* softer */
 
   position: relative;
-  transform: translateZ(0);
 }
 
-/* glossy shine layer */
+/* Reduced glossy strip (less white = sharper text) */
 .hero-title.hero-highlight::before{
   content:"";
   position:absolute;
-  left: 10px;
-  right: 10px;
+  left: 18px;
+  right: 18px;
   top: 6px;
-  height: 55%;
+  height: 42%;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.70), rgba(255,255,255,0));
+
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.45),
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0)
+  );
+
   pointer-events:none;
 }
 
-/* subtle gold glow ring */
+/* Softer glow, no heavy blur */
 .hero-title.hero-highlight::after{
   content:"";
   position:absolute;
-  inset: -6px;
+  inset: -8px;
   border-radius: 999px;
-  background: radial-gradient(circle at 30% 20%, rgba(255,189,89,0.45), transparent 60%);
-  filter: blur(10px);
-  opacity: .55;
+
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(255,189,89,0.45),
+    transparent 65%
+  );
+
+  filter: blur(8px); /* reduced */
+  opacity: .4;
   z-index: -1;
   pointer-events:none;
 }
 
-/* hover (desktop): small pop, not crazy */
-@media (hover:hover){
-  .hero-title.hero-highlight{
-    transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
-  }
-  .hero-title.hero-highlight:hover{
-    transform: translateY(-3px) scale(1.02);
-    box-shadow:
-      0 24px 55px rgba(0,0,0,0.28),
-      0 7px 0 rgba(0,0,0,0.18),
-      inset 0 2px 0 rgba(255,255,255,0.70),
-      inset 0 -10px 18px rgba(0,0,0,0.10);
-    filter: saturate(1.05);
-  }
-}
-
-/* extra small phones: tighter padding & size */
-@media (max-width: 480px){
-  .hero-title.hero-highlight{
-    padding: 8px 16px;
-    font-size: clamp(15px, 5.2vw, 20px) !important;
-  }
+/* Text sharpness enhancement */
+.hero-title.hero-highlight{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }

@@ -316,9 +316,9 @@
       <!-- HERO -->
       <div class="text-center mb-4">
         <br>
-        <h1 class="hero-title hero-highlight">
-      Premium Tour Operator
-    </h1>
+        <h1 class="hero-title hero-highlight" id="heroTitle">
+    Premium Tour Operator
+  </h1>
 
       </div>
 
@@ -761,205 +761,264 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- ✅ INLINE JS: dates min rules + WhatsApp msg (12-hour) + gallery build -->
-  <script>
-    (function(){
-      const pickupDT = document.getElementById('pickupDT');
-      const dropDT   = document.getElementById('dropDT');
-      const accom    = document.getElementById('accom');
-      const accomLbl = document.getElementById('accomLabel');
 
-      // ---------- Accommodation label ----------
-      if(accom && accomLbl){
-        const syncAccom = () => accomLbl.textContent = accom.checked ? 'Yes' : 'No';
-        accom.addEventListener('change', syncAccom);
-        syncAccom();
-      }
-
-      // ---------- Helpers ----------
-      function pad2(n){ return String(n).padStart(2,'0'); }
-
-      // datetime-local value => Date
-      function parseLocalDT(val){
-        // val format "YYYY-MM-DDTHH:MM"
-        if(!val) return null;
-        const [dPart, tPart] = val.split('T');
-        if(!dPart || !tPart) return null;
-        const [y,m,d] = dPart.split('-').map(Number);
-        const [hh,mm] = tPart.split(':').map(Number);
-        return new Date(y, (m-1), d, hh, mm, 0, 0);
-      }
-
-      // Date => "DD Mon YYYY, hh:mm AM/PM"
-      function format12h(d){
-        if(!d) return '';
-        const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-        let h = d.getHours();
-        const m = d.getMinutes();
-        const ampm = h >= 12 ? "PM" : "AM";
-        h = h % 12; if(h === 0) h = 12;
-        return `${pad2(d.getDate())} ${months[d.getMonth()]} ${d.getFullYear()}, ${h}:${pad2(m)} ${ampm}`;
-      }
-
-      // ---------- Disable past date/time ----------
-      function setMinNow(){
-        const now = new Date();
-        const y = now.getFullYear();
-        const mo = pad2(now.getMonth()+1);
-        const da = pad2(now.getDate());
-        const hh = pad2(now.getHours());
-        const mm = pad2(now.getMinutes());
-        const minVal = `${y}-${mo}-${da}T${hh}:${mm}`;
-        pickupDT.min = minVal;
-        // drop min will be set based on pickup selection
-      }
-      setMinNow();
-
-      // ---------- Drop date/time cannot be before pickup ----------
-      function syncDropMin(){
-        const p = parseLocalDT(pickupDT.value);
-        if(!p){
-          dropDT.min = '';
-          return;
-        }
-        // min = pickup datetime
-        const y = p.getFullYear();
-        const mo = pad2(p.getMonth()+1);
-        const da = pad2(p.getDate());
-        const hh = pad2(p.getHours());
-        const mm = pad2(p.getMinutes());
-        dropDT.min = `${y}-${mo}-${da}T${hh}:${mm}`;
-
-        // if current drop is before pickup, clear it
-        const d = parseLocalDT(dropDT.value);
-        if(d && d.getTime() < p.getTime()){
-          dropDT.value = '';
-        }
-      }
-      pickupDT.addEventListener('change', syncDropMin);
-      dropDT.addEventListener('change', syncDropMin);
-
-      // NOTE: Native date picker cannot "hide" earlier dates,
-      // but setting min prevents selecting them (best possible on all browsers).
-
-      // ---------- WhatsApp message builder ----------
-      function buildWhatsAppText(){
-        const name = (document.getElementById('name').value || '').trim();
-        const phone = (document.getElementById('phone').value || '').trim();
-        const pickup = (document.getElementById('pickup').value || '').trim();
-        const drop = (document.getElementById('drop').value || '').trim();
-        const intermediate = (document.getElementById('intermediate').value || '').trim();
-        const vehicle = (document.getElementById('vehicle').value || '').trim();
-        const accomNeeded = document.getElementById('accom').checked ? 'Yes' : 'No';
-
-        const pDT = parseLocalDT(pickupDT.value);
-        const dDT = parseLocalDT(dropDT.value);
-
-        let msg = `Hi Ravi G Tours and Travels,%0A`;
-        msg += `I want to book a trip.%0A%0A`;
-        msg += `Name: ${encodeURIComponent(name)}%0A`;
-        msg += `Phone: ${encodeURIComponent(phone)}%0A`;
-        msg += `Pickup: ${encodeURIComponent(pickup)}%0A`;
-        msg += `Drop: ${encodeURIComponent(drop)}%0A`;
-        if(intermediate) msg += `Intermediate: ${encodeURIComponent(intermediate)}%0A`;
-        msg += `Pickup Date & Time: ${encodeURIComponent(format12h(pDT))}%0A`;
-        if(dDT) msg += `Drop Date & Time: ${encodeURIComponent(format12h(dDT))}%0A`;
-        msg += `Vehicle: ${encodeURIComponent(vehicle)}%0A`;
-        msg += `Accommodation: ${encodeURIComponent(accomNeeded)}%0A`;
-        return msg;
-      }
-
-      // ---------- Form submit => open WhatsApp ----------
-      const form = document.getElementById('bookingForm');
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-
-        // basic check: pickupDT required
-        if(!pickupDT.value){
-          pickupDT.focus();
-          return;
-        }
-
-        // ensure pickup not in past (safety)
-        const p = parseLocalDT(pickupDT.value);
-        if(p && p.getTime() < Date.now() - 60000){
-          alert("Pickup date/time cannot be in the past.");
-          return;
-        }
-
-        // ensure drop >= pickup if set
-        const d = parseLocalDT(dropDT.value);
-        if(d && p && d.getTime() < p.getTime()){
-          alert("Drop date/time cannot be before pickup date/time.");
-          return;
-        }
-
-        const text = buildWhatsAppText();
-        const waNumber = "919944165207"; // ✅ change if needed
-        const url = `https://wa.me/${waNumber}?text=${text}`;
-        window.open(url, "_blank");
-      });
-
-      // ---------- Bottom WhatsApp quick button ----------
-      const quickWA = document.getElementById('quickWA');
-      if(quickWA){
-        quickWA.addEventListener('click', function(e){
-          e.preventDefault();
-          const waNumber = "919944165207";
-          const url = `https://wa.me/${waNumber}?text=${buildWhatsAppText()}`;
-          window.open(url, "_blank");
-        });
-      }
-
-      // ---------- Build Gallery carousel slides (1..17) ----------
-      const galleryInner = document.getElementById('galleryInner');
-      if(galleryInner){
-        const total = 17;
-        const perSlideDesktop = 4;
-        const perSlideMobile = 2;
-
-        const isMobile = window.matchMedia("(max-width: 576px)").matches;
-        const perSlide = isMobile ? perSlideMobile : perSlideDesktop;
-
-        let index = 1;
-        let first = true;
-
-        while(index <= total){
-          const item = document.createElement('div');
-          item.className = 'carousel-item' + (first ? ' active' : '');
-
-          const row = document.createElement('div');
-          row.className = 'gallery-row';
-
-          for(let k=0; k<perSlide && index<=total; k++, index++){
-            const img = document.createElement('img');
-            img.src = `images/customer/${index}.jpg`;
-            img.alt = `Customer ${index}`;
-            row.appendChild(img);
-          }
-
-          item.appendChild(row);
-          galleryInner.appendChild(item);
-
-          first = false;
-        }
-      }
-    })();
-  </script>
   <script>
   (function(){
-    const header = document.querySelector('.site-header');
-    let lastY = window.scrollY;
+    const el = document.getElementById("heroTitle");
+    if(!el) return;
 
+    // Smooth tilt settings
+    const maxTilt = 10;      // degrees
+    const maxMove = 10;      // px (depth feel)
+    let rafId = null;
+
+    function setVars(xp, yp){
+      // xp/yp: 0..1
+      el.style.setProperty("--mx", (xp*100).toFixed(1) + "%");
+      el.style.setProperty("--my", (yp*100).toFixed(1) + "%");
+    }
+
+    function onMove(e){
+      const r = el.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+      const px = (clientX - r.left) / r.width;   // 0..1
+      const py = (clientY - r.top) / r.height;   // 0..1
+
+      const tiltY = (px - 0.5) * (maxTilt * 2);
+      const tiltX = (0.5 - py) * (maxTilt * 2);
+
+      const moveX = (px - 0.5) * (maxMove * 2);
+      const moveY = (py - 0.5) * (maxMove * 2);
+
+      if(rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        // Stop idle float while interacting
+        el.style.animation = "none";
+        el.style.transform = `translate(${moveX}px, ${moveY}px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+        setVars(px, py);
+      });
+    }
+
+    function reset(){
+      if(rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        el.style.transform = "translate(0,0) rotateX(0deg) rotateY(0deg)";
+        setVars(0.5, 0.35);
+        // Restore idle float
+        el.style.animation = "";
+      });
+    }
+
+    // Desktop
+    el.addEventListener("mousemove", onMove);
+    el.addEventListener("mouseleave", reset);
+
+    // Mobile (touch)
+    el.addEventListener("touchmove", onMove, {passive:true});
+    el.addEventListener("touchend", reset);
+
+    // Initial shine position
+    setVars(0.5, 0.35);
+  })();
+</script>
+<script>
+(function(){
+  // ---------- Grab elements ----------
+  const pickupDT = document.getElementById('pickupDT');
+  const dropDT   = document.getElementById('dropDT');
+  const accom    = document.getElementById('accom');
+  const accomLbl = document.getElementById('accomLabel');
+  const form     = document.getElementById('bookingForm');
+  const quickWA  = document.getElementById('quickWA');
+  const galleryInner = document.getElementById('galleryInner');
+  const header = document.querySelector('.site-header');
+
+  // If critical elements missing, stop (prevents console errors)
+  if(!pickupDT || !form){
+    console.warn("Booking script: pickupDT or bookingForm not found.");
+    return;
+  }
+
+  // ---------- Helpers ----------
+  function pad2(n){ return String(n).padStart(2,'0'); }
+  const val = (id) => (document.getElementById(id)?.value || "").trim();
+
+  // datetime-local value => Date
+  function parseLocalDT(valStr){
+    if(!valStr) return null;
+    const [dPart, tPart] = valStr.split('T');
+    if(!dPart || !tPart) return null;
+    const [y,m,d] = dPart.split('-').map(Number);
+    const [hh,mm] = tPart.split(':').map(Number);
+    return new Date(y, (m-1), d, hh, mm, 0, 0);
+  }
+
+  // Date => "DD Mon YYYY, hh:mm AM/PM"
+  function format12h(d){
+    if(!d) return '';
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    let h = d.getHours();
+    const min = d.getMinutes();
+    const ampm = h >= 12 ? "PM" : "AM";
+    h = h % 12; if(h === 0) h = 12;
+    return `${pad2(d.getDate())} ${months[d.getMonth()]} ${d.getFullYear()}, ${h}:${pad2(min)} ${ampm}`;
+  }
+
+  // ---------- Accommodation label ----------
+  if(accom && accomLbl){
+    const syncAccom = () => accomLbl.textContent = accom.checked ? 'Yes' : 'No';
+    accom.addEventListener('change', syncAccom);
+    syncAccom();
+  }
+
+  // ---------- Disable past pickup date/time ----------
+  function setMinNow(){
+    const now = new Date();
+    const minVal =
+      `${now.getFullYear()}-${pad2(now.getMonth()+1)}-${pad2(now.getDate())}T${pad2(now.getHours())}:${pad2(now.getMinutes())}`;
+    pickupDT.min = minVal;
+  }
+  setMinNow();
+
+  // ---------- Drop date/time cannot be before pickup ----------
+  function syncDropMin(){
+    if(!dropDT) return;
+
+    const p = parseLocalDT(pickupDT.value);
+    if(!p){
+      dropDT.min = '';
+      return;
+    }
+
+    dropDT.min =
+      `${p.getFullYear()}-${pad2(p.getMonth()+1)}-${pad2(p.getDate())}T${pad2(p.getHours())}:${pad2(p.getMinutes())}`;
+
+    const d = parseLocalDT(dropDT.value);
+    if(d && d.getTime() < p.getTime()){
+      dropDT.value = '';
+    }
+  }
+  pickupDT.addEventListener('change', syncDropMin);
+  if(dropDT) dropDT.addEventListener('change', syncDropMin);
+
+  // ---------- WhatsApp message builder (SAFE: encode once) ----------
+  function buildWhatsAppText(){
+    const name  = val("name");
+    const phone = val("phone");
+    const pickup = val("pickup");
+    const drop   = val("drop");
+    const intermediate = val("intermediate");
+    const vehicle = (document.getElementById("vehicle")?.value || "").trim();
+    const accomNeeded = document.getElementById("accom")?.checked ? "Yes" : "No";
+
+    const pDT = parseLocalDT(pickupDT.value);
+    const dDT = dropDT ? parseLocalDT(dropDT.value) : null;
+
+    let msg = `Hi Ravi G Tours and Travels,\n`;
+    msg += `I want to book a trip.\n\n`;
+    msg += `Name: ${name || "-"}\n`;
+    msg += `Phone: ${phone || "-"}\n`;
+    msg += `Pickup: ${pickup || "-"}\n`;
+    msg += `Drop: ${drop || "-"}\n`;
+    if(intermediate) msg += `Intermediate: ${intermediate}\n`;
+    msg += `Pickup Date & Time: ${format12h(pDT) || "-"}\n`;
+    if(dDT) msg += `Drop Date & Time: ${format12h(dDT)}\n`;
+    msg += `Vehicle: ${vehicle || "-"}\n`;
+    msg += `Accommodation: ${accomNeeded}\n`;
+
+    return encodeURIComponent(msg);
+  }
+
+  // ---------- Open WhatsApp ----------
+  function openWA(){
+    const waNumber = "919944165207"; // change if needed
+    const url = `https://wa.me/${waNumber}?text=${buildWhatsAppText()}`;
+    window.open(url, "_blank");
+  }
+
+  // ---------- Form submit => WhatsApp ----------
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if(!pickupDT.value){
+      pickupDT.focus();
+      return;
+    }
+
+    // ensure pickup not in past (60s grace)
+    const p = parseLocalDT(pickupDT.value);
+    if(p && p.getTime() < Date.now() - 60000){
+      alert("Pickup date/time cannot be in the past.");
+      return;
+    }
+
+    // ensure drop >= pickup if set
+    if(dropDT && dropDT.value){
+      const d = parseLocalDT(dropDT.value);
+      if(d && p && d.getTime() < p.getTime()){
+        alert("Drop date/time cannot be before pickup date/time.");
+        return;
+      }
+    }
+
+    openWA();
+  });
+
+  // ---------- Bottom WhatsApp quick button ----------
+  if(quickWA){
+    quickWA.addEventListener('click', function(e){
+      e.preventDefault();
+      openWA();
+    });
+  }
+
+  // ---------- Build Gallery carousel slides (1..17) ----------
+  if(galleryInner){
+    const total = 17;
+    const perSlideDesktop = 4;
+    const perSlideMobile = 2;
+
+    const isMobile = window.matchMedia("(max-width: 576px)").matches;
+    const perSlide = isMobile ? perSlideMobile : perSlideDesktop;
+
+    let index = 1;
+    let first = true;
+
+    while(index <= total){
+      const item = document.createElement('div');
+      item.className = 'carousel-item' + (first ? ' active' : '');
+
+      const row = document.createElement('div');
+      row.className = 'gallery-row';
+
+      for(let k=0; k<perSlide && index<=total; k++, index++){
+        const img = document.createElement('img');
+        img.src = `images/customer/${index}.jpg`;
+        img.alt = `Customer ${index}`;
+        row.appendChild(img);
+      }
+
+      item.appendChild(row);
+      galleryInner.appendChild(item);
+      first = false;
+    }
+  }
+
+  // ---------- Hide header on scroll ----------
+  if(header){
+    let lastY = window.scrollY;
     window.addEventListener('scroll', () => {
       const y = window.scrollY;
-
-      // hide when scrolling down, show when scrolling up
       if (y > lastY && y > 120) header.classList.add('hide-header');
       else header.classList.remove('hide-header');
-
       lastY = y;
     }, { passive:true });
-  })();
-  </script>
+  }
+})();
+</script>
+
+
 </body>
 </html>
