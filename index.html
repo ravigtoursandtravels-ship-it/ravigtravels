@@ -181,22 +181,7 @@
       .navbar-toggler{ padding:5px 8px !important; }
     }
 
-    /* ---------- Bottom floating: Call charcoal, WA green (you already asked earlier) ---------- */
-    .bottom-floating .bf-btn.call{
-      background:#282829 !important;
-      color:#ffffff !important;
-      border:none !important;
-      box-shadow:0 10px 26px rgba(0,0,0,0.22) !important;
-    }
-    .bottom-floating .bf-btn.wa{
-      background:#25D366 !important;
-      color:#111111 !important;
-      border:none !important;
-      box-shadow:0 10px 26px rgba(37,211,102,0.35) !important;
-    }
-    .bottom-floating .bf-btn:hover{
-      transform: translateY(-4px) scale(1.03);
-    }
+
   </style>
 </head>
 
@@ -257,8 +242,9 @@
 <br>
       <!-- HERO -->
       <div class="text-center mb-4">
+        <br>
         <h1 class="hero-title hero-highlight">
-      Premium Tour Packages from Coimbatore
+      Premium Tour Operator
     </h1>
 
       </div>
@@ -269,7 +255,7 @@
         <!-- LEFT: FORM -->
         <div class="col-lg-6">
           <form id="bookingForm" class="booking-form p-4">
-              <p class="hero-lead">Share your journey details and receive a personalized quote instantly.</p>
+              <p class="hero-lead">Share your journey details and receive quote instantly.</p>
             <div class="row g-3">
 
               <div class="col-md-6">
@@ -345,9 +331,7 @@
                 </button>
               </div>
 
-              <div class="col-12 text-center small text-muted">
-                By submitting, you agree to be contacted for trip confirmation.
-              </div>
+
 
             </div>
           </form>
@@ -577,6 +561,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </div>
+
       <br><br>
       <div class="stats-box-wrap">
         <div class="stat-card">
@@ -591,9 +576,9 @@
 
       <div class="google-rating-box mb-4">
         <img src="images/glogo.webp" class="google-logo" alt="Google Logo">
-        <div class="rating-number">4.8</div>
+        <div class="rating-number">4.9</div>
         <div class="rating-stars">⭐⭐⭐⭐⭐</div>
-      </div>
+      </div24>
     </div>
   </section>
 
@@ -885,6 +870,22 @@
         }
       }
     })();
+  </script>
+  <script>
+  (function(){
+    const header = document.querySelector('.site-header');
+    let lastY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+
+      // hide when scrolling down, show when scrolling up
+      if (y > lastY && y > 120) header.classList.add('hide-header');
+      else header.classList.remove('hide-header');
+
+      lastY = y;
+    }, { passive:true });
+  })();
   </script>
 </body>
 </html>

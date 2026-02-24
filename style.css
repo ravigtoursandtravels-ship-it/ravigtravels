@@ -149,7 +149,7 @@ h1,h2,h3,h4,h5,h6{ font-weight: 600; }
   transition: background .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
 }
 .mine:hover{
-  background: var(--dark) !important;
+
   color: #fff !important;
   transform: scale(1.02);
   box-shadow: 0 14px 34px rgba(0,0,0,0.22);
@@ -321,6 +321,7 @@ h1,h2,h3,h4,h5,h6{ font-weight: 600; }
   margin: 0 auto 18px;
   color: var(--muted);
   font-size: 17px;
+  text-align: center;
   line-height: 1.65;
 }
 
@@ -1074,7 +1075,51 @@ body.terms-page{ background: var(--white); }
 
 /* Use real header height instead of guessing */
 body{
-  padding-top: calc(var(--topbar-h) + 110px) !important;
+  padding-top: calc(var(--topbar-h) + var(--header-h));
+}
+:root{
+  --header-h: 72px;   /* ✅ smaller desktop header */
+}
+
+.site-header{
+  padding: 8px 0;     /* ✅ reduce vertical padding */
+}
+
+/* logo smaller */
+.navbar-logo-wrap .logo{
+  width: 64px;
+  height: 64px;
+}
+
+/* brand title smaller */
+.brand-title{
+  font-size: 22px;
+  max-width: 520px;
+}
+
+/* phones slightly smaller */
+.brand-phones{
+  font-size: 13px;
+}
+@media (max-width: 991.98px){
+  :root{ --header-h: 86px; }       /* ✅ not 130px */
+  .navbar-logo-wrap .logo{ width: 56px; height: 56px; }
+  .brand-title{ font-size: 18px; max-width: 260px; }
+  .brand-phones{ font-size: 12px; }
+}
+/* smooth hide/show */
+.site-header{
+  transition: transform .25s ease;
+}
+
+/* when scrolling down */
+.site-header.hide-header{
+  transform: translateY(-110%); /* hides header */
+}
+
+/* topbar stays always visible (optional) */
+.mine{
+  transition: none;
 }
 
 /* =========================================
@@ -1258,8 +1303,8 @@ body{
   display: inline-block;
   margin-top: 10px;
   padding: 6px 14px;
-
-  font-size: 13px;
+text-align: center;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: .4px;
   line-height: 1.5;
@@ -1274,8 +1319,8 @@ body{
 
 .booking-section{
   background:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("images/bg.avif");
+  
+    url("images/Beach.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1327,34 +1372,122 @@ body{
   transition: .2s ease;
 }
 
-.hero-highlight{
-  display: inline-block;
-  background-color: #FFBD59;
-  color: #1e293b;
-  padding: 0px 14px;
-    font-size: 24px;
-  border-radius: 60px;
-  font-weight: 400;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+
+
+/* ---------- Bottom floating: Call charcoal, WA green (you already asked earlier) ---------- */
+.bottom-floating .bf-btn.call{
+  background:#282829 !important;
+  color:#ffffff !important;
+  border:none !important;
+  box-shadow:0 10px 26px rgba(0,0,0,0.22) !important;
+}
+.bottom-floating .bf-btn.wa{
+  background:#25D366 !important;
+  color:#111111 !important;
+  border:none !important;
+  box-shadow:0 10px 26px rgba(37,211,102,0.35) !important;
+}
+.bottom-floating .bf-btn:hover{
+  transform: translateY(-4px) scale(1.03);
 }
 
-.text-center .hero-highlight{
-  margin: 0 auto;               /* center horizontally */
-}
-.hero-highlight{
-  font-size: 28px;
+/* Hover effect for this button */
+.wa-book-btn{
+  transition: transform .25s ease, box-shadow .25s ease, color .25s ease;
 }
 
-@media (max-width: 768px){
-  .hero-highlight{
-    font-size: 22px;
-    padding: 8px 20px;
+.wa-book-btn:hover{
+  color: #ffffff !important;              /* font turns white */
+  transform: translateY(-4px) scale(1.05); /* pop up */
+  box-shadow: 0 16px 40px rgba(37,211,102,0.55);
+}
+
+
+/* =========================================================
+   HERO H1 — PREMIUM 3D PILL (RESPONSIVE, MOBILE SAFE)
+   Use with: <h1 class="hero-title hero-highlight">...</h1>
+   ========================================================= */
+
+.hero-title.hero-highlight{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+
+  padding: 10px 26px;
+  border-radius: 999px;
+
+  /* Responsive size: never huge on mobile */
+  font-size: clamp(16px, 4.4vw, 34px) !important;
+  line-height: 1.15 !important;
+  font-weight: 900 !important;
+  letter-spacing: .2px;
+
+  /* Premium colors */
+  color: #1b1f24;
+  background: linear-gradient(180deg, #ffd78a 0%, #ffbd59 45%, #f3a93a 100%);
+
+  /* 3D depth + crisp edge */
+  border: 1px solid rgba(40,40,41,0.22);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.22),        /* depth shadow */
+    0 6px 0 rgba(0,0,0,0.18),            /* hard “base” for 3D */
+    inset 0 2px 0 rgba(255,255,255,0.65),/* top highlight */
+    inset 0 -10px 18px rgba(0,0,0,0.10); /* bottom shading */
+
+  position: relative;
+  transform: translateZ(0);
+}
+
+/* glossy shine layer */
+.hero-title.hero-highlight::before{
+  content:"";
+  position:absolute;
+  left: 10px;
+  right: 10px;
+  top: 6px;
+  height: 55%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.70), rgba(255,255,255,0));
+  pointer-events:none;
+}
+
+/* subtle gold glow ring */
+.hero-title.hero-highlight::after{
+  content:"";
+  position:absolute;
+  inset: -6px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 20%, rgba(255,189,89,0.45), transparent 60%);
+  filter: blur(10px);
+  opacity: .55;
+  z-index: -1;
+  pointer-events:none;
+}
+
+/* hover (desktop): small pop, not crazy */
+@media (hover:hover){
+  .hero-title.hero-highlight{
+    transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  }
+  .hero-title.hero-highlight:hover{
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+      0 24px 55px rgba(0,0,0,0.28),
+      0 7px 0 rgba(0,0,0,0.18),
+      inset 0 2px 0 rgba(255,255,255,0.70),
+      inset 0 -10px 18px rgba(0,0,0,0.10);
+    filter: saturate(1.05);
   }
 }
 
+/* extra small phones: tighter padding & size */
 @media (max-width: 480px){
-  .hero-highlight{
-    font-size: 18px;
-    padding: 6px 16px;
+  .hero-title.hero-highlight{
+    padding: 8px 16px;
+    font-size: clamp(15px, 5.2vw, 20px) !important;
   }
 }
