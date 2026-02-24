@@ -24,14 +24,13 @@
   <meta property="og:description" content="Book outstation trips, airport transfers, and tour packages from Coimbatore. Clean cars, verified drivers."/>
   <meta property="og:image" content="https://www.ravigtravels.com/images/Logo.png"/>
 
-  <!-- FAVICON -->
   <link rel="icon" type="image/png" href="images/logo.png">
 
-  <!-- Bootstrap & Font Awesome (icons) -->
+  <!-- Bootstrap & Font Awesome -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 
-  <!-- Main CSS -->
+  <!-- Your main CSS -->
   <link rel="stylesheet" href="style.css"/>
 
   <!-- Schema.org JSON-LD -->
@@ -55,6 +54,150 @@
     "areaServed":["Coimbatore","Tamil Nadu","South India"]
   }
   </script>
+
+  <!-- ✅ INLINE CSS: form + carousels + small screen header alignment -->
+  <style>
+    /* ---------- Top call link (icon black) ---------- */
+    .top-call-link{
+      color:#282829 !important;
+      text-decoration:none !important;
+      font-weight:800;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .top-call-link i{ color:#000 !important; font-size:14px; }
+
+    /* ---------- Remove shadows on toggler + book buttons (base) ---------- */
+    .navbar-toggler{ box-shadow:none !important; }
+    .book-now-btn, #bookNowBtn, .bookNowBtn{ box-shadow:none !important; }
+
+    /* ---------- WhatsApp button pop hover + white text ---------- */
+    .wa-book-btn{
+      background:#25D366 !important;
+      color:#111111 !important;
+      border:none !important;
+      border-radius:12px !important;
+      font-weight:800 !important;
+      font-size:16px !important;
+      padding:12px 18px !important;
+      box-shadow:0 8px 20px rgba(37,211,102,0.35) !important;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+      display:inline-flex !important;
+      align-items:center !important;
+      justify-content:center !important;
+      gap:10px !important;
+      width:100% !important;
+      max-width:340px !important;
+    }
+    .wa-book-btn:hover{
+      transform: translateY(-4px) scale(1.05);
+      box-shadow:0 18px 44px rgba(37,211,102,0.55) !important;
+      background:#1ebe5d !important;
+      color:#ffffff !important;
+    }
+    .wa-book-btn:hover i{ color:#ffffff !important; }
+
+    /* ---------- Single "Date & Time" field look ---------- */
+    .dt-onebox{
+      border-radius:14px !important;
+      min-height:52px !important;
+      padding:12px 14px !important;
+      font-size:16px !important;
+    }
+
+    /* ---------- Accommodation switch spacing ---------- */
+    .accom-row{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:6px;
+    }
+
+    /* ---------- Swipable carousels (Bootstrap) ---------- */
+    .carousel-control-prev,
+    .carousel-control-next{
+      width: 44px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+      filter: none;
+      background-color: rgba(40,40,41,0.85);
+      border-radius: 999px;
+      padding: 14px;
+      background-size: 55% 55%;
+    }
+
+    /* Reviews slide cards */
+    .review-card{
+      background: rgba(255,255,255,0.96);
+      border: 1px solid rgba(0,0,0,0.10);
+      border-radius: 16px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+      padding: 16px 16px;
+      height:100%;
+    }
+    .review-card .stars{ font-size:16px; letter-spacing:1px; }
+    .review-card p{ margin:10px 0 0; line-height:1.55; color:#282829; font-size:14px; }
+    .review-card span{ display:block; margin-top:8px; font-size:13px; font-weight:700; opacity:.75; }
+
+    /* Gallery images inside carousel */
+    .gallery-row{
+      display:flex;
+      gap:14px;
+      justify-content:center;
+      flex-wrap:nowrap;
+    }
+    .gallery-row img{
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 2px solid rgba(255,189,89,0.60);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.10);
+      transition: transform .25s ease;
+    }
+    .gallery-row img:hover{ transform: translateY(-3px) scale(1.03); }
+
+    /* Make gallery fit on small screens: 2 images per slide */
+    @media (max-width: 576px){
+      .gallery-row img{ width: 44vw; height: 44vw; max-width: 170px; max-height: 170px; }
+    }
+
+    /* ---------- Small screen header alignment (328x812 type) ---------- */
+    @media (max-width: 360px){
+      .mine{ font-size:13px !important; padding:8px 0 !important; letter-spacing:1px !important; }
+      .site-header{ padding:10px 12px !important; }
+      .navbar-logo-wrap .logo{ width:58px !important; height:58px !important; }
+      .brand-title{ font-size:18px !important; white-space:normal !important; }
+      .brand-phones{ font-size:12px !important; gap:4px !important; }
+      .navbar-toggler{ padding:6px 10px !important; border-radius:10px !important; }
+    }
+    @media (max-width: 328px){
+      .brand-title{ font-size:16px !important; }
+      .brand-phones{ font-size:11px !important; }
+      .navbar-logo-wrap{ margin-right:6px !important; }
+      .navbar-toggler{ padding:5px 8px !important; }
+    }
+
+    /* ---------- Bottom floating: Call charcoal, WA green (you already asked earlier) ---------- */
+    .bottom-floating .bf-btn.call{
+      background:#282829 !important;
+      color:#ffffff !important;
+      border:none !important;
+      box-shadow:0 10px 26px rgba(0,0,0,0.22) !important;
+    }
+    .bottom-floating .bf-btn.wa{
+      background:#25D366 !important;
+      color:#111111 !important;
+      border:none !important;
+      box-shadow:0 10px 26px rgba(37,211,102,0.35) !important;
+    }
+    .bottom-floating .bf-btn:hover{
+      transform: translateY(-4px) scale(1.03);
+    }
+  </style>
 </head>
 
 <body class="terms-page">
@@ -62,39 +205,34 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
+  <!-- 24/7 bar -->
   <div class="mine">
-    <a href='tel:9944165207'
-       style='color:#282829; text-decoration:none;'>
-       📞 24/7 Call: 9944165207
+    <a href="tel:9944165207" class="top-call-link">
+      <i class="fas fa-phone"></i>
+      24/7 Call: 9944165207
     </a>
   </div>
+
+  <!-- Header -->
   <header class="site-header">
-
-    <br>
     <nav class="navbar navbar-expand-lg container">
-
-      <!-- LEFT: Logo -->
       <a href="index.html" class="navbar-logo-wrap">
         <img src="images/logo.png" class="logo" alt="Ravi G Tours and Travels">
       </a>
 
-      <!-- MIDDLE: Name + phone numbers -->
       <div class="brand-block">
         <div class="brand-title">Ravi G Tours and Travels</div>
-
         <div class="brand-phones">
-          <a href="tel:+919944165207" style="text-decoration:none;color:inherit;"> 99441 65207</a>
+          <a href="tel:+919944165207" style="text-decoration:none;color:inherit;">99441 65207</a>
           <span class="divider">|</span>
-          <a href="tel:+919994467675" style="text-decoration:none;color:inherit;"> 99944 67675</a>
+          <a href="tel:+919994467675" style="text-decoration:none;color:inherit;">99944 67675</a>
         </div>
       </div>
 
-      <!-- RIGHT: Toggler -->
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- MENU -->
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
@@ -105,177 +243,341 @@
           <li class="nav-item"><a class="nav-link" href="terms-and-conditions.html">Terms and Conditions</a></li>
         </ul>
       </div>
-
     </nav>
-      <div class="mobile-center-tabs d-flex d-lg-none justify-content-center gap-2 mt-2">
+
+    <!-- Mobile quick tabs -->
+    <div class="mobile-center-tabs d-flex d-lg-none justify-content-center gap-2 mt-2">
       <a style="text-decoration:none;color:inherit;" href="hourly-package.html" class="pkg-tab">Hourly Package</a>
       <a style="text-decoration:none;color:inherit;" href="tour-packages.html" class="pkg-tab">Tour Packages</a>
     </div>
   </header>
 
-  <!-- animated decorative shapes (CSS only - dark aqua) -->
-  <div class="float-shapes" aria-hidden="true">
-    <span class="shape circle c1"></span>
-    <span class="shape circle c2"></span>
-    <span class="shape dot d1"></span>
-    <span class="shape line l1"></span>
-  </div>
-
-  <!-- BOOKING FORM – TOP & CENTERED -->
-
-
-      <section id="booking" class="booking-section py-5" style="padding-top:18px;">
-  <div class="container">
-
-    <!-- HERO -->
-    <section class="hero py-5">
-      <div class="container text-center">
-        <h1 class="hero-title">Premium Tour Packages from Coimbatore</h1>
-        <p class="hero-lead">Enter the details below and get your quote in minutes.</p>
-      </div>
-
-      <!-- Trip Type Tabs -->
-      <div class="col-12 mb-3">
-        <div class="package-tabs">
-
-          <button type="button" class="pkg-tab active" data-trip="round">Round Trip</button>
-          <button type="button" class="pkg-tab" data-trip="drop">Drop Trip</button>
-        </div>
-        <input type="hidden" id="tripType" name="tripType" value="round">
+  <section id="booking" class="booking-section py-5" style="padding-top:18px;">
+    <div class="container">
+<br>
+      <!-- HERO -->
+      <div class="text-center mb-4">
+        <h1 class="hero-title hero-highlight">
+      Premium Tour Packages from Coimbatore
+    </h1>
 
       </div>
-    </section>
 
-    <!-- FORM -->
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10">
+      <!-- TWO COLUMN LAYOUT -->
+      <div class="row g-4 align-items-start">
 
-        <form id="bookingForm" class="booking-form p-4">
+        <!-- LEFT: FORM -->
+        <div class="col-lg-6">
+          <form id="bookingForm" class="booking-form p-4">
+              <p class="hero-lead">Share your journey details and receive a personalized quote instantly.</p>
+            <div class="row g-3">
 
-          <div class="row g-2">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input id="name" class="form-control" required>
+              </div>
 
-            <div class="col-sm-6">
-              <label class="form-label">Name</label>
-              <input id="name" class="form-control" required>
-            </div>
+              <div class="col-md-6">
+                <label class="form-label">Phone</label>
+                <input id="phone" class="form-control" inputmode="numeric" required>
+              </div>
 
-            <div class="col-sm-6">
-              <label class="form-label">Phone</label>
-              <input id="phone" class="form-control" required>
-            </div>
+              <div class="col-md-6">
+                <label class="form-label">Pickup Location</label>
+                <input id="pickup" class="form-control" required>
+              </div>
 
-            <div class="col-sm-6">
-              <label class="form-label">Pickup Location</label>
-              <input id="pickup" class="form-control" required>
-            </div>
+              <div class="col-md-6">
+                <label class="form-label">Drop Location</label>
+                <input id="drop" class="form-control" required>
+              </div>
 
-            <div class="col-sm-6">
-              <label class="form-label">Drop Location</label>
-              <input id="drop" class="form-control" required>
-            </div>
+              <div class="col-12">
+                <label class="form-label">Intermediate Locations (optional)</label>
+                <input id="intermediate" class="form-control" placeholder="Example: Coonoor, Tea Estate">
+              </div>
 
-            <div class="col-12">
-              <label id="intermediateLabel" class="form-label">Intermediate Locations (optional)</label>
-              <input id="intermediate" class="form-control">
-            </div>
+              <div class="col-md-6">
+                <label class="form-label">Pickup Date & Time</label>
+                <input type="datetime-local" id="pickupDT" class="form-control dt-onebox" required>
+              </div>
 
-            <div class="col-md-4">
-              <label class="form-label">Pickup Date</label>
-              <input type="date" id="pickupDate" class="form-control" required>
-            </div>
+              <div class="col-md-6">
+                <label class="form-label">Drop Date & Time (optional)</label>
+                <input type="datetime-local" id="dropDT" class="form-control dt-onebox">
+              </div>
 
-            <div class="col-md-4">
-              <label class="form-label">Pickup Time</label>
-              <input type="time" id="pickupTime" class="form-control" required>
-            </div>
-
-            <div class="col-md-4">
-              <label id="dropDateLabel" class="form-label">Drop Date (optional)</label>
-              <input type="date" id="dropDate" class="form-control">
-              <div id="durationDisplay" class="mt-1"></div>
-            </div>
-
-            <div class="col-md-4">
-              <label class="form-label">Drop Time (optional)</label>
-              <input type="time" id="dropTime" class="form-control">
-            </div>
-
-            <div class="col-md-8">
-              <label class="form-label">Select Vehicle Type</label>
-              <select id="vehicle" class="form-select" required>
-                <option value="">-- Choose a Vehicle --</option>
-                <optgroup label="Sedan">
-                  <option value="Swift Dzire 4+1">Swift Dzire 4+1</option>
-                  <option value="Toyota Etios 4+1">Toyota Etios 4+1</option>
-                </optgroup>
-                <optgroup label="SUV / MPV">
-                  <option value="Maruti Ertiga 6+1">Maruti Ertiga 6+1</option>
-                  <option value="Toyota Innova 7+1">Toyota Innova 7+1</option>
-                  <option value="Innova Crysta 6+1 / 7+1">Innova Crysta 6+1 / 7+1</option>
-                </optgroup>
-                <optgroup label="Traveller">
-                  <option value="Urbania 12-16">Urbania 12-16</option>
-                  <option value="Tempo Traveller 12-14">Tempo Traveller 12-14</option>
+              <div class="col-md-8">
+                <label class="form-label">Select Vehicle Type</label>
+                <select id="vehicle" class="form-select" required>
+                  <option value="">-- Choose a Vehicle --</option>
+                  <optgroup label="Sedan">
+                    <option value="Swift Dzire 4+1">Swift Dzire 4+1</option>
+                    <option value="Toyota Etios 4+1">Toyota Etios 4+1</option>
+                  </optgroup>
+                  <optgroup label="SUV / MPV">
+                    <option value="Maruti Ertiga 6+1">Maruti Ertiga 6+1</option>
+                    <option value="Toyota Innova 7+1">Toyota Innova 7+1</option>
+                    <option value="Innova Crysta 6+1 / 7+1">Innova Crysta 6+1 / 7+1</option>
+                  </optgroup>
+                  <optgroup label="Traveller">
+                    <option value="Urbania 12-16">Urbania 12-16</option>
+                    <option value="Tempo Traveller 12-14">Tempo Traveller 12-14</option>
                     <option value="Tempo Traveller 14-18">Tempo Traveller 14-18</option>
-                </optgroup>
-              </select>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label">Accommodation</label>
+                <div class="accom-row">
+                  <div class="accom-switch">
+                    <input type="checkbox" id="accom" class="accom-input">
+                    <label for="accom" class="accom-toggle"><span class="accom-knob"></span></label>
+                    <span id="accomLabel" class="ms-2 text-muted">No</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 text-center mt-2">
+                <button type="submit" class="btn px-4 py-2 wa-book-btn">
+                  <i class="fab fa-whatsapp"></i> Book Now via WhatsApp
+                </button>
+              </div>
+
+              <div class="col-12 text-center small text-muted">
+                By submitting, you agree to be contacted for trip confirmation.
+              </div>
+
             </div>
+          </form>
+        </div>
 
+        <!-- RIGHT: ENGAGING CONTENT -->
+        <div class="col-lg-6">
 
-            <div class="col-12 d-flex align-items-center gap-3">
-              <label class="form-label mb-0">Accommodation Needed (Click to enable)</label>
-              <div class="accom-switch">
-                <input type="checkbox" id="accom" class="accom-input">
-                <label for="accom" class="accom-toggle"><span class="accom-knob"></span></label>
-                <span id="accomLabel" class="ms-2 text-muted">No</span>
+          <!-- Quick trust card -->
+          <div class="p-4 booking-form mb-3">
+            <h3 class="mb-2" style="font-size:20px;">Why Ravi G Tours & Travels?</h3>
+            <p class="mb-0" style="color:#556066; line-height:1.65;">
+              Clean vehicles, verified drivers, and on-time pickups — built for comfortable family trips, couple getaways, and group tours across Tamil Nadu & South India.
+            </p>
+          </div>
+
+          <!-- Feature grid -->
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="p-3 booking-form h-100">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <strong>Verified Drivers</strong>
+                </div>
+                <div class="small" style="color:#556066;">Professional & customer-friendly.</div>
               </div>
             </div>
 
-            <div class="col-12">
-              <label class="form-label">Special Requirements</label>
-              <textarea id="additional" class="form-control" rows="2"></textarea>
+            <div class="col-6">
+              <div class="p-3 booking-form h-100">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="fa-solid fa-car-side"></i>
+                  <strong>Clean Vehicles</strong>
+                </div>
+                <div class="small" style="color:#556066;">Well-maintained & comfortable rides.</div>
+              </div>
             </div>
 
-            <div class="col-12 text-center mt-3">
-    <button
-      type="submit"
-      class="btn px-4 py-2"
-      style="
-        background:#25D366;
-        color:#111111;
-        border:none;
-        border-radius:12px;
-        font-weight:700;
-        font-size:16px;
-        box-shadow:0 8px 20px rgba(37,211,102,0.35);
-      "
-    >
-      <i class="fab fa-whatsapp"></i> Book Now via WhatsApp
-    </button>
-  </div>
+            <div class="col-6">
+              <div class="p-3 booking-form h-100">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="fa-solid fa-clock"></i>
+                  <strong>On-Time Pickup</strong>
+                </div>
+                <div class="small" style="color:#556066;">Reliable schedules and support.</div>
+              </div>
+            </div>
 
+            <div class="col-6">
+              <div class="p-3 booking-form h-100">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <strong>Quick Quote</strong>
+                </div>
+                <div class="small" style="color:#556066;">Get pricing in minutes via WhatsApp.</div>
+              </div>
+            </div>
           </div>
 
-        </form>
+          <!-- Popular routes -->
+          <div class="p-4 booking-form mt-3">
+            <h3 class="mb-2" style="font-size:18px;">Popular Tour Picks</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge" style="background:#282829;color:#FFBD59;padding:10px 12px;border-radius:14px;">Ooty</span>
+              <span class="badge" style="background:#282829;color:#FFBD59;padding:10px 12px;border-radius:14px;">Kodaikanal</span>
+              <span class="badge" style="background:#282829;color:#FFBD59;padding:10px 12px;border-radius:14px;">Munnar</span>
+              <span class="badge" style="background:#282829;color:#FFBD59;padding:10px 12px;border-radius:14px;">Coorg</span>
+              <span class="badge" style="background:#282829;color:#FFBD59;padding:10px 12px;border-radius:14px;">Valparai</span>
+            </div>
+            <div class="small mt-2" style="color:#556066;">Tell us your plan — we’ll suggest the best itinerary.</div>
+          </div>
 
+        </div>
       </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
-
-  <!-- 3 x SEO paragraphs about Ravi G Tours and Travels -->
+  <!-- SEO paragraph -->
   <section class="about-home py-4">
     <div class="container">
       <p><strong>Ravi G Tours and Travels</strong> is a premium travel service based in Coimbatore offering reliable and comfortable transportation across Tamil Nadu. We specialize in outstation trips, airport transfers, tailored tour packages, and group travel solutions with experienced and verified drivers. Our priority is clean vehicles, punctual service, and a safe, memorable travel experience for every passenger.</p>
     </div>
   </section>
 
-  <!-- ================================
-       GOOGLE RATING + AUTO-SCROLLING REVIEWS
-  ================================ -->
-  <section class="reviews-marquee-section">
+  <!-- ✅ Reviews + Rating (NO auto-scroll) -->
+  <section class="reviews-marquee-section py-5">
     <div class="container text-center">
+
+
+
+      <h2 class="section-title mb-4">What Our Customers Say</h2>
+
+      <!-- Bootstrap swipe carousel for reviews -->
+      <div id="reviewsCarousel" class="carousel slide" data-bs-touch="true" data-bs-interval="false">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Safe, comfortable and memorable girls trip to Kodaikanal. Highly recommended!"</p>
+                  <span>- Siny Mathew</span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Very friendly team, treated us like family. Best for Coimbatore–Ooty–Kodaikanal."</p>
+                  <span>- Sahitya Saripalli</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Memorable trip and very professional driver. Excellent service."</p>
+                  <span>- Ramya Kandiyoor</span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Affordable 4-day Ooty package. Very polite and friendly service."</p>
+                  <span>- Geetha A</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Safe driving. Guru anna is very cool and friendly!"</p>
+                  <span>- Gayathri Gurram</span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Great service, good pricing. Very customer-friendly."</p>
+                  <span>- Suga Prasad</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Friendly service and knows all tourist spots well."</p>
+                  <span>- Avt Hospitality</span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Amazing safe driving and reasonable price."</p>
+                  <span>- Preemeswari SS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="carousel-item">
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Clean cars and very good service. Highly satisfied."</p>
+                  <span>- Jayapal P</span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="review-card text-start">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                  <p>"Excellent service at a very affordable price."</p>
+                  <span>- Maha Nanthakumar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev" aria-label="Previous review">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next" aria-label="Next review">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- ✅ Customer Gallery (NO auto-move, swipe controlled) -->
+  <section class="py-4">
+    <div class="container text-center">
+      <h2 class="stat-value mb-3">Customer Gallery</h2>
+
+      <div id="galleryCarousel" class="carousel slide" data-bs-touch="true" data-bs-interval="false">
+        <div class="carousel-inner" id="galleryInner">
+          <!-- JS will build slides from 1..17 images -->
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev" aria-label="Previous images">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next" aria-label="Next images">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      <br><br>
       <div class="stats-box-wrap">
         <div class="stat-card">
           <div class="stat-value">Since 2018</div>
@@ -288,210 +590,75 @@
       </div>
 
       <div class="google-rating-box mb-4">
-        <img src="images/glogo.webp"
-             class="google-logo" alt="Google Logo">
+        <img src="images/glogo.webp" class="google-logo" alt="Google Logo">
         <div class="rating-number">4.8</div>
         <div class="rating-stars">⭐⭐⭐⭐⭐</div>
       </div>
+    </div>
+  </section>
 
-      <h2 class="section-title mb-4">What Our Customers Say</h2>
+  <!-- Footer (your existing footer kept) -->
+  <footer class="site-footer py-4">
+    <div class="container mt-5 mb-4">
+      <div class="row">
+        <div class="col-6 col-md-3 mb-3">
+          <h6 class="fw-bold">Tamil Nadu</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Madurai</a></li>
+            <li><a href="index.html">Rameswaram</a></li>
+            <li><a href="index.html">Kanyakumari</a></li>
+            <li><a href="index.html">Palani</a></li>
+            <li><a href="index.html">Kodaikanal</a></li>
+            <li><a href="index.html">Ooty</a></li>
+          </ul>
+        </div>
 
-      <div class="reviews-marquee">
-        <div class="marquee-track">
-          <!-- reviews (unchanged) -->
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Safe, comfortable and memorable girls trip to Kodaikanal. Highly recommended!"</p><span>- Siny Mathew</span></div>
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Very friendly team, treated us like family. Best for Coimbatore–Ooty–Kodaikanal."</p><span>- Sahitya Saripalli</span></div>
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Memorable trip and very professional driver. Excellent service."</p><span>- Ramya Kandiyoor</span></div>
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Affordable 4-day Ooty package. Very polite and friendly service."</p><span>- Geetha A</span></div>
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Safe driving. Guru anna is very cool and friendly!"</p><span>- Gayathri Gurram</span></div>
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Great service, good pricing. Very customer-friendly."</p><span>- Suga Prasad</span></div>
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Friendly service and knows all tourist spots well."</p><span>- Avt Hospitality</span></div>
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Amazing safe driving and reasonable price."</p><span>- Preemeswari SS</span></div>
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Clean cars and very good service. Highly satisfied."</p><span>- Jayapal P</span></div>
-          <div class="marquee-card">⭐⭐⭐⭐⭐<p>"Excellent service at a very affordable price."</p><span>- Maha Nanthakumar</span></div>
+        <div class="col-6 col-md-3 mb-3">
+          <h6 class="fw-bold">Kerala</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Munnar</a></li>
+            <li><a href="index.html">Wayanad</a></li>
+            <li><a href="index.html">Kochi</a></li>
+            <li><a href="index.html">Alleppey</a></li>
+            <li><a href="index.html">Thekkady</a></li>
+            <li><a href="index.html">Athirapally</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <h6 class="fw-bold">Karnataka</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Mysuru</a></li>
+            <li><a href="index.html">Bengaluru</a></li>
+            <li><a href="index.html">Coorg</a></li>
+            <li><a href="index.html">Bandipur</a></li>
+            <li><a href="index.html">Chikkamagaluru</a></li>
+            <li><a href="index.html">Hampi</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <h6 class="fw-bold">Popular Spots</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Valparai</a></li>
+            <li><a href="index.html">Yercaud</a></li>
+            <li><a href="index.html">Coonoor</a></li>
+            <li><a href="index.html">Kotagiri</a></li>
+            <li><a href="index.html">Top Slip</a></li>
+            <li><a href="index.html">Meghamalai</a></li>
+          </ul>
         </div>
       </div>
 
-    </div>
-  </section>
-  <!-- ⭐ GOOGLE REVIEWS SECTION END → PLACE THIS CAROUSEL BELOW ⭐ -->
+      <hr>
 
-  <div class="review-carousel-wrapper">
-    <h2 class="stat-value">Customer Gallery</h2>
-
-    <div class="review-carousel" id="customerCarousel">
-        <!-- JS will insert 1–17 images here -->
-    </div>
-
-  </div>
-
-  <!-- ⭐ GSAP CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-  <script>
-  const container = document.getElementById("customerCarousel");
-
-  // Load 1–17 images
-  let images = [];
-  for (let i = 1; i <= 17; i++) {
-    images.push(`images/customer/${i}.jpg`);
-  }
-
-  // Duplicate images for smooth infinite loop
-  const allImages = [...images, ...images];
-
-  allImages.forEach(src => {
-    let img = document.createElement("img");
-    img.src = src;
-    img.className = "review-slide";
-    container.appendChild(img);
-  });
-
-  // GSAP infinite loop
-  let slideWidth = 168; // 150px + 18px gap = 168
-  let totalSlides = allImages.length;
-
-  gsap.to(".review-slide", {
-    x: () => `-=${slideWidth * totalSlides}`,
-    duration: 200,
-    ease: "none",
-    repeat: -1,   // infinite loop
-    modifiers: {
-      x: gsap.utils.unitize(x => {
-        return (parseFloat(x) % (slideWidth * totalSlides)) ;
-      })
-    }
-  });
-  </script>
-
-
-
-  <style>
-  /* ------------------------------
-      CONTAINER STYLE
-  ------------------------------- */
-  .review-carousel-wrapper {
-    position: relative;
-    max-width: 100%;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.03);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255,255,255,0.1);
-  }
-
-  .section-title {
-    font-size: 22px;
-    color: #fff;
-    margin-bottom: 12px;
-  }
-
-  /* ------------------------------
-      CAROUSEL TRACK
-  ------------------------------- */
-  .review-carousel {
-    display: flex;
-    gap: 18px;
-    overflow: hidden;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  /* ------------------------------
-      IMAGE STYLING
-  ------------------------------- */
-  .review-slide {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 16px;
-    border: 3px solid transparent;
-    background: linear-gradient(#000, #000) padding-box,
-                linear-gradient(135deg, #7c3aed, #06b6d4) border-box;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-    transition: transform .3s;
-  }
-
-  .review-slide:hover {
-    transform: scale(1.05);
-  }
-
-  </style>
-
-
-  <!-- Footer -->
-    <footer class="site-footer py-4">
-
-          <!-- Footer Quick Links -->
-          <div class="container mt-5 mb-4">
-
-            <!-- MAIN 4-COLUMN SECTION -->
-            <div class="row">
-
-              <!-- Column 1 -->
-              <div class="col-6 col-md-3 mb-3">
-                <h6 class="fw-bold">Tamil Nadu</h6>
-                <ul class="list-unstyled footer-links">
-                  <li><a href="index.html">Madurai</a></li>
-                  <li><a href="index.html">Rameswaram</a></li>
-                  <li><a href="index.html">Kanyakumari</a></li>
-                  <li><a href="index.html">Palani</a></li>
-                  <li><a href="index.html">Kodaikanal</a></li>
-                  <li><a href="index.html">Ooty</a></li>
-                </ul>
-              </div>
-
-              <!-- Column 2 -->
-              <div class="col-6 col-md-3 mb-3">
-                <h6 class="fw-bold">Kerala</h6>
-                <ul class="list-unstyled footer-links">
-                  <li><a href="index.html">Munnar</a></li>
-                  <li><a href="index.html">Wayanad</a></li>
-                  <li><a href="index.html">Kochi</a></li>
-                  <li><a href="index.html">Alleppey</a></li>
-                  <li><a href="index.html">Thekkady</a></li>
-                  <li><a href="index.html">Athirapally</a></li>
-                </ul>
-              </div>
-
-              <!-- Column 3 -->
-              <div class="col-6 col-md-3 mb-3">
-                <h6 class="fw-bold">Karnataka</h6>
-                <ul class="list-unstyled footer-links">
-                  <li><a href="index.html">Mysuru</a></li>
-                  <li><a href="index.html">Bengaluru</a></li>
-                  <li><a href="index.html">Coorg</a></li>
-                  <li><a href="index.html">Bandipur</a></li>
-                  <li><a href="index.html">Chikkamagaluru</a></li>
-                  <li><a href="index.html">Hampi</a></li>
-                </ul>
-              </div>
-
-              <!-- Column 4 -->
-              <div class="col-6 col-md-3 mb-3">
-                <h6 class="fw-bold">Popular Spots</h6>
-                <ul class="list-unstyled footer-links">
-                  <li><a href="index.html">Valparai</a></li>
-                  <li><a href="index.html">Yercaud</a></li>
-                  <li><a href="index.html">Coonoor</a></li>
-                  <li><a href="index.html">Kotagiri</a></li>
-                  <li><a href="index.html">Top Slip</a></li>
-                  <li><a href="index.html">Meghamalai</a></li>
-                </ul>
-              </div>
-
-            </div>
-
-
-  <hr>
       <div class="container">
         <div class="row gy-3">
           <div class="col-md-4">
             <h5>Ravi G Tours and Travels</h5>
             <p>M 138, TNHP Colony, Phase 2, Vellikener, Thudiyalur<br>Coimbatore, Tamil Nadu 641029</p>
             <p>MSME - UDYAM-TN-03-0068191</p>
-            <p>GST -  33EJLPP6762C1Z0</p>
+            <p>GST - 33EJLPP6762C1Z0</p>
           </div>
 
           <div class="col-md-4">
@@ -511,32 +678,213 @@
               <li><a href="about-us.html">About Us</a></li>
             </ul>
           </div>
-
         </div>
 
         <div class="text-center mt-3 small">
           © 2025 Ravi G Tours and Travels — All Rights Reserved
-            <p style="font-size: 14px; opacity: 0.7;">
-          Designed & curated by
-          <a href="https://marcinmind.in" target="_blank" class="footer-credit">
-      Marc in Mind Technologies
-    </a>.
-        </p>
+          <p style="font-size: 14px; opacity: 0.7;">
+            Designed & curated by
+            <a href="https://marcinmind.in" target="_blank" class="footer-credit">Marc in Mind Technologies</a>.
+          </p>
         </div>
       </div>
-      <br>
-      <br>
-    </footer>
+      <br><br>
+    </div>
+  </footer>
 
-  <!-- bottom-centered floating CALL + WA bar (CovaiGlide-style) -->
+  <!-- Bottom floating bar -->
   <div class="bottom-floating" role="group" aria-label="Quick actions">
     <a class="bf-btn call" href="tel:+919944165207" aria-label="Call Ravi G Tours and Travels"><i class="fa fa-phone"></i> Call</a>
     <a class="bf-btn wa" href="#" id="quickWA" aria-label="WhatsApp Ravi G Tours and Travels"><i class="fab fa-whatsapp"></i> WhatsApp</a>
   </div>
 
-  <!-- scripts -->
+  <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-  <script src="main.js"></script>
+
+  <!-- ✅ INLINE JS: dates min rules + WhatsApp msg (12-hour) + gallery build -->
+  <script>
+    (function(){
+      const pickupDT = document.getElementById('pickupDT');
+      const dropDT   = document.getElementById('dropDT');
+      const accom    = document.getElementById('accom');
+      const accomLbl = document.getElementById('accomLabel');
+
+      // ---------- Accommodation label ----------
+      if(accom && accomLbl){
+        const syncAccom = () => accomLbl.textContent = accom.checked ? 'Yes' : 'No';
+        accom.addEventListener('change', syncAccom);
+        syncAccom();
+      }
+
+      // ---------- Helpers ----------
+      function pad2(n){ return String(n).padStart(2,'0'); }
+
+      // datetime-local value => Date
+      function parseLocalDT(val){
+        // val format "YYYY-MM-DDTHH:MM"
+        if(!val) return null;
+        const [dPart, tPart] = val.split('T');
+        if(!dPart || !tPart) return null;
+        const [y,m,d] = dPart.split('-').map(Number);
+        const [hh,mm] = tPart.split(':').map(Number);
+        return new Date(y, (m-1), d, hh, mm, 0, 0);
+      }
+
+      // Date => "DD Mon YYYY, hh:mm AM/PM"
+      function format12h(d){
+        if(!d) return '';
+        const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        let h = d.getHours();
+        const m = d.getMinutes();
+        const ampm = h >= 12 ? "PM" : "AM";
+        h = h % 12; if(h === 0) h = 12;
+        return `${pad2(d.getDate())} ${months[d.getMonth()]} ${d.getFullYear()}, ${h}:${pad2(m)} ${ampm}`;
+      }
+
+      // ---------- Disable past date/time ----------
+      function setMinNow(){
+        const now = new Date();
+        const y = now.getFullYear();
+        const mo = pad2(now.getMonth()+1);
+        const da = pad2(now.getDate());
+        const hh = pad2(now.getHours());
+        const mm = pad2(now.getMinutes());
+        const minVal = `${y}-${mo}-${da}T${hh}:${mm}`;
+        pickupDT.min = minVal;
+        // drop min will be set based on pickup selection
+      }
+      setMinNow();
+
+      // ---------- Drop date/time cannot be before pickup ----------
+      function syncDropMin(){
+        const p = parseLocalDT(pickupDT.value);
+        if(!p){
+          dropDT.min = '';
+          return;
+        }
+        // min = pickup datetime
+        const y = p.getFullYear();
+        const mo = pad2(p.getMonth()+1);
+        const da = pad2(p.getDate());
+        const hh = pad2(p.getHours());
+        const mm = pad2(p.getMinutes());
+        dropDT.min = `${y}-${mo}-${da}T${hh}:${mm}`;
+
+        // if current drop is before pickup, clear it
+        const d = parseLocalDT(dropDT.value);
+        if(d && d.getTime() < p.getTime()){
+          dropDT.value = '';
+        }
+      }
+      pickupDT.addEventListener('change', syncDropMin);
+      dropDT.addEventListener('change', syncDropMin);
+
+      // NOTE: Native date picker cannot "hide" earlier dates,
+      // but setting min prevents selecting them (best possible on all browsers).
+
+      // ---------- WhatsApp message builder ----------
+      function buildWhatsAppText(){
+        const name = (document.getElementById('name').value || '').trim();
+        const phone = (document.getElementById('phone').value || '').trim();
+        const pickup = (document.getElementById('pickup').value || '').trim();
+        const drop = (document.getElementById('drop').value || '').trim();
+        const intermediate = (document.getElementById('intermediate').value || '').trim();
+        const vehicle = (document.getElementById('vehicle').value || '').trim();
+        const accomNeeded = document.getElementById('accom').checked ? 'Yes' : 'No';
+
+        const pDT = parseLocalDT(pickupDT.value);
+        const dDT = parseLocalDT(dropDT.value);
+
+        let msg = `Hi Ravi G Tours and Travels,%0A`;
+        msg += `I want to book a trip.%0A%0A`;
+        msg += `Name: ${encodeURIComponent(name)}%0A`;
+        msg += `Phone: ${encodeURIComponent(phone)}%0A`;
+        msg += `Pickup: ${encodeURIComponent(pickup)}%0A`;
+        msg += `Drop: ${encodeURIComponent(drop)}%0A`;
+        if(intermediate) msg += `Intermediate: ${encodeURIComponent(intermediate)}%0A`;
+        msg += `Pickup Date & Time: ${encodeURIComponent(format12h(pDT))}%0A`;
+        if(dDT) msg += `Drop Date & Time: ${encodeURIComponent(format12h(dDT))}%0A`;
+        msg += `Vehicle: ${encodeURIComponent(vehicle)}%0A`;
+        msg += `Accommodation: ${encodeURIComponent(accomNeeded)}%0A`;
+        return msg;
+      }
+
+      // ---------- Form submit => open WhatsApp ----------
+      const form = document.getElementById('bookingForm');
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+
+        // basic check: pickupDT required
+        if(!pickupDT.value){
+          pickupDT.focus();
+          return;
+        }
+
+        // ensure pickup not in past (safety)
+        const p = parseLocalDT(pickupDT.value);
+        if(p && p.getTime() < Date.now() - 60000){
+          alert("Pickup date/time cannot be in the past.");
+          return;
+        }
+
+        // ensure drop >= pickup if set
+        const d = parseLocalDT(dropDT.value);
+        if(d && p && d.getTime() < p.getTime()){
+          alert("Drop date/time cannot be before pickup date/time.");
+          return;
+        }
+
+        const text = buildWhatsAppText();
+        const waNumber = "919944165207"; // ✅ change if needed
+        const url = `https://wa.me/${waNumber}?text=${text}`;
+        window.open(url, "_blank");
+      });
+
+      // ---------- Bottom WhatsApp quick button ----------
+      const quickWA = document.getElementById('quickWA');
+      if(quickWA){
+        quickWA.addEventListener('click', function(e){
+          e.preventDefault();
+          const waNumber = "919944165207";
+          const url = `https://wa.me/${waNumber}?text=${buildWhatsAppText()}`;
+          window.open(url, "_blank");
+        });
+      }
+
+      // ---------- Build Gallery carousel slides (1..17) ----------
+      const galleryInner = document.getElementById('galleryInner');
+      if(galleryInner){
+        const total = 17;
+        const perSlideDesktop = 4;
+        const perSlideMobile = 2;
+
+        const isMobile = window.matchMedia("(max-width: 576px)").matches;
+        const perSlide = isMobile ? perSlideMobile : perSlideDesktop;
+
+        let index = 1;
+        let first = true;
+
+        while(index <= total){
+          const item = document.createElement('div');
+          item.className = 'carousel-item' + (first ? ' active' : '');
+
+          const row = document.createElement('div');
+          row.className = 'gallery-row';
+
+          for(let k=0; k<perSlide && index<=total; k++, index++){
+            const img = document.createElement('img');
+            img.src = `images/customer/${index}.jpg`;
+            img.alt = `Customer ${index}`;
+            row.appendChild(img);
+          }
+
+          item.appendChild(row);
+          galleryInner.appendChild(item);
+
+          first = false;
+        }
+      }
+    })();
+  </script>
 </body>
 </html>
