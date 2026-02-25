@@ -157,19 +157,26 @@ select.form-select {
 .itinerary.hidden { display:none; }
 
 /* Itinerary text black */
-#itineraryBox,
-#itineraryBox * {
-  color: #000 !important;
+#itineraryBox{
+  color:#000;
+}
+#itineraryBox h5{
+  color:#0b737a !important;
+}
+#itineraryContent,
+#itineraryContent *{
+  color:#000 !important;
+}
+
+.package-section{
+  flex: 1 0 auto;
+}
+.rg-footer{
+  margin-top: auto;
 }
 /* ---------- FOOTER FIX ---------- */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.site-footer {
-  margin-top: auto !important;
-}
+
+
 
 #finalPrice {
   color: #0b737a;
@@ -328,112 +335,181 @@ body {
 
 
   <!-- Footer -->
-    <footer class="site-footer py-4">
+  <footer class="rg-footer">
+    <div class="container rg-footer__wrap">
 
-          <!-- Footer Quick Links -->
-          <div class="container mt-5 mb-4">
+      <!-- Top grid -->
+      <div class="row g-4 rg-footer__top">
 
-            <!-- MAIN 4-COLUMN SECTION -->
-            <div class="row">
-
-              <!-- Column 1 -->
-              <div class="col-6 col-md-3 mb-3">
-                <h6 class="fw-bold">Tamil Nadu</h6>
-                <ul class="list-unstyled footer-links">
-                  <li><a href="index.html">Madurai</a></li>
-                  <li><a href="index.html">Rameswaram</a></li>
-                  <li><a href="index.html">Kanyakumari</a></li>
-                  <li><a href="index.html">Palani</a></li>
-                  <li><a href="index.html">Kodaikanal</a></li>
-                  <li><a href="index.html">Ooty</a></li>
-                </ul>
-              </div>
-
-              <!-- Column 2 -->
-              <div class="col-6 col-md-3 mb-3">
-                <h6 class="fw-bold">Kerala</h6>
-                <ul class="list-unstyled footer-links">
-                  <li><a href="index.html">Munnar</a></li>
-                  <li><a href="index.html">Wayanad</a></li>
-                  <li><a href="index.html">Kochi</a></li>
-                  <li><a href="index.html">Alleppey</a></li>
-                  <li><a href="index.html">Thekkady</a></li>
-                  <li><a href="index.html">Athirapally</a></li>
-                </ul>
-              </div>
-
-              <!-- Column 3 -->
-              <div class="col-6 col-md-3 mb-3">
-                <h6 class="fw-bold">Karnataka</h6>
-                <ul class="list-unstyled footer-links">
-                  <li><a href="index.html">Mysuru</a></li>
-                  <li><a href="index.html">Bengaluru</a></li>
-                  <li><a href="index.html">Coorg</a></li>
-                  <li><a href="index.html">Bandipur</a></li>
-                  <li><a href="index.html">Chikkamagaluru</a></li>
-                  <li><a href="index.html">Hampi</a></li>
-                </ul>
-              </div>
-
-              <!-- Column 4 -->
-              <div class="col-6 col-md-3 mb-3">
-                <h6 class="fw-bold">Popular Spots</h6>
-                <ul class="list-unstyled footer-links">
-                  <li><a href="index.html">Valparai</a></li>
-                  <li><a href="index.html">Yercaud</a></li>
-                  <li><a href="index.html">Coonoor</a></li>
-                  <li><a href="index.html">Kotagiri</a></li>
-                  <li><a href="index.html">Top Slip</a></li>
-                  <li><a href="index.html">Meghamalai</a></li>
-                </ul>
-              </div>
-
-            </div>
-
-
-  <hr>
-      <div class="container">
-        <div class="row gy-3">
-          <div class="col-md-4">
-            <h5>Ravi G Tours and Travels</h5>
-            <p>M 138, TNHP Colony, Phase 2, Vellikener, Thudiyalur<br>Coimbatore, Tamil Nadu 641029</p>
-            <p>MSME - UDYAM-TN-03-0068191</p>
-            <p>GST -  33EJLPP6762C1Z0</p>
-          </div>
-
-          <div class="col-md-4">
-            <h6>Contact</h6>
-            <p><i class="fa fa-phone"></i> <a href="tel:+919944165207" style="text-decoration:none;color:inherit;"> +91 99441 65207</a></p>
-            <p><i class="fa fa-phone"></i> <a href="tel:+919994467675" style="text-decoration:none;color:inherit;"> +91 99944 67675</a></p>
-            <p><i class="fa fa-envelope"></i> <a href="mailto:ravigtoursandtravels@gmail.com" style="text-decoration:none;color:inherit;">ravigtoursandtravels@gmail.com</a></p>
-            <p><i class="fa fa-globe"></i> www.ravigtravels.com</p>
-          </div>
-
-          <div class="col-md-4">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="services.html">Services</a></li>
-              <li><a href="tour-packages.html">Tour Packages</a></li>
-              <li><a href="hourly-package.html">Hourly Package</a></li>
-              <li><a href="about-us.html">About Us</a></li>
+        <div class="col-6 col-md-3">
+          <div class="rg-footer__card rg-pop">
+            <h6 class="rg-footer__title">Tamil Nadu</h6>
+            <ul class="rg-footer__links">
+              <li><a href="index.html">Madurai</a></li>
+              <li><a href="index.html">Rameswaram</a></li>
+              <li><a href="index.html">Kanyakumari</a></li>
+              <li><a href="index.html">Palani</a></li>
+              <li><a href="index.html">Kodaikanal</a></li>
+              <li><a href="index.html">Ooty</a></li>
             </ul>
           </div>
-
         </div>
 
-        <div class="text-center mt-3 small">
-          © 2025 Ravi G Tours and Travels — All Rights Reserved
-            <p style="font-size: 14px; opacity: 0.7;">
+        <div class="col-6 col-md-3">
+          <div class="rg-footer__card rg-pop">
+            <h6 class="rg-footer__title">Kerala</h6>
+            <ul class="rg-footer__links">
+              <li><a href="index.html">Munnar</a></li>
+              <li><a href="index.html">Wayanad</a></li>
+              <li><a href="index.html">Kochi</a></li>
+              <li><a href="index.html">Alleppey</a></li>
+              <li><a href="index.html">Thekkady</a></li>
+              <li><a href="index.html">Athirapally</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="rg-footer__card rg-pop">
+            <h6 class="rg-footer__title">Karnataka</h6>
+            <ul class="rg-footer__links">
+              <li><a href="index.html">Mysuru</a></li>
+              <li><a href="index.html">Bengaluru</a></li>
+              <li><a href="index.html">Coorg</a></li>
+              <li><a href="index.html">Bandipur</a></li>
+              <li><a href="index.html">Chikkamagaluru</a></li>
+              <li><a href="index.html">Hampi</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="rg-footer__card rg-pop">
+            <h6 class="rg-footer__title">Popular Spots</h6>
+            <ul class="rg-footer__links">
+              <li><a href="index.html">Valparai</a></li>
+              <li><a href="index.html">Yercaud</a></li>
+              <li><a href="index.html">Coonoor</a></li>
+              <li><a href="index.html">Kotagiri</a></li>
+              <li><a href="index.html">Top Slip</a></li>
+              <li><a href="index.html">Meghamalai</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="rg-footer__divider"></div>
+
+      <!-- Bottom area -->
+      <!-- Bottom area -->
+      <div class="row g-4 rg-footer__bottom align-items-start">
+
+        <!-- Left spacer (1) -->
+        <div class="col-md-1 d-none d-md-block"></div>
+
+        <!-- Brand section (5) -->
+        <div class="col-md-5">
+          <div class="rg-footer__brand rg-pop">
+            <div class="rg-footer__logoWrap">
+              <img src="images/logo.png" alt="Ravi G Tours and Travels Logo" class="rg-footer__logo">
+            </div>
+            <div>
+              <h5 class="rg-footer__brandName">Ravi G Tours and Travels</h5>
+              <p class="rg-footer__muted">
+                M 138, TNHP Colony, Phase 2, Vellikener, Thudiyalur<br>
+                Coimbatore, Tamil Nadu 641029
+              </p>
+              <p class="rg-footer__muted mb-0">MSME - UDYAM-TN-03-0068191</p>
+              <p class="rg-footer__muted">GST - 33EJLPP6762C1Z0</p>
+              <p class="rg-footer__muted">+91 9944165207</p>
+              <p class="rg-footer__muted">+91 9994467675</p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact + Quick Links combined (6) -->
+        <div class="col-md-6">
+          <div class="row g-4">
+
+            <!-- Contact -->
+            <div class="col-lg-6">
+              <div class="rg-footer__card rg-pop">
+                <h6 class="rg-footer__title">Contact</h6>
+
+                <div class="rg-footer__actions">
+
+                  <a class="rg-iconBtn rg-tip"
+                     href="https://wa.me/919944165207"
+                     target="_blank"
+                     data-tip="Chat on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span class="rg-iconBtn__text">WhatsApp</span>
+                  </a>
+
+                  <a class="rg-iconBtn rg-tip"
+                     href="mailto:ravigtoursandtravels@gmail.com"
+                     data-tip="Send Email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="rg-iconBtn__text">Email</span>
+                  </a>
+
+                  <a class="rg-iconBtn rg-tip"
+                     href="https://www.instagram.com/ravi_g_travels_official?igsh=YWtrcGd0dGF1Njky"
+                     target="_blank"
+                     data-tip="Follow on Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="rg-iconBtn__text">Instagram</span>
+                  </a>
+
+                  <a class="rg-iconBtn rg-tip"
+                     href="https://maps.app.goo.gl/RyKt8qK5zpV8RQn26?g_st=awb"
+                     target="_blank"
+                     data-tip="View on Google Maps">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="rg-iconBtn__text">Google</span>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-6">
+              <div class="rg-footer__card rg-pop">
+                <h6 class="rg-footer__title">Quick Links</h6>
+                <ul class="rg-footer__links">
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="tour-packages.html">Tour Packages</a></li>
+                  <li><a href="hourly-package.html">Hourly Package</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="rg-footer__divider rg-footer__divider--soft"></div>
+
+      <!-- Copyright -->
+      <div class="rg-footer__copy">
+        <div>© 2025 Ravi G Tours and Travels — All Rights Reserved</div>
+        <div class="rg-footer__credit">
           Designed & curated by
-          <a href="https://marcinmind.in" target="_blank" class="footer-credit">
-      Marc in Mind Technologies
-    </a>.
-        </p>
+          <a href="https://marcinmind.in" target="_blank" rel="noopener" class="rg-footer__creditLink">
+            Marc in Mind Technologies
+          </a>
         </div>
       </div>
-      <br>
-      <br>
-    </footer>
+
+    </div>
+    <br><br>
+  </footer>
+
 
 
 <div class="bottom-floating">
