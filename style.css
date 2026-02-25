@@ -1787,3 +1787,14 @@ text-align: center;
   text-shadow: 0 0 10px rgba(255,189,89,0.6);
   transform: translateY(-2px);
 }
+/* Footer Titles + Brand Name Yellow */
+
+.rg-footer__title{
+  color: #FFBD59 !important;
+  font-weight: 800;
+}
+
+.rg-footer__brandName{
+  color: #FFBD59 !important;
+  font-weight: 900;
+}
