@@ -1326,8 +1326,42 @@ text-align: center;
   color: #ffffff;
 }
 /* ===== Right column typography on white cards ===== */
+/* RIGHT SIDE CARDS WITH NOISE */
+.booking-card{
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Noise Overlay */
+.booking-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(0,0,0,0.02) 0px,
+      rgba(0,0,0,0.02) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Hover Effect */
+.booking-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
 .booking-section .col-lg-6 .booking-form{
-    background: rgba(255, 255, 255, 0.6); /* 50% transparency */
+  background: rgba(255, 255, 255, 0.6); /* 50% transparency */
   border: 1px solid rgba(0,0,0,0.08);
   box-shadow: 0 12px 28px rgba(0,0,0,0.10);
   border-radius: 18px;
@@ -1483,6 +1517,8 @@ text-align: center;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+
 /* Remove default list dots */
 .info-list {
   list-style: none !important;
