@@ -1085,8 +1085,9 @@
   }
 
   // ---------- Build Gallery carousel slides (1..17) ----------
+  // ---------- Build Gallery carousel slides (1..32) ----------
   if(galleryInner){
-    const total = 17;
+    const total = 32;
     const perSlideDesktop = 4;
     const perSlideMobile = 2;
 
@@ -1105,7 +1106,7 @@
 
       for(let k=0; k<perSlide && index<=total; k++, index++){
         const img = document.createElement('img');
-        img.src = `images/customer/${index}.jpg`;
+        img.src = `images/customer/${index}.jpeg`;   // ✅ jpeg
         img.alt = `Customer ${index}`;
         row.appendChild(img);
       }
