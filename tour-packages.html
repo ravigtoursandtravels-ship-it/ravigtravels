@@ -60,7 +60,7 @@
   transition: 0.25s ease-in-out;
 }
 
-/* ACTIVE TAB (Same gradient as Book Now button) */
+/* ACTIVE TAB (Same gradient as Enquire Now button) */
 .pkg-tab.active {
   background: linear-gradient(90deg, var(--brand-dark), var(--brand)) !important;
   color: #fff !important;
@@ -325,7 +325,7 @@ select.form-select {
         </div>
   <h2 id="finalPrice">₹0</h2>
         <button id="bookNowBtn" disabled>
-          <i class="fab fa-whatsapp"></i>   Book Now
+          <i class="fab fa-whatsapp"></i>   Enquire Now
         </button>
       </div>
     </div>
@@ -520,11 +520,19 @@ select.form-select {
     <br><br>
   </footer>
 
+  <!-- Bottom floating bar -->
+  <div class="bottom-floating" role="group" aria-label="Quick actions">
 
-<div class="bottom-floating">
-  <a class="bf-btn call" href="tel:+919944165207"><i class="fa fa-phone"></i> Call</a>
-  <a class="bf-btn wa" id="quickWA"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-</div>
+    <a class="bf-btn call" href="tel:+919944165207">
+      <i class="fa fa-phone"></i> Call
+    </a>
+
+    <a class="bf-btn wa" href="#" id="floatWhatsApp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+  </div>
+<script src="ravig.js"></script>
 
 <!-- BOOKING DETAILS MODAL -->
 <div class="modal fade" id="bookingModal" tabindex="-1">
@@ -572,7 +580,7 @@ select.form-select {
               text-decoration:none;
               box-shadow:0 10px 24px rgba(37,211,102,0.35);"
            id="confirmBooking">
-          <i class="fab fa-whatsapp"></i> Book Now
+          <i class="fab fa-whatsapp"></i> Enquire Now
         </button>
       </div>
     </div>

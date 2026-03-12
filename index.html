@@ -282,7 +282,54 @@
     padding: 6px 8px !important;
   }
 }
+.shine-package-btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:10px;
+  background:#ffbd59;
+  color:#000;
+  font-weight:700;
+  text-decoration:none;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 0 10px rgba(255,189,89,0.7);
+  animation:packageBlink 1.2s infinite;
+}
 
+/* shining sweep */
+.shine-package-btn::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-120%;
+  width:60%;
+  height:100%;
+  background:linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.9) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transform:skewX(-25deg);
+  animation:packageShine 2s infinite;
+}
+
+@keyframes packageShine{
+  0%{ left:-120%; }
+  100%{ left:140%; }
+}
+
+/* blinking glow */
+@keyframes packageBlink{
+  0%,100%{
+    transform:scale(1);
+    box-shadow:0 0 8px rgba(255,189,89,0.7);
+  }
+  50%{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(255,189,89,1);
+  }
+}
   </style>
 </head>
 
@@ -333,8 +380,15 @@
 
     <!-- Mobile quick tabs -->
     <div class="mobile-center-tabs d-flex d-lg-none justify-content-center gap-2 mt-2">
-      <a style="text-decoration:none;color:inherit;" href="hourly-package.html" class="pkg-tab">Hourly Package</a>
-      <a style="text-decoration:none;color:inherit;" href="tour-packages.html" class="pkg-tab">Tour Packages</a>
+
+      <a href="hourly-package.html" class="shine-package-btn">
+        Hourly Package
+      </a>
+
+      <a href="tour-packages.html" class="shine-package-btn">
+        Tour Packages
+      </a>
+
     </div>
   </header>
 
@@ -429,7 +483,7 @@
 
               <div class="col-12 text-center mt-2">
                 <button type="submit" class="btn px-4 py-2 wa-book-btn">
-                  <i class="fab fa-whatsapp"></i> Book Now via WhatsApp
+                  <i class="fab fa-whatsapp"></i> Enquire Now via WhatsApp
                 </button>
               </div>
 
@@ -872,14 +926,20 @@
 
   <!-- Bottom floating bar -->
   <div class="bottom-floating" role="group" aria-label="Quick actions">
-    <a class="bf-btn call" href="tel:+919944165207" aria-label="Call Ravi G Tours and Travels"><i class="fa fa-phone"></i> Call</a>
-    <a class="bf-btn wa" href="#" id="quickWA" aria-label="WhatsApp Ravi G Tours and Travels"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-  </div>
 
+    <a class="bf-btn call" href="tel:+919944165207">
+      <i class="fa fa-phone"></i> Call
+    </a>
+
+    <a class="bf-btn wa" href="#" id="floatWhatsApp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+  </div>
+<script src="ravig.js"></script>
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- ✅ INLINE JS: dates min rules + WhatsApp msg (12-hour) + gallery build -->
 
   <script>
   (function(){
@@ -1023,7 +1083,7 @@
   if(dropDT) dropDT.addEventListener('change', syncDropMin);
 
   // ---------- WhatsApp message builder (SAFE: encode once) ----------
-  function buildWhatsAppText(){
+  function buildWhatsAppText() {
     const name  = val("name");
     const phone = val("phone");
     const pickup = val("pickup");
@@ -1035,17 +1095,29 @@
     const pDT = parseLocalDT(pickupDT.value);
     const dDT = dropDT ? parseLocalDT(dropDT.value) : null;
 
-    let msg = `Hi Ravi G Tours and Travels,\n`;
-    msg += `I want to book a trip.\n\n`;
-    msg += `Name: ${name || "-"}\n`;
-    msg += `Phone: ${phone || "-"}\n`;
-    msg += `Pickup: ${pickup || "-"}\n`;
-    msg += `Drop: ${drop || "-"}\n`;
-    if(intermediate) msg += `Intermediate: ${intermediate}\n`;
-    msg += `Pickup Date & Time: ${format12h(pDT) || "-"}\n`;
-    if(dDT) msg += `Drop Date & Time: ${format12h(dDT)}\n`;
-    msg += `Vehicle: ${vehicle || "-"}\n`;
-    msg += `Accommodation: ${accomNeeded}\n`;
+    let msg = `🌟 *New Trip Booking Request* 🌟\n\n`;
+    msg += `Hello Ravi G Tours and Travels 👋\n`;
+    msg += `I would like to book a trip. Please find my details below:\n\n`;
+
+    msg += `👤 *Name:* ${name || "-"}\n`;
+    msg += `📞 *Phone:* ${phone || "-"}\n`;
+    msg += `📍 *Pickup Location:* ${pickup || "-"}\n`;
+    msg += `🏁 *Drop Location:* ${drop || "-"}\n`;
+
+    if (intermediate) {
+      msg += `🗺️ *Intermediate Locations / Places to Visit:* ${intermediate}\n`;
+    }
+
+    msg += `🗓️ *Pickup Date & Time:* ${format12h(pDT) || "-"}\n`;
+
+    if (dDT) {
+      msg += `⏰ *Drop Date & Time:* ${format12h(dDT)}\n`;
+    }
+
+    msg += `🚖 *Vehicle Type:* ${vehicle || "-"}\n`;
+    msg += `🏨 *Accommodation Needed:* ${accomNeeded === "Yes" ? "Yes ✅" : "No ❌"}\n\n`;
+
+    msg += `Kindly share the fare and booking confirmation details. Thank you! 😊`;
 
     return encodeURIComponent(msg);
   }
