@@ -333,6 +333,88 @@
 .mobile-center-tabs{
   gap:50px !important;
 }
+.trust-title{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+.trust-text{
+  color:#556066;
+  line-height:1.6;
+}
+
+.feature-card{
+  display:flex;
+  gap:12px;
+  padding:14px;
+  border-radius:10px;
+  background:#fff;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  align-items:flex-start;
+  height:100%;
+}
+
+.feature-icon{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:#ffbd59;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#000;
+  font-size:14px;
+}
+
+.feature-icon.whatsapp{
+  background:#25D366;
+  color:#fff;
+}
+
+.feature-title{
+  font-weight:600;
+  font-size:14px;
+}
+
+.feature-desc{
+  font-size:12px;
+  color:#6c757d;
+}
+
+.tour-title{
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.route-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:8px;
+}
+
+.route-chip{
+  background:#ffbd59;
+  color:#000;
+  font-size:12px;
+  padding:6px 12px;
+  border-radius:20px;
+  font-weight:600;
+  transition:all .25s ease;
+}
+
+.route-chip:hover{
+  background:#f7a935;
+  transform:translateY(-2px);
+}
+
+.tour-note{
+  font-size:12px;
+  color:#6c757d;
+  margin-top:8px;
+}
   </style>
 </head>
 
@@ -497,75 +579,89 @@
         </div>
 
         <!-- RIGHT: ENGAGING CONTENT -->
-    <div class="col-lg-6">
+        <div class="col-lg-6">
 
-      <!-- Quick trust card -->
-      <div class="p-4 booking-card mb-3">
-        <h3 class="mb-2" style="font-size:20px;">Why Ravi G Tours & Travels?</h3>
-        <p class="mb-0" style="color:#556066; line-height:1.65;">
-          Clean vehicles, verified drivers, and on-time pickups — built for comfortable family trips, couple getaways, and group tours across Tamil Nadu & South India.
-        </p>
+          <!-- Trust Card -->
+          <div class="p-4 booking-card trust-card mb-3">
+            <h3 class="trust-title">Why Choose Ravi G Tours & Travels?</h3>
+            <p class="trust-text">
+              Travel with confidence. We provide clean vehicles, verified drivers,
+              and punctual pickups for comfortable family trips, couple getaways,
+              and group tours across Tamil Nadu and South India.
+            </p>
+          </div>
+
+          <!-- Feature Grid -->
+          <div class="row g-3">
+
+            <div class="col-6">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                  <div class="feature-title">Verified Drivers</div>
+                  <div class="feature-desc">Professional & customer-friendly.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-car-side"></i>
+                </div>
+                <div>
+                  <div class="feature-title">Clean Vehicles</div>
+                  <div class="feature-desc">Well-maintained & comfortable rides.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <div class="feature-title">On-Time Pickup</div>
+                  <div class="feature-desc">Reliable schedules and support.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="feature-card">
+                <div class="feature-icon whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <div class="feature-title">Quick Quote</div>
+                  <div class="feature-desc">Get pricing instantly via WhatsApp.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Popular Tours -->
+          <div class="p-4 booking-card mt-3">
+        <h3 class="tour-title">Popular Tour Picks</h3>
+
+        <div class="route-tags">
+          <span class="route-chip">Ooty</span>
+          <span class="route-chip">Kodaikanal</span>
+          <span class="route-chip">Munnar</span>
+          <span class="route-chip">Coorg</span>
+          <span class="route-chip">Valparai</span>
+        </div>
+
+        <div class="tour-note">
+          Tell us your travel plan — we’ll suggest the best itinerary for your trip.
+        </div>
       </div>
 
-      <!-- Feature grid -->
-      <div class="row g-3">
-        <div class="col-6">
-          <div class="p-3 booking-card h-100">
-            <div class="d-flex align-items-center gap-2 mb-1">
-              <i class="fa-solid fa-shield-halved"></i>
-              <strong>Verified Drivers</strong>
-            </div>
-            <div class="small" style="color:#556066;">Professional & customer-friendly.</div>
-          </div>
         </div>
-
-        <div class="col-6">
-          <div class="p-3 booking-card h-100">
-            <div class="d-flex align-items-center gap-2 mb-1">
-              <i class="fa-solid fa-car-side"></i>
-              <strong>Clean Vehicles</strong>
-            </div>
-            <div class="small" style="color:#556066;">Well-maintained & comfortable rides.</div>
-          </div>
-        </div>
-
-        <div class="col-6">
-          <div class="p-3 booking-card h-100">
-            <div class="d-flex align-items-center gap-2 mb-1">
-              <i class="fa-solid fa-clock"></i>
-              <strong>On-Time Pickup</strong>
-            </div>
-            <div class="small" style="color:#556066;">Reliable schedules and support.</div>
-          </div>
-        </div>
-
-        <div class="col-6">
-          <div class="p-3 booking-card h-100">
-            <div class="d-flex align-items-center gap-2 mb-1">
-              <i class="fa-brands fa-whatsapp"></i>
-              <strong>Quick Quote</strong>
-            </div>
-            <div class="small" style="color:#556066;">Get pricing in minutes via WhatsApp.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Popular routes -->
-      <div class="p-4 booking-card mt-3">
-        <h3 class="mb-2" style="font-size:18px;">Popular Tour Picks</h3>
-        <div class="d-flex flex-wrap gap-2">
-          <span class="badge route-badge">Ooty</span>
-          <span class="badge route-badge">Kodaikanal</span>
-          <span class="badge route-badge">Munnar</span>
-          <span class="badge route-badge">Coorg</span>
-          <span class="badge route-badge">Valparai</span>
-        </div>
-        <div class="small mt-2" style="color:#556066;">
-          Tell us your plan — we’ll suggest the best itinerary.
-        </div>
-      </div>
-
-    </div>
       </div>
 
     </div>
