@@ -284,16 +284,17 @@
 }
 .shine-package-btn{
   display:inline-block;
-  padding:10px 16px;
-  border-radius:10px;
+  padding:6px 10px; /* reduced size */
+  border-radius:8px;
   background:#ffbd59;
   color:#000;
-  font-weight:700;
+  font-size:13px; /* smaller text */
+  font-weight:600;
   text-decoration:none;
   position:relative;
   overflow:hidden;
-  box-shadow:0 0 10px rgba(255,189,89,0.7);
-  animation:packageBlink 1.2s infinite;
+  box-shadow:0 0 6px rgba(255,189,89,0.7);
+  animation:packageBlink 1.3s infinite;
 }
 
 /* shining sweep */
@@ -302,7 +303,7 @@
   position:absolute;
   top:0;
   left:-120%;
-  width:60%;
+  width:50%;
   height:100%;
   background:linear-gradient(
     120deg,
@@ -311,7 +312,7 @@
     rgba(255,255,255,0) 100%
   );
   transform:skewX(-25deg);
-  animation:packageShine 2s infinite;
+  animation:packageShine 2.2s infinite;
 }
 
 @keyframes packageShine{
@@ -319,16 +320,18 @@
   100%{ left:140%; }
 }
 
-/* blinking glow */
 @keyframes packageBlink{
   0%,100%{
     transform:scale(1);
-    box-shadow:0 0 8px rgba(255,189,89,0.7);
+    box-shadow:0 0 5px rgba(255,189,89,0.7);
   }
   50%{
-    transform:scale(1.05);
-    box-shadow:0 0 20px rgba(255,189,89,1);
+    transform:scale(1.03);
+    box-shadow:0 0 12px rgba(255,189,89,1);
   }
+}
+.mobile-center-tabs{
+  gap:50px !important;
 }
   </style>
 </head>
