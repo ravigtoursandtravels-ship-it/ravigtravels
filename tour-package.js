@@ -6,7 +6,7 @@ const packagesByDays = {
       prices: { "Sedan (4+1)": 3000, "Innova (7+1)": 4000, "Crysta (7+1)": 4800, "Tempo Traveller 14-Seater": 6000, "Tempo Traveller 18-Seater": 6500, "Urbania 12-Seater/16-Seater": 10000 },
       nights: 0,
       itinerary: [
-        "Day 1: GD Car Museum, Perur Temple, Isha Yoga Center, Marudhamalai Temple, VOC Park Zoo — Return Coimbatore"
+        "Day 1: GD Car Museum, Perur Temple, Isha Yoga Center, Marudhamalai Temple, VOC Park — Return Coimbatore"
       ]
     },
 
