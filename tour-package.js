@@ -3,7 +3,7 @@ const packagesByDays = {
   1: {
     "Coimbatore Local – 100km": {
       km: "100 km",
-      prices: { "Sedan (4+1)": 2800, "Innova (7+1)": 3800, "Crysta (7+1)": 4500, "Tempo Traveller 14-Seater": 5500, "Tempo Traveller 18-Seater": 6000, "Urbania 12-Seater/16-Seater": 9000 },
+      prices: { "Sedan (4+1)": 3000, "Innova (7+1)": 3800, "Crysta (7+1)": 4500, "Tempo Traveller 14-Seater": 5500, "Tempo Traveller 18-Seater": 6000, "Urbania 12-Seater/16-Seater": 9000 },
       nights: 0,
       itinerary: [
         "Day 1: GD Car Museum, Perur Temple, Isha Yoga Center, Marudhamalai Temple, VOC Park Zoo — Return Coimbatore"
