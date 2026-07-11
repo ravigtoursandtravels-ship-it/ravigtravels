@@ -971,3 +971,32 @@ document.addEventListener("DOMContentLoaded", () => {
     if (selectFromHash()) renderAll();
   });
 });
+/* =========================================
+   DESTINATION MOBILE SCROLL ARROWS
+========================================= */
+
+const destinationScrollLeft =
+  document.getElementById("destinationScrollLeft");
+
+const destinationScrollRight =
+  document.getElementById("destinationScrollRight");
+
+function getDestinationList() {
+  return document.querySelector(
+    "#destinationSidebar .destination-list"
+  );
+}
+
+destinationScrollLeft?.addEventListener("click", () => {
+  getDestinationList()?.scrollBy({
+    left: -220,
+    behavior: "smooth"
+  });
+});
+
+destinationScrollRight?.addEventListener("click", () => {
+  getDestinationList()?.scrollBy({
+    left: 220,
+    behavior: "smooth"
+  });
+});

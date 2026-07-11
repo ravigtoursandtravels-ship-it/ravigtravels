@@ -20,7 +20,7 @@
       <a class="navbar-brand" href="index.html" aria-label="Ravi G Tours and Travels home">
         <span class="brand-logo-shell"><img src="images/logo.png" alt="Ravi G Tours and Travels logo"></span>
         <span class="brand-copy">
-          <span class="brand-name">Ravi G Tours <span>&amp; Travels</span></span>
+          <span class="brand-name">Ravi G <span>Tours &amp; Travels</span></span>
           <span class="brand-sub">Elite Cab &amp; Travel Services</span>
         </span>
       </a>
@@ -42,7 +42,35 @@
     </div>
   </section>
 <main><section class="tour-section" id="tourPackagesSection"><div class="container"><div class="package-tabs-container reveal"><div class="package-tabs-header"><div class="package-tabs-title">Package duration</div><div class="package-tabs-arrows"><button id="scrollLeftBtn" aria-label="Scroll left"><i class="fa-solid fa-chevron-left"></i></button><button id="scrollRightBtn" aria-label="Scroll right"><i class="fa-solid fa-chevron-right"></i></button></div></div><div class="package-tabs-scroll" id="packageTabsRow"></div></div>
-<div class="tour-shell reveal"><div class="row g-0"><aside class="col-lg-3"><div class="tour-sidebar"><div class="tour-sidebar-title">Destinations</div><div id="destinationSidebar"></div></div></aside><div class="col-lg-9" id="tariffSection"><span class="route-anchor" data-active-package-anchor aria-hidden="true"></span><div class="tour-main"><div class="tour-topbar"><div><span class="section-kicker">Selected package</span><h2 class="tour-current-title" id="packageHeading">Tour Package</h2><p class="route-line" id="routeLine"></p><p class="tour-current-sub" id="packageSubheading"></p></div></div>
+<div class="tour-shell reveal"><div class="row g-0"><aside class="col-lg-3">
+  <div class="tour-sidebar">
+
+    <div class="tour-sidebar-heading">
+      <div class="tour-sidebar-title">Destinations</div>
+
+      <div class="destination-arrows" aria-label="Scroll destinations">
+        <button
+          type="button"
+          id="destinationScrollLeft"
+          aria-label="Previous destinations"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button
+          type="button"
+          id="destinationScrollRight"
+          aria-label="Next destinations"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="destinationSidebar"></div>
+
+  </div>
+</aside><div class="col-lg-9" id="tariffSection"><span class="route-anchor" data-active-package-anchor aria-hidden="true"></span><div class="tour-main"><div class="tour-topbar"><div><span class="section-kicker">Selected package</span><h2 class="tour-current-title" id="packageHeading">Tour Package</h2><p class="route-line" id="routeLine"></p><p class="tour-current-sub" id="packageSubheading"></p></div></div>
 <div class="tour-filter-card" id="tourFilterCard"><div class="row g-3 align-items-end"><div class="col-md-3"><label class="form-label">Accommodation</label><div class="hotel-switch-wrap"><button type="button" id="hotelSwitch" class="hotel-switch" aria-label="Toggle hotel"><span></span></button><strong>Include hotel</strong></div></div><div class="col-md-9 hotel-fields" id="hotelFields"><div class="row g-3"><div class="col-sm-4"><label class="form-label" for="hotelType">Hotel category</label><select class="form-select" id="hotelType"><option value="2star">2-Star</option><option value="3star">3-Star</option></select></div><div class="col-sm-4"><label class="form-label" for="occupancy">Occupancy</label><select class="form-select" id="occupancy"><option value="double">Double</option><option value="triple">Triple</option></select></div><div class="col-sm-4"><label class="form-label" for="rooms">Rooms</label><input class="form-control" type="number" id="rooms" min="1" max="20" value="1"></div></div></div></div></div>
 <div class="tariff-wrap"><table class="table tariff-table"><thead><tr><th>Vehicle</th><th>Tariff</th><th>Book</th></tr></thead><tbody id="tariffBody"></tbody></table></div>
 <div class="itinerary-table-wrap"><div class="itinerary-title-bar">Day-by-day itinerary</div><div class="table-responsive"><table class="table itinerary-table"><tbody id="itineraryBody"></tbody></table></div></div><div class="tour-note-bar"><i class="fa-solid fa-circle-info"></i> Final fare is subject to route changes, hotel availability, seasonal pricing and customer-specific requirements.</div></div></div></div></div></div></section></main>
