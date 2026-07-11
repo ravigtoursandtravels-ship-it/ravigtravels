@@ -1,43 +1,19 @@
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-  const waButton = document.getElementById("floatWhatsApp");
-
-  if (waButton) {
-
-    waButton.addEventListener("click", function (e) {
-
-      e.preventDefault();
-
-      const phoneNumber = "919944165207";
-
-      let message = "💬 *Quick Enquiry from Website* \n";
-      message += "━━━━━━━━━━━━━━━\n\n";
-
-      message += "👤 Name:\n";
-      message += "📞 Phone:\n";
-      message += "📍 Pickup Location:\n";
-      message += "🗺️ Intermediate / Places to Visit:\n";
-      message += "🏁 Drop Location:\n";
-      message += "🗓️ Pickup Date & Time:\n";
-      message += "🚘 Vehicle Preference:\n";
-      message += "👥 Number of People:\n";
-      message += "🏨 Accommodation Needed: Yes / No\n\n";
-
-      message += "💬 Please share the fare details.\n";
-      message += "🙏 Thank you";
-
-      const whatsappURL =
-        "https://wa.me/" +
-        phoneNumber +
-        "?text=" +
-        encodeURIComponent(message);
-
-      window.open(whatsappURL, "_blank");
-
-    });
-
-  }
-
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-current-year]").forEach(el => el.textContent = new Date().getFullYear());
+  const header = document.querySelector(".site-header");
+  let lastY = window.scrollY;
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+    if (header && y > lastY && y > 180) header.classList.add("header-hidden");
+    else if (header) header.classList.remove("header-hidden");
+    lastY = y;
+  }, {passive:true});
+  document.querySelectorAll("#mainNav a").forEach(link => link.addEventListener("click", () => {
+    const el = document.getElementById("mainNav");
+    if (el && el.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(el).hide();
+  }));
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    if(entry.isIntersecting){ entry.target.classList.add("is-visible"); observer.unobserve(entry.target); }
+  }), {threshold:.12});
+  document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 });

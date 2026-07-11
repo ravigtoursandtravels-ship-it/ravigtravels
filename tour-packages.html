@@ -1,612 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17759765871"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-17759765871');
-  </script>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Tour Packages – Ravi G Tours and Travels</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tour Packages | Ravi G Tours & Travels</title>
+  <meta name="description" content="Vehicle-wise South India tour package tariffs from Coimbatore with optional hotel rates and detailed itineraries.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#08111f">
   <link rel="icon" type="image/png" href="images/logo.png">
-
-<style>
-/* ==============================================================
-   TOUR-PACKAGES — PAGE-ONLY, NO CONFLICT WITH OTHER PAGES
-============================================================== */
-
-/* ---------- PACKAGE TABS (GRID LAYOUT, NO SCROLLING) ---------- */
-.package-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 0 !important;
-  margin-bottom: 14px !important;
-  background: linear-gradient(
-      to right,
-      rgba(255,255,255,0.85) 0%,
-      rgba(255,255,255,0.55) 20%,
-      rgba(255,255,255,0.20) 50%,
-      rgba(255,255,255,0) 90%
-  );
-  border-radius: 12px;
-}
-
-/* Normal Tab Style */
-.pkg-tab {
-  flex: 1 1 calc(20% - 10px);
-  min-width: 120px;
-  padding: 10px !important;
-  font-size: 15px !important;
-  font-weight: 600;
-  white-space: nowrap;
-  text-align: center;
-
-  background: #f8fefc !important;
-  color: #0b737a !important;
-  border: 2px solid #0b737a !important;
-  border-radius: 10px;
-
-  transition: 0.25s ease-in-out;
-}
-
-/* ACTIVE TAB (Same gradient as Enquire Now button) */
-.pkg-tab.active {
-  background: linear-gradient(90deg, var(--brand-dark), var(--brand)) !important;
-  color: #fff !important;
-  border: none !important;
-  box-shadow: 0 4px 14px rgba(11,115,122,0.35);
-}
-
-/* MOBILE GRID: 3 on top, 2 on bottom */
-@media (max-width: 767px) {
-  .pkg-tab {
-    flex: 1 1 calc(33.33% - 10px);
-    font-size: 12px !important;
-    padding: 8px !important;
-  }
-  .pkg-tab:nth-child(n+4) {
-    flex: 1 1 calc(50% - 10px);
-  }
-}
-
-/* ---------- FORMS ---------- */
-.form-box {
-  padding: 12px 14px !important;
-  margin-bottom: 12px !important;
-  background: rgba(255,255,255,0.85);
-  border-radius: 12px;
-  border: 1px solid rgba(11,115,122,0.12);
-}
-
-select.form-select {
-  height: 34px !important;
-  font-size: 14px !important;
-}
-
-/* ---------- PRICE BOX ---------- */
-.price-box {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-#bookNowBtn {
-  padding: 10px 16px !important;
-  border-radius: 10px;
-  font-size: 15px !important;
-  background: linear-gradient(90deg, var(--brand-dark), var(--brand));
-  color: #fff;
-  border: none;
-}
-#bookNowBtn:disabled {
-  opacity: 0.5;
-}
-
-/* ---------- INCLUSIONS / EXCLUSIONS ---------- */
-.info-box {
-  display: flex;
-  gap: 16px;
-  margin-top: 14px !important;
-  padding: 12px !important;
-  background: rgba(255,255,255,0.9);
-  border-radius: 12px;
-  border: 1px solid rgba(11,115,122,0.10);
-}
-.info-box.hidden { display:none; }
-
-.info-col { flex: 1 1 45%; }
-
-.inc-icon {
-  background: #ecfff1;
-  color: #0bb24b;
-  border-radius: 6px;
-  padding: 4px 7px;
-  font-weight: 700;
-}
-.exc-icon {
-  background: #fff5f5;
-  color: #d23a3a;
-  border-radius: 6px;
-  padding: 4px 7px;
-  font-weight: 700;
-}
-
-@media (max-width:767px) {
-  .info-box { flex-direction: column; }
-}
-
-/* ---------- ITINERARY BOX ---------- */
-.itinerary {
-  background: #fff;
-  padding: 12px !important;
-  border-radius: 10px;
-  margin-top: 14px !important;
-  border: 1px solid rgba(11,115,122,0.08);
-}
-.itinerary.hidden { display:none; }
-
-/* Itinerary text black */
-#itineraryBox{
-  color:#000;
-}
-#itineraryBox h5{
-  color:#0b737a !important;
-}
-#itineraryContent,
-#itineraryContent *{
-  color:#000 !important;
-}
-
-.package-section{
-  flex: 1 0 auto;
-}
-.rg-footer{
-  margin-top: auto;
-}
-/* ---------- FOOTER FIX ---------- */
-
-
-
-#finalPrice {
-  color: #0b737a;
-  font-weight: 700;   /* Bold */
-}
-
-</style>
-
-</head>
-
-<body class="terms-page">
-  <div class="mine">
-    <a href="tel:9944165207" class="top-call-link">
-      <i class="fas fa-phone"></i>
-      24/7 Call: 9944165207
-    </a>
-  </div>
-<!-- HEADER -->
-<header class="site-header">
-
-  <nav class="navbar navbar-expand-lg container">
-    <a href="index.html" class="navbar-logo-wrap">
-      <img src="images/logo.png" class="logo" alt="Ravi G Tours and Travels">
-    </a>
-
-    <div class="brand-block">
-      <div class="brand-title">Ravi G Tours & Travels</div>
-      <div class="brand-phones">
-        <a href="tel:+919944165207"> 99441 65207</a> |
-        <a href="tel:+919994467675"> 99944 67675</a>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head><body class="inner-page">
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl container" aria-label="Primary navigation">
+      <a class="navbar-brand" href="index.html" aria-label="Ravi G Tours and Travels home">
+        <span class="brand-logo-shell"><img src="images/logo.png" alt="Ravi G Tours and Travels logo"></span>
+        <span class="brand-copy">
+          <span class="brand-name">Ravi G Tours <span>&amp; Travels</span></span>
+          <span class="brand-sub">Elite Cab &amp; Travel Services</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-xl-center"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="services.html">Services</a></li><li class="nav-item"><a class="nav-link" href="hourly-package.html">Hourly Package</a></li><li class="nav-item"><a class="nav-link active" href="tour-packages.html" aria-current="page">Tour Packages</a></li><li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="terms-and-conditions.html">Terms</a></li></ul>
+        <a class="header-cta" href="index.html#booking"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+      </div>
+    </nav>
+  </header>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-card reveal">
+        <div class="page-hero-icon"><i class="fa-solid fa-route"></i></div>
+        <div><span class="eyebrow">Tariffs & itineraries</span><h1>Tour packages, beautifully planned.</h1><p>Choose the duration, destination, vehicle and optional accommodation. Review the tariff and itinerary before sending your enquiry.</p></div>
       </div>
     </div>
-
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="hourly-package.html">Hourly Package</a></li>
-        <li class="nav-item"><a class="nav-link active" href="tour-packages.html">Tour Packages</a></li>
-        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="terms-and-conditions.html">Terms & Conditions</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<!-- MAIN SECTION -->
-<section class="package-section container py-5">
-  <h2 class="hero-title text-center mb-3">Tour Packages</h2>
-
-  <!-- TABS -->
-  <div class="package-tabs" id="packageTabs">
-    <button class="pkg-tab active" data-days="1">One-Day Trips</button>
-    <button class="pkg-tab" data-days="2">2 Days / 1 Night</button>
-    <button class="pkg-tab" data-days="3">3 Days / 2 Nights</button>
-    <button class="pkg-tab" data-days="4">4 Days / 3 Nights</button>
-    <button class="pkg-tab" data-days="5">5 Days / 4 Nights</button>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-6">
-
-      <div class="form-box">
-        <h5>Choose your package</h5>
-        <select id="routeSelect" class="form-select"></select>
-      </div>
-
-      <div class="form-box">
-        <h5>Select Vehicle</h5>
-        <select id="vehicleSelect" class="form-select">
-          <option value="">Choose a vehicle...</option>
-        </select>
-      </div>
-
-      <!-- ACCOMMODATION -->
-
-      <!-- ACCOMMODATION -->
-      <div class="form-box" id="accomBox" style="display:none;">
-
-      <h5>Accommodation (Optional) Click to enable</h5>
-
-      <!-- Toggle (always visible when accomBox appears) -->
-      <label class="switch-accom">
-        <input type="checkbox" id="accomToggle">
-        <span class="slider"></span>
-      </label>
-
-    </div>
-
-    <!-- SEPARATE CONTAINER (hidden until toggle ON) -->
-    <div class="form-box mt-3 accom-container" id="accomContainer" style="display:none;">
-
-      <div class="row mt-2">
-        <div class="col-6">
-          <label>Hotel Type</label>
-          <select id="accomHotel" class="form-select">
-            <option value="2star">2-Star</option>
-            <option value="3star">3-Star</option>
-          </select>
-        </div>
-
-        <div class="col-6">
-          <label>Occupancy</label>
-          <select id="accomOccupancy" class="form-select">
-            <option value="double">Double</option>
-            <option value="triple">Triple</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="row mt-2">
-        <div class="col-12">
-          <label>Rooms</label>
-          <input type="number" id="accomRooms" class="form-control" min="1" max="20" value="1">
-        </div>
-      </div>
-
-    </div>
-
-    </div>
-
-    <!-- RIGHT SIDE -->
-    <div class="col-lg-6">
-      <div class="price-box">
-        <h4 id="priceTitle">Select a Route</h4>
-
-
-        <div class="info-box hidden" id="infoBox">
-          <div class="info-col">
-            <h5>Inclusions</h5>
-            <ul id="inclusionList" class="info-list"></ul>
-          </div>
-          <div class="info-col">
-            <h5>Exclusions</h5>
-            <ul id="exclusionList" class="info-list"></ul>
-          </div>
-        </div>
-
-        <div class="itinerary hidden" id="itineraryBox">
-          <h5 style="font-weight:700;color:#0b737a;">Itinerary</h5>
-          <div id="itineraryContent"></div>
-        </div>
-  <h2 id="finalPrice">₹0</h2>
-        <button id="bookNowBtn" disabled>
-          <i class="fab fa-whatsapp"></i>   Enquire Now
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- Footer -->
-  <!-- Footer -->
+  </section>
+<main><section class="tour-section" id="tourPackagesSection"><div class="container"><div class="package-tabs-container reveal"><div class="package-tabs-header"><div class="package-tabs-title">Package duration</div><div class="package-tabs-arrows"><button id="scrollLeftBtn" aria-label="Scroll left"><i class="fa-solid fa-chevron-left"></i></button><button id="scrollRightBtn" aria-label="Scroll right"><i class="fa-solid fa-chevron-right"></i></button></div></div><div class="package-tabs-scroll" id="packageTabsRow"></div></div>
+<div class="tour-shell reveal"><div class="row g-0"><aside class="col-lg-3"><div class="tour-sidebar"><div class="tour-sidebar-title">Destinations</div><div id="destinationSidebar"></div></div></aside><div class="col-lg-9" id="tariffSection"><span class="route-anchor" data-active-package-anchor aria-hidden="true"></span><div class="tour-main"><div class="tour-topbar"><div><span class="section-kicker">Selected package</span><h2 class="tour-current-title" id="packageHeading">Tour Package</h2><p class="route-line" id="routeLine"></p><p class="tour-current-sub" id="packageSubheading"></p></div></div>
+<div class="tour-filter-card" id="tourFilterCard"><div class="row g-3 align-items-end"><div class="col-md-3"><label class="form-label">Accommodation</label><div class="hotel-switch-wrap"><button type="button" id="hotelSwitch" class="hotel-switch" aria-label="Toggle hotel"><span></span></button><strong>Include hotel</strong></div></div><div class="col-md-9 hotel-fields" id="hotelFields"><div class="row g-3"><div class="col-sm-4"><label class="form-label" for="hotelType">Hotel category</label><select class="form-select" id="hotelType"><option value="2star">2-Star</option><option value="3star">3-Star</option></select></div><div class="col-sm-4"><label class="form-label" for="occupancy">Occupancy</label><select class="form-select" id="occupancy"><option value="double">Double</option><option value="triple">Triple</option></select></div><div class="col-sm-4"><label class="form-label" for="rooms">Rooms</label><input class="form-control" type="number" id="rooms" min="1" max="20" value="1"></div></div></div></div></div>
+<div class="tariff-wrap"><table class="table tariff-table"><thead><tr><th>Vehicle</th><th>Tariff</th><th>Book</th></tr></thead><tbody id="tariffBody"></tbody></table></div>
+<div class="itinerary-table-wrap"><div class="itinerary-title-bar">Day-by-day itinerary</div><div class="table-responsive"><table class="table itinerary-table"><tbody id="itineraryBody"></tbody></table></div></div><div class="tour-note-bar"><i class="fa-solid fa-circle-info"></i> Final fare is subject to route changes, hotel availability, seasonal pricing and customer-specific requirements.</div></div></div></div></div></div></section></main>
   <footer class="rg-footer">
-    <div class="container rg-footer__wrap">
-
-      <!-- Top grid -->
-      <div class="row g-4 rg-footer__top">
-
-        <div class="col-6 col-md-3">
-          <div class="rg-footer__card rg-pop">
-            <h6 class="rg-footer__title">Tamil Nadu</h6>
-            <ul class="rg-footer__links">
-              <li><a href="index.html">Madurai</a></li>
-              <li><a href="index.html">Rameswaram</a></li>
-              <li><a href="index.html">Kanyakumari</a></li>
-              <li><a href="index.html">Palani</a></li>
-              <li><a href="index.html">Kodaikanal</a></li>
-              <li><a href="index.html">Ooty</a></li>
-            </ul>
+    <div class="container footer-shell">
+      <div class="row g-4 g-xl-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span class="footer-logo"><img src="images/logo.png" alt="Ravi G Tours and Travels"></span>
+            <div><h2>Ravi G Tours &amp; Travels</h2><p>Premium, dependable travel from Coimbatore across Tamil Nadu and South India.</p></div>
           </div>
+          <div class="footer-badges"><span>MSME Registered</span><span>GST Registered</span><span>Since 2018</span></div>
         </div>
-
-        <div class="col-6 col-md-3">
-          <div class="rg-footer__card rg-pop">
-            <h6 class="rg-footer__title">Kerala</h6>
-            <ul class="rg-footer__links">
-              <li><a href="index.html">Munnar</a></li>
-              <li><a href="index.html">Wayanad</a></li>
-              <li><a href="index.html">Kochi</a></li>
-              <li><a href="index.html">Alleppey</a></li>
-              <li><a href="index.html">Thekkady</a></li>
-              <li><a href="index.html">Athirapally</a></li>
-            </ul>
+        <div class="col-6 col-lg-2">
+          <h3 class="footer-title">Explore</h3>
+          <ul class="footer-links"><li><a href="services.html">Services</a></li><li><a href="hourly-package.html">Hourly Packages</a></li><li><a href="tour-packages.html">Tour Packages</a></li><li><a href="about-us.html">About Us</a></li></ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3 class="footer-title">Popular</h3>
+          <ul class="footer-links"><li><a href="tour-packages.html#ooty">Ooty</a></li><li><a href="tour-packages.html#kodaikanal">Kodaikanal</a></li><li><a href="tour-packages.html#munnar">Munnar</a></li><li><a href="tour-packages.html#valparai">Valparai</a></li></ul>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="footer-title">Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:+919944165207"><i class="fa-solid fa-phone"></i><span>+91 99441 65207</span></a>
+            <a href="tel:+919994467675"><i class="fa-solid fa-phone-volume"></i><span>+91 99944 67675</span></a>
+            <a href="mailto:ravigtoursandtravels@gmail.com"><i class="fa-solid fa-envelope"></i><span>ravigtoursandtravels@gmail.com</span></a>
+            <span><i class="fa-solid fa-location-dot"></i><span>Thudiyalur, Coimbatore – 641029</span></span>
           </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="rg-footer__card rg-pop">
-            <h6 class="rg-footer__title">Karnataka</h6>
-            <ul class="rg-footer__links">
-              <li><a href="index.html">Mysuru</a></li>
-              <li><a href="index.html">Bengaluru</a></li>
-              <li><a href="index.html">Coorg</a></li>
-              <li><a href="index.html">Bandipur</a></li>
-              <li><a href="index.html">Chikkamagaluru</a></li>
-              <li><a href="index.html">Hampi</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="rg-footer__card rg-pop">
-            <h6 class="rg-footer__title">Popular Spots</h6>
-            <ul class="rg-footer__links">
-              <li><a href="index.html">Valparai</a></li>
-              <li><a href="index.html">Yercaud</a></li>
-              <li><a href="index.html">Coonoor</a></li>
-              <li><a href="index.html">Kotagiri</a></li>
-              <li><a href="index.html">Top Slip</a></li>
-              <li><a href="index.html">Meghamalai</a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="rg-footer__divider"></div>
-
-      <!-- Bottom area -->
-      <!-- Bottom area -->
-      <div class="row g-4 rg-footer__bottom align-items-start">
-
-        <!-- Left spacer (1) -->
-        <div class="col-md-1 d-none d-md-block"></div>
-
-        <!-- Brand section (5) -->
-        <div class="col-md-5">
-          <div class="rg-footer__brand rg-pop">
-            <div class="rg-footer__logoWrap">
-              <img src="images/logo.png" alt="Ravi G Tours and Travels Logo" class="rg-footer__logo">
-            </div>
-            <div>
-              <h5 class="rg-footer__brandName">Ravi G Tours and Travels</h5>
-              <p class="rg-footer__muted">
-                M 138, TNHP Colony, Phase 2, Vellikener, Thudiyalur<br>
-                Coimbatore, Tamil Nadu 641029
-              </p>
-              <p class="rg-footer__muted mb-0">MSME - UDYAM-TN-03-0068191</p>
-              <p class="rg-footer__muted">GST - 33EJLPP6762C1Z0</p>
-              <a class="rg-iconBtn"
-       href="tel:+919944165207">
-      <i class="fa-solid fa-phone"></i>
-      <span class="rg-iconBtn__text">+91 99441 65207</span>
-    </a>
-<br>
-    <a class="rg-iconBtn"
-       href="tel:+919994467675">
-      <i class="fa-solid fa-phone"></i>
-      <span class="rg-iconBtn__text">+91 99944 67675</span>
-    </a>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact + Quick Links combined (6) -->
-        <div class="col-md-6">
-          <div class="row g-4">
-
-            <!-- Contact -->
-            <div class="col-lg-6">
-              <div class="rg-footer__card rg-pop">
-                <h6 class="rg-footer__title">Contact</h6>
-
-                <div class="rg-footer__actions">
-
-                  <a class="rg-iconBtn rg-tip"
-                     href="https://wa.me/919944165207"
-                     target="_blank"
-                     data-tip="Chat on WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span class="rg-iconBtn__text">WhatsApp</span>
-                  </a>
-
-                  <a class="rg-iconBtn rg-tip"
-                     href="mailto:ravigtoursandtravels@gmail.com"
-                     data-tip="Send Email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span class="rg-iconBtn__text">Email</span>
-                  </a>
-
-                  <a class="rg-iconBtn rg-tip"
-                     href="https://www.instagram.com/ravi_g_travels_official?igsh=YWtrcGd0dGF1Njky"
-                     target="_blank"
-                     data-tip="Follow on Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                    <span class="rg-iconBtn__text">Instagram</span>
-                  </a>
-
-                  <a class="rg-iconBtn rg-tip"
-                     href="https://maps.app.goo.gl/RyKt8qK5zpV8RQn26?g_st=awb"
-                     target="_blank"
-                     data-tip="View on Google Maps">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span class="rg-iconBtn__text">Google</span>
-                  </a>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-lg-6">
-              <div class="rg-footer__card rg-pop">
-                <h6 class="rg-footer__title">Quick Links</h6>
-                <ul class="rg-footer__links">
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="tour-packages.html">Tour Packages</a></li>
-                  <li><a href="hourly-package.html">Hourly Package</a></li>
-                  <li><a href="about-us.html">About Us</a></li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="rg-footer__divider rg-footer__divider--soft"></div>
-
-      <!-- Copyright -->
-      <div class="rg-footer__copy">
-        <div>© 2025 Ravi G Tours and Travels — All Rights Reserved</div>
-        <div class="rg-footer__credit">
-          Designed & curated by
-          <a href="https://marcinmind.in" target="_blank" rel="noopener" class="rg-footer__creditLink">
-            Marc in Mind Technologies
-          </a>
         </div>
       </div>
-
+      <div class="footer-bottom"><span>© <span data-current-year></span> Ravi G Tours and Travels. All rights reserved.</span><span>Designed &amp; curated by <a href="https://marcinmind.in" target="_blank" rel="noopener">Marc in Mind Technologies</a></span></div>
     </div>
-    <br><br>
   </footer>
-
-  <!-- Bottom floating bar -->
-  <div class="bottom-floating" role="group" aria-label="Quick actions">
-
-    <a class="bf-btn call" href="tel:+919944165207">
-      <i class="fa fa-phone"></i> Call
-    </a>
-
-    <a class="bf-btn wa" href="#" id="floatWhatsApp">
-      <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
-
+  <div class="floating-actions" aria-label="Quick contact actions">
+    <a class="float-call" href="tel:+919944165207"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+    <a class="float-whatsapp" href="https://wa.me/919944165207" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
   </div>
-<script src="ravig.js"></script>
-
-<!-- BOOKING DETAILS MODAL -->
-<div class="modal fade" id="bookingModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Enter Trip Details</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-
-        <div class="mb-2">
-          <label class="form-label">Pickup Location</label>
-          <input type="text" id="pickupLocation" class="form-control" placeholder="Eg: Coimbatore Railway Station">
-        </div>
-
-        <div class="mb-2">
-      <label class="form-label">Pickup Date & Time</label>
-      <input type="datetime-local" id="pickupDateTime" class="form-control">
-    </div>
-
-
-        <div class="mb-2">
-          <label class="form-label">Drop Location</label>
-          <input type="text" id="dropLocation" class="form-control" placeholder="Eg: Ooty Bus Stand">
-        </div>
-
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button     class="btn px-4 py-2 wa-book-btn"
-            style="
-              display:inline-flex;
-              align-items:center;
-              justify-content:center;
-              gap:8px;
-              background:#25D366;
-              color:#111111;
-              padding:14px 26px;
-              border-radius:14px;
-              font-weight:700;
-              font-size:16px;
-              text-decoration:none;
-              box-shadow:0 10px 24px rgba(37,211,102,0.35);"
-           id="confirmBooking">
-          <i class="fab fa-whatsapp"></i> Enquire Now
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-const accomToggleBtn = document.getElementById("accomToggle");
-const accomContainer = document.getElementById("accomContainer");
-
-accomToggleBtn.addEventListener("change", () => {
-if (accomToggleBtn.checked) {
-  accomContainer.style.display = "block";  // show the container
-} else {
-  accomContainer.style.display = "none";   // hide the container
-}
-
-// call your existing price update function
-updatePriceAndUI();
-});
-
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-<script src="main.js"></script>
-<script src="tour-package.js"></script>
-
-</body>
-</html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="ravig.js"></script>
+<div class="modal fade modal-tour" id="bookingModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><div><span class="section-kicker">Trip enquiry</span><h5 class="modal-title">Enter booking details</h5></div><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="summary-box"><div><span>Package</span><span id="sumPackage"></span></div><div><span>Vehicle</span><span id="sumVehicle"></span></div><div><span>Tariff</span><span id="sumPrice"></span></div></div><form id="bookingFormTour"><input type="hidden" id="bookVehicle"><input type="hidden" id="bookPrice"><div class="row g-3"><div class="col-md-6"><label class="form-label" for="bookName">Name</label><input class="form-control" id="bookName" required></div><div class="col-md-6"><label class="form-label" for="bookPhone">Phone</label><input class="form-control" id="bookPhone" inputmode="numeric" maxlength="10" required></div><div class="col-12"><label class="form-label" for="pickupLocation">Pickup location</label><input class="form-control" id="pickupLocation" required></div><div class="col-12"><label class="form-label" for="pickupDateTime">Pickup date &amp; time</label><input class="form-control" type="datetime-local" id="pickupDateTime" required></div><div class="col-12"><label class="form-label" for="dropLocation">Drop location</label><input class="form-control" id="dropLocation" required></div><div class="col-12"><button class="whatsapp-btn-full" type="submit"><i class="fa-brands fa-whatsapp"></i> Continue to WhatsApp</button></div></div></form></div></div></div></div>
+<script src="tour-package.js"></script></body></html>

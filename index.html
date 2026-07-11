@@ -1,1250 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17759765871"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17759765871');
-</script>
-  <!-- Google Tag Manager (placeholder) -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');
-  </script>
-
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Ravi G Tours and Travels — Premium Taxi & Tours in Coimbatore</title>
-  <meta name="description" content="Ravi G Tours and Travels - Premium taxi service from Coimbatore. Outstation, airport transfers, tempo traveller & tour packages with verified drivers. 24/7 support."/>
-  <meta name="keywords" content="Ravi G Tours and Travels, Coimbatore taxi, outstation cab, tempo traveller, tour packages Coimbatore"/>
-  <meta name="author" content="Ravi G Tours and Travels">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ravi G Tours & Travels | Premium Taxi & Tours in Coimbatore</title>
+  <meta name="description" content="Premium cab rentals, hourly packages and South India tour packages from Coimbatore with clean vehicles and trusted drivers.">
   <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://www.ravigtravels.com/">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Ravi G Tours and Travels — Premium Taxi & Tours in Coimbatore"/>
-  <meta property="og:description" content="Book outstation trips, airport transfers, and tour packages from Coimbatore. Clean cars, verified drivers."/>
-  <meta property="og:image" content="https://www.ravigtravels.com/images/Logo.png"/>
-
+  <meta name="theme-color" content="#08111f">
   <link rel="icon" type="image/png" href="images/logo.png">
-
-  <!-- Bootstrap & Font Awesome -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-
-  <!-- Your main CSS -->
-  <link rel="stylesheet" href="style.css"/>
-
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"TravelAgency",
-    "name":"Ravi G Tours and Travels",
-    "url":"https://www.ravigtravels.com",
-    "logo":"https://www.ravigtravels.com/images/Logo.png",
-    "telephone":"+919944165207",
-    "email":"ravigtoursandtravels@gmail.com",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"M 138, TNHP Colony, Phase 2, Vellikener, Thudiyalur",
-      "addressLocality":"Coimbatore",
-      "addressRegion":"Tamil Nadu",
-      "postalCode":"641029",
-      "addressCountry":"IN"
-    },
-    "areaServed":["Coimbatore","Tamil Nadu","South India"]
-  }
-  </script>
-
-  <!-- ✅ INLINE CSS: form + carousels + small screen header alignment -->
-  <style>
-    /* ---------- Top call link (icon black) ---------- */
-    .top-call-link{
-      color:#282829 !important;
-      text-decoration:none !important;
-      font-weight:800;
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-    }
-    .top-call-link i{ color:#000 !important; font-size:14px; }
-
-    /* ---------- Remove shadows on toggler + book buttons (base) ---------- */
-    .navbar-toggler{ box-shadow:none !important; }
-    .book-now-btn, #bookNowBtn, .bookNowBtn{ box-shadow:none !important; }
-
-    /* ---------- WhatsApp button pop hover + white text ---------- */
-    .wa-book-btn{
-      background:#25D366 !important;
-      color:#111111 !important;
-      border:none !important;
-      border-radius:12px !important;
-      font-weight:800 !important;
-      font-size:16px !important;
-      padding:12px 18px !important;
-      box-shadow:0 8px 20px rgba(37,211,102,0.35) !important;
-      transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
-      display:inline-flex !important;
-      align-items:center !important;
-      justify-content:center !important;
-      gap:10px !important;
-      width:100% !important;
-      max-width:340px !important;
-    }
-    .wa-book-btn:hover{
-      transform: translateY(-4px) scale(1.05);
-      box-shadow:0 18px 44px rgba(37,211,102,0.55) !important;
-      background:#1ebe5d !important;
-      color:#ffffff !important;
-    }
-    .wa-book-btn:hover i{ color:#ffffff !important; }
-
-    /* ---------- Single "Date & Time" field look ---------- */
-    .dt-onebox{
-      border-radius:14px !important;
-      min-height:52px !important;
-      padding:12px 14px !important;
-      font-size:16px !important;
-    }
-
-    /* ---------- Accommodation switch spacing ---------- */
-    .accom-row{
-      display:flex;
-      align-items:center;
-      gap:14px;
-      flex-wrap:wrap;
-      margin-top:6px;
-    }
-
-    /* ---------- Swipable carousels (Bootstrap) ---------- */
-    .carousel-control-prev,
-    .carousel-control-next{
-      width: 44px;
-    }
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon{
-      filter: none;
-      background-color: rgba(40,40,41,0.85);
-      border-radius: 999px;
-      padding: 14px;
-      background-size: 55% 55%;
-    }
-
-    /* Reviews slide cards */
-    .review-card{
-      background: rgba(255,255,255,0.96);
-      border: 1px solid rgba(0,0,0,0.10);
-      border-radius: 16px;
-      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
-      padding: 16px 16px;
-      height:100%;
-    }
-    .review-card .stars{ font-size:16px; letter-spacing:1px; }
-    .review-card p{ margin:10px 0 0; line-height:1.55; color:#282829; font-size:14px; }
-    .review-card span{ display:block; margin-top:8px; font-size:13px; font-weight:700; opacity:.75; }
-
-    /* Gallery images inside carousel */
-    .gallery-row{
-      display:flex;
-      gap:14px;
-      justify-content:center;
-      flex-wrap:nowrap;
-    }
-    .gallery-row img{
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 16px;
-      border: 2px solid rgba(255,189,89,0.60);
-      box-shadow: 0 10px 22px rgba(0,0,0,0.10);
-      transition: transform .25s ease;
-    }
-    .gallery-row img:hover{ transform: translateY(-3px) scale(1.03); }
-
-    /* =========================================================
-       ✅ CLEAN MEDIA QUERIES (KEEP ONLY THIS SET)
-       Paste at END of CSS
-       ========================================================= */
-
-    /* --- 576px and below: Gallery 2 per slide + safe header spacing --- */
-    @media (max-width: 576px){
-      /* Gallery: 2 images per slide */
-      .gallery-row{
-        gap: 12px !important;
-        flex-wrap: nowrap !important;
-        justify-content: center !important;
-      }
-      .gallery-row img{
-        width: 44vw !important;
-        height: 44vw !important;
-        max-width: 170px !important;
-        max-height: 170px !important;
-        border-radius: 14px !important;
-      }
-
-      /* Optional: reduce nav spacing on mobile */
-      .navbar-nav{ gap: 10px !important; }
-    }
-
-    /* --- 360px and below: (328×812 type phones) header alignment fix --- */
-    @media (max-width: 360px){
-      /* Topbar: DO NOT add vertical padding (breaks height). Use font-size only. */
-      :root{ --topbar-h: 44px; }
-
-      .mine{
-        height: var(--topbar-h) !important;
-        font-size: 13px !important;
-        letter-spacing: 1px !important;
-        padding: 0 10px !important; /* ✅ only horizontal */
-      }
-
-      /* Header sizing */
-      :root{ --header-h: 72px; } /* ✅ stable */
-      .site-header{
-        padding: 8px 0 !important;
-      }
-
-      /* Logo + brand */
-      .navbar-logo-wrap .logo{
-        width: 58px !important;
-        height: 58px !important;
-      }
-
-      .brand-phones{
-        font-size: 11px !important;
-        gap: 4px !important;
-      }
-
-      /* Toggler */
-      .navbar-toggler{
-        padding: 6px 10px !important;
-        border-radius: 10px !important;
-      }
-    }
-
-    /* --- 328px and below: extra-tight (your request) --- */
-    @media (max-width: 328px){
-
-      .brand-phones{
-        font-size: 10.5px !important;
-      }
-      .navbar-logo-wrap{
-        margin-right: 6px !important;
-      }
-      .navbar-toggler{
-        padding: 5px 8px !important;
-      }
-
-      /* Nav links */
-      .nav-link{
-        font-size: 13px !important;
-        padding: 8px 10px !important;
-      }
-
-      /* Floating buttons smaller */
-      .bf-btn{
-        font-size: 13px !important;
-        padding: 10px 14px !important;
-      }
-    }
-@media (max-width: 200px){
-
-  body{
-    font-size: 12px !important;
-  }
-
-  .navbar-logo-wrap .logo{
-    width: 42px !important;
-    height: 42px !important;
-  }
-
-  .brand-title{
-    font-size: 11px !important;
-    max-width: 100px !important;
-  }
-
-  .pkg-tab,
-  .tab-btn{
-    font-size: 10px !important;
-    padding: 5px 6px !important;
-  }
-
-  .bf-btn{
-    font-size: 10px !important;
-    padding: 6px 8px !important;
-  }
-}
-.shine-package-btn{
-  display:inline-block;
-  padding:6px 10px; /* reduced size */
-  border-radius:8px;
-  background:#ffbd59;
-  color:#000;
-  font-size:13px; /* smaller text */
-  font-weight:600;
-  text-decoration:none;
-  position:relative;
-  overflow:hidden;
-  box-shadow:0 0 6px rgba(255,189,89,0.7);
-  animation:packageBlink 1.3s infinite;
-}
-
-/* shining sweep */
-.shine-package-btn::before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:-120%;
-  width:50%;
-  height:100%;
-  background:linear-gradient(
-    120deg,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,0.9) 50%,
-    rgba(255,255,255,0) 100%
-  );
-  transform:skewX(-25deg);
-  animation:packageShine 2.2s infinite;
-}
-
-@keyframes packageShine{
-  0%{ left:-120%; }
-  100%{ left:140%; }
-}
-
-@keyframes packageBlink{
-  0%,100%{
-    transform:scale(1);
-    box-shadow:0 0 5px rgba(255,189,89,0.7);
-  }
-  50%{
-    transform:scale(1.03);
-    box-shadow:0 0 12px rgba(255,189,89,1);
-  }
-}
-.mobile-center-tabs{
-  gap:50px !important;
-}
-.route-tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-top:8px;
-}
-
-.route-chip{
-  background:#ffbd59;
-  color:#000;
-  font-size:12px;
-  padding:6px 12px;
-  border-radius:20px;
-  font-weight:600;
-  transition:all .25s ease;
-}
-
-.route-chip:hover{
-  background:#f7a935;
-  transform:translateY(-2px);
-}
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="home-page">
 
-<body class="terms-page">
-  <!-- GTM (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-  <!-- 24/7 bar -->
-  <div class="mine">
-    <a href="tel:9944165207" class="top-call-link">
-      <i class="fas fa-phone"></i>
-      24/7 Call: 9944165207
-    </a>
-  </div>
-
-  <!-- Header -->
   <header class="site-header">
-    <nav class="navbar navbar-expand-lg container">
-      <a href="index.html" class="navbar-logo-wrap">
-        <img src="images/logo.png" class="logo" alt="Ravi G Tours and Travels">
+    <nav class="navbar navbar-expand-xl container" aria-label="Primary navigation">
+      <a class="navbar-brand" href="index.html" aria-label="Ravi G Tours and Travels home">
+        <span class="brand-logo-shell"><img src="images/logo.png" alt="Ravi G Tours and Travels logo"></span>
+        <span class="brand-copy">
+          <span class="brand-name">Ravi G Tours <span>&amp; Travels</span></span>
+          <span class="brand-sub">Elite Cab &amp; Travel Services</span>
+        </span>
       </a>
-
-      <div class="brand-block">
-        <div class="brand-title">Ravi G Tours & Travels</div>
-        <div class="brand-phones">
-          <a href="tel:+919944165207" style="text-decoration:none;color:inherit;">99441 65207</a>
-          <span class="divider">|</span>
-          <a href="tel:+919994467675" style="text-decoration:none;color:inherit;">99944 67675</a>
-        </div>
-      </div>
-
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span><span></span>
       </button>
-
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="hourly-package.html">Hourly Package</a></li>
-          <li class="nav-item"><a class="nav-link" href="tour-packages.html">Tour Packages</a></li>
-          <li class="nav-item"><a class="nav-link" href="about-us.html">About us</a></li>
-          <li class="nav-item"><a class="nav-link" href="terms-and-conditions.html">Terms and Conditions</a></li>
-        </ul>
+        <ul class="navbar-nav ms-auto align-items-xl-center"><li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li><li class="nav-item"><a class="nav-link" href="services.html">Services</a></li><li class="nav-item"><a class="nav-link" href="hourly-package.html">Hourly Package</a></li><li class="nav-item"><a class="nav-link" href="tour-packages.html">Tour Packages</a></li><li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="terms-and-conditions.html">Terms</a></li></ul>
+        <a class="header-cta" href="index.html#booking"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
       </div>
     </nav>
-
-    <!-- Mobile quick tabs -->
-    <div class="mobile-center-tabs d-flex d-lg-none justify-content-center gap-2 mt-2">
-
-      <a href="hourly-package.html" class="shine-package-btn">
-        Hourly Package
-      </a>
-
-      <a href="tour-packages.html" class="shine-package-btn">
-        Tour Packages
-      </a>
-
-    </div>
   </header>
-
-  <section id="booking" class="booking-section py-5" style="padding-top:18px;">
-    <div class="container">
-<br>
-      <!-- HERO -->
-      <div class="text-center mb-4">
-        <br>
-        <h1 class="hero-title hero-highlight" id="heroTitle">
-    Premium South India Tour Operator
-  </h1>
-
-      </div>
-
-      <!-- TWO COLUMN LAYOUT -->
-      <div class="row g-4 align-items-start">
-
-        <!-- LEFT: FORM -->
-        <div class="col-lg-6">
-          <form id="bookingForm" class="booking-form p-4">
-              <h3 class="mb-2" style="color:var(--dark);font-size:30px;">Get Instant Quote.</h3>
-
+  <main>
+    <section class="hero-home" id="booking">
+      <div class="container">
+        <div class="row g-4 g-xl-5 hero-grid">
+          <div class="col-lg-7"><div class="hero-copy reveal">
+            <span class="hero-badge"><i class="fa-solid fa-crown"></i> Trusted travel partner since 2018</span>
+            <h1>Travel,<span>elevated.</span></h1>
+            <p>Thoughtfully managed cab and tour services from Coimbatore—clean vehicles, courteous drivers and seamless support for every kilometre.</p>
+            <div class="hero-actions"><a href="tour-packages.html" class="btn-premium"><i class="fa-solid fa-route"></i> Explore Tour Packages</a><a href="hourly-package.html" class="btn-outline-premium"><i class="fa-regular fa-clock"></i> View Hourly Tariffs</a></div>
+            <div class="hero-trust"><span><i class="fa-solid fa-shield-halved"></i> Verified drivers</span><span><i class="fa-solid fa-car-side"></i> Clean fleet</span><span><i class="fa-solid fa-headset"></i> 24/7 assistance</span></div>
+          </div></div>
+          <div class="col-lg-5"><form id="bookingForm" class="booking-form reveal">
+            <div class="form-head"><div><span class="section-kicker">Instant enquiry</span><h2>Plan your journey</h2><p>Share the essentials. We’ll reply on WhatsApp.</p></div><span class="quote-mark"><i class="fa-solid fa-arrow-right"></i></span></div>
             <div class="row g-3">
-
-              <div class="col-md-6">
-                <label class="form-label">Name</label>
-                <input id="name" class="form-control" required>
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Phone</label>
-                <input id="phone" class="form-control" inputmode="numeric" required>
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Pickup Location</label>
-                <input id="pickup" class="form-control" required>
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Drop Location</label>
-                <input id="drop" class="form-control" required>
-              </div>
-
-              <div class="col-12">
-                <label class="form-label">Intermediate Locations (optional)</label>
-                <input id="intermediate" class="form-control" placeholder="Example: Coonoor, Tea Estate">
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Pickup Date & Time</label>
-                <input type="datetime-local" id="pickupDT" class="form-control dt-onebox" required>
-              </div>
-
-              <div class="col-md-6">
-                <label class="form-label">Drop Date & Time (optional)</label>
-                <input type="datetime-local" id="dropDT" class="form-control dt-onebox">
-              </div>
-
-              <div class="col-md-8">
-                <label class="form-label">Select Vehicle Type</label>
-                <select id="vehicle" class="form-select" required>
-                  <option value="">-- Choose a Vehicle --</option>
-                  <optgroup label="Sedan">
-                    <option value="Swift Dzire 4+1">Swift Dzire 4+1</option>
-                    <option value="Toyota Etios 4+1">Toyota Etios 4+1</option>
-                  </optgroup>
-                  <optgroup label="SUV / MPV">
-                    <option value="Maruti Ertiga 6+1">Maruti Ertiga 6+1</option>
-                    <option value="Toyota Innova 7+1">Toyota Innova 7+1</option>
-                    <option value="Innova Crysta 6+1 / 7+1">Innova Crysta 6+1 / 7+1</option>
-                  </optgroup>
-                  <optgroup label="Traveller">
-                    <option value="Urbania 12-16">Urbania 12-16</option>
-                    <option value="Tempo Traveller 12-14">Tempo Traveller 12-14</option>
-                    <option value="Tempo Traveller 14-18">Tempo Traveller 14-18</option>
-                  </optgroup>
-                </select>
-              </div>
-
-              <div class="col-md-4">
-                <label class="form-label">Accommodation</label>
-                <div class="accom-row">
-                  <div class="accom-switch">
-                    <input type="checkbox" id="accom" class="accom-input">
-                    <label for="accom" class="accom-toggle"><span class="accom-knob"></span></label>
-                    <span id="accomLabel" class="ms-2 text-muted">No</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 text-center mt-2">
-                <button type="submit" class="btn px-4 py-2 wa-book-btn">
-                  <i class="fab fa-whatsapp"></i> Enquire Now via WhatsApp
-                </button>
-              </div>
-
-
-
+              <div class="col-md-6"><label class="form-label" for="name">Name</label><input id="name" class="form-control" autocomplete="name" required></div>
+              <div class="col-md-6"><label class="form-label" for="phone">Phone</label><input type="tel" id="phone" class="form-control" inputmode="numeric" maxlength="10" pattern="[6-9][0-9]{9}" required></div>
+              <div class="col-md-6"><label class="form-label" for="pickup">Pickup location</label><input id="pickup" class="form-control" required></div>
+              <div class="col-md-6"><label class="form-label" for="drop">Drop location</label><input id="drop" class="form-control" required></div>
+              <div class="col-12"><label class="form-label" for="intermediate">Places to visit / intermediate stops</label><input id="intermediate" class="form-control" placeholder="Example: Coonoor, Tea Estate"></div>
+              <div class="col-md-6"><label class="form-label" for="pickupDT">Pickup date &amp; time</label><input type="datetime-local" id="pickupDT" class="form-control" required></div>
+              <div class="col-md-6"><label class="form-label" for="dropDT">Drop date &amp; time</label><input type="datetime-local" id="dropDT" class="form-control"></div>
+              <div class="col-md-8"><label class="form-label" for="vehicle">Vehicle preference</label><select id="vehicle" class="form-select" required><option value="">Choose a vehicle</option><optgroup label="Sedan"><option>Swift Dzire 4+1</option><option>Toyota Etios 4+1</option></optgroup><optgroup label="SUV / MPV"><option>Maruti Ertiga 6+1</option><option>Toyota Innova 7+1</option><option>Innova Crysta 6+1 / 7+1</option></optgroup><optgroup label="Traveller"><option>Urbania 12-16</option><option>Tempo Traveller 12-14</option><option>Tempo Traveller 14-18</option></optgroup></select></div>
+              <div class="col-md-4"><label class="form-label">Accommodation</label><div class="accom-row"><div class="accom-switch"><input type="checkbox" id="accom" class="accom-input"><label for="accom" class="accom-toggle"><span class="accom-knob"></span></label><span id="accomLabel" class="ms-2 text-muted">No</span></div></div></div>
+              <div class="col-12"><button type="submit" class="wa-book-btn w-100"><i class="fa-brands fa-whatsapp"></i> Get my quote on WhatsApp</button></div>
             </div>
-          </form>
+          </form></div>
         </div>
-
-        <!-- RIGHT: ENGAGING CONTENT -->
-    <div class="col-lg-6">
-
-      <!-- Quick trust card -->
-      <div class="p-4 booking-card mb-3">
-        <h3 class="mb-2" style="font-size:20px;">Why Ravi G Tours & Travels?</h3>
-        <p class="mb-0" style="color:#556066; line-height:1.65;">
-          Clean vehicles, verified drivers, and on-time pickups — built for comfortable family trips, couple getaways, and group tours across Tamil Nadu & South India.
-        </p>
+        <div class="metric-strip glass-card reveal"><div class="row g-0"><div class="col-6 col-lg-3 metric-item"><strong>2018</strong><span>Serving since</span></div><div class="col-6 col-lg-3 metric-item"><strong>650+</strong><span>Successful trips</span></div><div class="col-6 col-lg-3 metric-item"><strong>4.9★</strong><span>Google rating</span></div><div class="col-6 col-lg-3 metric-item"><strong>24/7</strong><span>Travel support</span></div></div></div>
       </div>
+    </section>
+    <section class="section-shell"><div class="container"><div class="section-heading center reveal"><span class="section-kicker">One travel partner</span><h2>Everything your journey needs</h2><p>From an airport pickup to a seven-day South India circuit, every service is managed with the same care.</p></div><div class="row g-4 service-grid">
+      <div class="col-md-6 col-xl-4"><a class="service-box reveal" href="services.html"><i class="fa-solid fa-car-side"></i><h3>Local &amp; Outstation</h3><p>Reliable city rides, airport transfers and long-distance travel with experienced drivers.</p><span class="service-link">Discover service <i class="fa-solid fa-arrow-right"></i></span></a></div>
+      <div class="col-md-6 col-xl-4"><a class="service-box reveal" href="hourly-package.html"><i class="fa-regular fa-clock"></i><h3>Hourly Packages</h3><p>Clear 8-hour and 10-hour tariffs for meetings, shopping and local sightseeing.</p><span class="service-link">See tariffs <i class="fa-solid fa-arrow-right"></i></span></a></div>
+      <div class="col-md-6 col-xl-4"><a class="service-box reveal" href="tour-packages.html"><i class="fa-solid fa-route"></i><h3>Curated Tours</h3><p>Vehicle-wise fares, accommodation options and day-by-day itineraries in one place.</p><span class="service-link">Explore packages <i class="fa-solid fa-arrow-right"></i></span></a></div>
+    </div></div></section>
 
-      <!-- Feature grid -->
-      <div class="row g-3">
-        <div class="col-6">
-          <div class="p-3 booking-card h-100">
-            <div class="d-flex align-items-center gap-2 mb-1">
-              <i class="fa-solid fa-shield-halved"></i>
-              <strong>Verified Drivers</strong>
-            </div>
-            <div class="small" style="color:#556066;">Professional & customer-friendly.</div>
-          </div>
+    <!-- PREMIUM HOME PACKAGES START -->
+    <section class="home-packages-section" id="popular-tour-packages">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Popular short escapes</span>
+          <h2>Choose a ready-made South India plan</h2>
+          <p>Open the complete vehicle tariff and day-by-day itinerary directly from each package.</p>
         </div>
 
-        <div class="col-6">
-          <div class="p-3 booking-card h-100">
-            <div class="d-flex align-items-center gap-2 mb-1">
-              <i class="fa-solid fa-car-side"></i>
-              <strong>Clean Vehicles</strong>
-            </div>
-            <div class="small" style="color:#556066;">Well-maintained & comfortable rides.</div>
+        <div class="home-package-group" id="two-days-one-night-packages">
+          <div class="home-package-heading reveal">
+            <div><span>Weekend plans</span><h3>2 Days / 1 Night</h3></div>
+            <a href="tour-packages.html#tour-package-2-days">View all 2-day packages <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-        </div>
-
-        <div class="col-6">
-          <div class="p-3 booking-card h-100">
-            <div class="d-flex align-items-center gap-2 mb-1">
-              <i class="fa-solid fa-clock"></i>
-              <strong>On-Time Pickup</strong>
-            </div>
-            <div class="small" style="color:#556066;">Reliable schedules and support.</div>
-          </div>
-        </div>
-
-        <div class="col-6">
-          <div class="p-3 booking-card h-100">
-            <div class="d-flex align-items-center gap-2 mb-1">
-              <i class="fa-brands fa-whatsapp"></i>
-              <strong>Quick Quote</strong>
-            </div>
-            <div class="small" style="color:#556066;">Get pricing in minutes via WhatsApp.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Popular routes -->
-      <div class="p-4 booking-card mt-3">
-      <h3 class="tour-title">Popular Tour Categories</h3>
-<br>
-      <div class="route-tags">
-
-    <span class="route-chip">Hill Stations</span>
-    <span class="route-chip">Beach Tours</span>
-    <span class="route-chip">Honeymoon Packages</span>
-    <span class="route-chip">Pilgrimage Tours</span>
-    <span class="route-chip">Family Trips</span>
-    <span class="route-chip">Weekend Getaways</span>
-    <span class="route-chip">Wildlife Tours</span>
-    <span class="route-chip">Adventure Trips</span>
-    <span class="route-chip">Temple Tours</span>
-    <span class="route-chip">South India Tours</span>
-
-  </div>
-
-        <div class="tour-note">
-          Tell us your travel plan — we’ll suggest the best itinerary for your trip.
-        </div>
-      </div>
-
-    </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SEO paragraph -->
-  <section class="about-home py-4">
-    <div class="container">
-      <p><strong>Ravi G Tours and Travels</strong> is a premium travel service based in Coimbatore offering reliable and comfortable transportation across Tamil Nadu. We specialize in outstation trips, airport transfers, tailored tour packages, and group travel solutions with experienced and verified drivers. Our priority is clean vehicles, punctual service, and a safe, memorable travel experience for every passenger.</p>
-    </div>
-  </section>
-
-  <!-- ✅ Reviews + Rating (NO auto-scroll) -->
-  <section class="reviews-marquee-section py-5">
-    <div class="container text-center">
-
-
-
-      <h2 class="section-title mb-4">What Our Customers Say</h2>
-
-      <!-- Bootstrap swipe carousel for reviews -->
-      <div id="reviewsCarousel" class="carousel slide" data-bs-touch="true" data-bs-interval="false">
-        <div class="carousel-inner">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="row g-3 justify-content-center">
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Safe, comfortable and memorable girls trip to Kodaikanal. Highly recommended!"</p>
-                  <span>- Siny Mathew</span>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Very friendly team, treated us like family. Best for Coimbatore–Ooty–Kodaikanal."</p>
-                  <span>- Sahitya Saripalli</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="row g-3 justify-content-center">
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Memorable trip and very professional driver. Excellent service."</p>
-                  <span>- Ramya Kandiyoor</span>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Affordable 4-day Ooty package. Very polite and friendly service."</p>
-                  <span>- Geetha A</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <div class="row g-3 justify-content-center">
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Safe driving. Guru anna is very cool and friendly!"</p>
-                  <span>- Gayathri Gurram</span>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Great service, good pricing. Very customer-friendly."</p>
-                  <span>- Suga Prasad</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="carousel-item">
-            <div class="row g-3 justify-content-center">
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Friendly service and knows all tourist spots well."</p>
-                  <span>- Avt Hospitality</span>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Amazing safe driving and reasonable price."</p>
-                  <span>- Preemeswari SS</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 5 -->
-          <div class="carousel-item">
-            <div class="row g-3 justify-content-center">
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Clean cars and very good service. Highly satisfied."</p>
-                  <span>- Jayapal P</span>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="review-card text-start">
-                  <div class="stars">⭐⭐⭐⭐⭐</div>
-                  <p>"Excellent service at a very affordable price."</p>
-                  <span>- Maha Nanthakumar</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev" aria-label="Previous review">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next" aria-label="Next review">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-      </div>
-
-    </div>
-
-
-  </section>
-
-  <!-- ✅ Customer Gallery (NO auto-move, swipe controlled) -->
-  <section class="py-4">
-    <div class="container text-center">
-      <h2 class="stat-value mb-3">Customer Gallery</h2>
-
-      <div id="galleryCarousel" class="carousel slide" data-bs-touch="true" data-bs-interval="false">
-        <div class="carousel-inner" id="galleryInner">
-          <!-- JS will build slides from 1..17 images -->
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev" aria-label="Previous images">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next" aria-label="Next images">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-      </div>
-
-      <br><br>
-      <div class="stats-box-wrap">
-        <div class="stat-card">
-          <div class="stat-value">Since 2018</div>
-          <div class="stat-label">Serving Customers</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">500+</div>
-          <div class="stat-label">Successful Trips</div>
-        </div>
-      </div>
-
-      <div class="google-rating-box mb-4">
-        <img src="images/glogo.webp" class="google-logo" alt="Google Logo">
-        <div class="rating-number">4.9</div>
-        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
-      </div24>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="rg-footer">
-    <div class="container rg-footer__wrap">
-
-      <!-- Top grid -->
-      <div class="row g-4 rg-footer__top">
-
-        <div class="col-6 col-md-3">
-          <div class="rg-footer__card rg-pop">
-            <h6 class="rg-footer__title">Tamil Nadu</h6>
-            <ul class="rg-footer__links">
-              <li><a href="index.html">Madurai</a></li>
-              <li><a href="index.html">Rameswaram</a></li>
-              <li><a href="index.html">Kanyakumari</a></li>
-              <li><a href="index.html">Palani</a></li>
-              <li><a href="index.html">Kodaikanal</a></li>
-              <li><a href="index.html">Ooty</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="rg-footer__card rg-pop">
-            <h6 class="rg-footer__title">Kerala</h6>
-            <ul class="rg-footer__links">
-              <li><a href="index.html">Munnar</a></li>
-              <li><a href="index.html">Wayanad</a></li>
-              <li><a href="index.html">Kochi</a></li>
-              <li><a href="index.html">Alleppey</a></li>
-              <li><a href="index.html">Thekkady</a></li>
-              <li><a href="index.html">Athirapally</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="rg-footer__card rg-pop">
-            <h6 class="rg-footer__title">Karnataka</h6>
-            <ul class="rg-footer__links">
-              <li><a href="index.html">Mysuru</a></li>
-              <li><a href="index.html">Bengaluru</a></li>
-              <li><a href="index.html">Coorg</a></li>
-              <li><a href="index.html">Bandipur</a></li>
-              <li><a href="index.html">Chikkamagaluru</a></li>
-              <li><a href="index.html">Hampi</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="rg-footer__card rg-pop">
-            <h6 class="rg-footer__title">Popular Spots</h6>
-            <ul class="rg-footer__links">
-              <li><a href="index.html">Valparai</a></li>
-              <li><a href="index.html">Yercaud</a></li>
-              <li><a href="index.html">Coonoor</a></li>
-              <li><a href="index.html">Kotagiri</a></li>
-              <li><a href="index.html">Top Slip</a></li>
-              <li><a href="index.html">Meghamalai</a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="rg-footer__divider"></div>
-
-      <!-- Bottom area -->
-      <!-- Bottom area -->
-      <div class="row g-4 rg-footer__bottom align-items-start">
-
-        <!-- Left spacer (1) -->
-        <div class="col-md-1 d-none d-md-block"></div>
-
-        <!-- Brand section (5) -->
-        <div class="col-md-5">
-          <div class="rg-footer__brand rg-pop">
-            <div class="rg-footer__logoWrap">
-              <img src="images/logo.png" alt="Ravi G Tours and Travels Logo" class="rg-footer__logo">
-            </div>
-            <div>
-              <h5 class="rg-footer__brandName">Ravi G Tours and Travels</h5>
-              <p class="rg-footer__muted">
-                M 138, TNHP Colony, Phase 2, Vellikener, Thudiyalur<br>
-                Coimbatore, Tamil Nadu 641029
-              </p>
-              <p class="rg-footer__muted mb-0">MSME - UDYAM-TN-03-0068191</p>
-              <p class="rg-footer__muted">GST - 33EJLPP6762C1Z0</p>
-              <a class="rg-iconBtn"
-       href="tel:+919944165207">
-      <i class="fa-solid fa-phone"></i>
-      <span class="rg-iconBtn__text">+91 99441 65207</span>
-    </a>
-<br>
-    <a class="rg-iconBtn"
-       href="tel:+919994467675">
-      <i class="fa-solid fa-phone"></i>
-      <span class="rg-iconBtn__text">+91 99944 67675</span>
-    </a>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact + Quick Links combined (6) -->
-        <div class="col-md-6">
           <div class="row g-4">
-
-            <!-- Contact -->
-            <div class="col-lg-6">
-              <div class="rg-footer__card rg-pop">
-                <h6 class="rg-footer__title">Contact</h6>
-
-                <div class="rg-footer__actions">
-
-                  <a class="rg-iconBtn rg-tip"
-                     href="https://wa.me/919944165207"
-                     target="_blank"
-                     data-tip="Chat on WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span class="rg-iconBtn__text">WhatsApp</span>
-                  </a>
-
-                  <a class="rg-iconBtn rg-tip"
-                     href="mailto:ravigtoursandtravels@gmail.com"
-                     data-tip="Send Email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span class="rg-iconBtn__text">Email</span>
-                  </a>
-
-                  <a class="rg-iconBtn rg-tip"
-                     href="https://www.instagram.com/ravi_g_travels_official?igsh=YWtrcGd0dGF1Njky"
-                     target="_blank"
-                     data-tip="Follow on Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                    <span class="rg-iconBtn__text">Instagram</span>
-                  </a>
-
-                  <a class="rg-iconBtn rg-tip"
-                     href="https://maps.app.goo.gl/RyKt8qK5zpV8RQn26?g_st=awb"
-                     target="_blank"
-                     data-tip="View on Google Maps">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span class="rg-iconBtn__text">Google</span>
-                  </a>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-lg-6">
-              <div class="rg-footer__card rg-pop">
-                <h6 class="rg-footer__title">Quick Links</h6>
-                <ul class="rg-footer__links">
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="tour-packages.html">Tour Packages</a></li>
-                  <li><a href="hourly-package.html">Hourly Package</a></li>
-                  <li><a href="about-us.html">About Us</a></li>
-                </ul>
-              </div>
-            </div>
-
+            <div class="col-md-6 col-xl-3"><a id="ooty-2d" href="tour-packages.html#ooty-2d" class="home-package-card reveal"><div class="home-package-media"><img src="images/destinations/ooty.webp" alt="Ooty tour package" loading="lazy" onerror="this.style.display='none'"><span>2D / 1N</span></div><div class="home-package-body"><small>Nilgiris favourite</small><h4>Ooty &amp; Coonoor</h4><p>Gardens, lake, tea estates and Coonoor viewpoints in one comfortable weekend.</p><b>View tariff &amp; itinerary <i class="fa-solid fa-arrow-right"></i></b></div></a></div>
+            <div class="col-md-6 col-xl-3"><a id="kodaikanal-2d" href="tour-packages.html#kodaikanal-2d" class="home-package-card reveal"><div class="home-package-media"><img src="images/destinations/kodaikanal.webp" alt="Kodaikanal tour package" loading="lazy" onerror="this.style.display='none'"><span>2D / 1N</span></div><div class="home-package-body"><small>Classic hill retreat</small><h4>Kodaikanal</h4><p>Lake, Coaker’s Walk, Pine Forest, Pillar Rocks and signature viewpoints.</p><b>View tariff &amp; itinerary <i class="fa-solid fa-arrow-right"></i></b></div></a></div>
+            <div class="col-md-6 col-xl-3"><a id="valparai-2d" href="tour-packages.html#valparai-2d" class="home-package-card reveal"><div class="home-package-media"><img src="images/destinations/valparai.webp" alt="Valparai tour package" loading="lazy" onerror="this.style.display='none'"><span>2D / 1N</span></div><div class="home-package-body"><small>Tea-country drive</small><h4>Valparai</h4><p>Hairpin bends, Monkey Falls, tea estates, dams and peaceful viewpoints.</p><b>View tariff &amp; itinerary <i class="fa-solid fa-arrow-right"></i></b></div></a></div>
+            <div class="col-md-6 col-xl-3"><a id="munnar-2d" href="tour-packages.html#munnar-2d" class="home-package-card reveal"><div class="home-package-media"><img src="images/destinations/munnar.webp" alt="Munnar tour package" loading="lazy" onerror="this.style.display='none'"><span>2D / 1N</span></div><div class="home-package-body"><small>Kerala highlands</small><h4>Munnar</h4><p>Tea gardens, waterfalls, Mattupetty, Echo Point and Eravikulam highlights.</p><b>View tariff &amp; itinerary <i class="fa-solid fa-arrow-right"></i></b></div></a></div>
           </div>
         </div>
 
-      </div>
-
-      <div class="rg-footer__divider rg-footer__divider--soft"></div>
-
-      <!-- Copyright -->
-      <div class="rg-footer__copy">
-        <div>© 2025 Ravi G Tours and Travels — All Rights Reserved</div>
-        <div class="rg-footer__credit">
-          Designed & curated by
-          <a href="https://marcinmind.in" target="_blank" rel="noopener" class="rg-footer__creditLink">
-            Marc in Mind Technologies
-          </a>
+        <div class="home-package-group" id="three-days-two-nights-packages">
+          <div class="home-package-heading reveal">
+            <div><span>Extended plans</span><h3>3 Days / 2 Nights</h3></div>
+            <a href="tour-packages.html#tour-package-3-days">View all 3-day packages <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-3"><a id="ooty-3d" href="tour-packages.html#ooty-3d" class="home-package-card reveal"><div class="home-package-media"><img src="images/destinations/ooty.webp" alt="Ooty three day package" loading="lazy" onerror="this.style.display='none'"><span>3D / 2N</span></div><div class="home-package-body"><small>Complete Nilgiris</small><h4>Ooty Complete</h4><p>Ooty, Coonoor, Pykara, gardens, lake and viewpoints in one relaxed plan.</p><b>View tariff &amp; itinerary <i class="fa-solid fa-arrow-right"></i></b></div></a></div>
+            <div class="col-md-6 col-xl-3"><a id="kodaikanal-3d" href="tour-packages.html#kodaikanal-3d" class="home-package-card reveal"><div class="home-package-media"><img src="images/destinations/kodaikanal.webp" alt="Kodaikanal three day package" loading="lazy" onerror="this.style.display='none'"><span>3D / 2N</span></div><div class="home-package-body"><small>Slow hill holiday</small><h4>Kodaikanal Complete</h4><p>More time for the lake, forests, caves, viewpoints, parks and local shopping.</p><b>View tariff &amp; itinerary <i class="fa-solid fa-arrow-right"></i></b></div></a></div>
+            <div class="col-md-6 col-xl-3"><a id="munnar-3d" href="tour-packages.html#munnar-3d" class="home-package-card reveal"><div class="home-package-media"><img src="images/destinations/munnar.webp" alt="Munnar three day package" loading="lazy" onerror="this.style.display='none'"><span>3D / 2N</span></div><div class="home-package-body"><small>Full Munnar circuit</small><h4>Munnar Complete</h4><p>Tea country, national park, dams, lakes, waterfalls and scenic leisure.</p><b>View tariff &amp; itinerary <i class="fa-solid fa-arrow-right"></i></b></div></a></div>
+            <div class="col-md-6 col-xl-3"><a id="valparai-athirapally-3d" href="tour-packages.html#valparai-athirapally-3d" class="home-package-card reveal"><div class="home-package-media"><img src="images/destinations/valparai.webp" alt="Valparai Athirapally package" loading="lazy" onerror="this.style.display='none'"><span>3D / 2N</span></div><div class="home-package-body"><small>Waterfalls &amp; estates</small><h4>Valparai &amp; Athirapally</h4><p>Tea landscapes, forest viewpoints and Kerala’s celebrated waterfalls.</p><b>View tariff &amp; itinerary <i class="fa-solid fa-arrow-right"></i></b></div></a></div>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- PREMIUM HOME PACKAGES END -->
 
+    <section class="reviews-marquee-section"><div class="container"><div class="section-heading center reveal"><span class="section-kicker">Guest stories</span><h2>Trusted on the road</h2></div><div id="reviewsCarousel" class="carousel slide reveal" data-bs-touch="true"><div class="carousel-inner">
+      <div class="carousel-item active"><div class="row g-3 justify-content-center"><div class="col-md-5"><div class="review-card"><div class="stars">★★★★★</div><p>“Safe, comfortable and memorable girls trip to Kodaikanal. Highly recommended!”</p><span>— Siny Mathew</span></div></div><div class="col-md-5"><div class="review-card"><div class="stars">★★★★★</div><p>“Very friendly team, treated us like family. Best for Coimbatore–Ooty–Kodaikanal.”</p><span>— Sahitya Saripalli</span></div></div></div></div>
+      <div class="carousel-item"><div class="row g-3 justify-content-center"><div class="col-md-5"><div class="review-card"><div class="stars">★★★★★</div><p>“Memorable trip and very professional driver. Excellent service.”</p><span>— Ramya Kandiyoor</span></div></div><div class="col-md-5"><div class="review-card"><div class="stars">★★★★★</div><p>“Affordable four-day Ooty package. Very polite and friendly service.”</p><span>— Geetha A</span></div></div></div></div>
+      <div class="carousel-item"><div class="row g-3 justify-content-center"><div class="col-md-5"><div class="review-card"><div class="stars">★★★★★</div><p>“Safe driving. Guru anna is very cool and friendly!”</p><span>— Gayathri Gurram</span></div></div><div class="col-md-5"><div class="review-card"><div class="stars">★★★★★</div><p>“Great service, good pricing and very customer-friendly.”</p><span>— Suga Prasad</span></div></div></div></div>
+    </div><button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button><button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button></div></div></section>
+    <section class="section-shell pt-0"><div class="container text-center"><div class="section-heading center reveal"><span class="section-kicker">Real journeys</span><h2>Customer gallery</h2></div><div id="galleryCarousel" class="carousel slide reveal" data-bs-touch="true"><div class="carousel-inner" id="galleryInner"></div><button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button><button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button></div><div class="stats-box-wrap"><div class="stat-card reveal"><div class="stat-value">650+</div><div class="stat-label">Trips completed</div></div><div class="google-rating-box reveal"><img src="images/glogo.webp" class="google-logo" alt="Google"><div class="rating-number">4.9</div><div class="rating-stars">★★★★★</div></div></div></div></section>
+  </main>
+
+  <footer class="rg-footer">
+    <div class="container footer-shell">
+      <div class="row g-4 g-xl-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span class="footer-logo"><img src="images/logo.png" alt="Ravi G Tours and Travels"></span>
+            <div><h2>Ravi G Tours &amp; Travels</h2><p>Premium, dependable travel from Coimbatore across Tamil Nadu and South India.</p></div>
+          </div>
+          <div class="footer-badges"><span>MSME Registered</span><span>GST Registered</span><span>Since 2018</span></div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3 class="footer-title">Explore</h3>
+          <ul class="footer-links"><li><a href="services.html">Services</a></li><li><a href="hourly-package.html">Hourly Packages</a></li><li><a href="tour-packages.html">Tour Packages</a></li><li><a href="about-us.html">About Us</a></li></ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3 class="footer-title">Popular</h3>
+          <ul class="footer-links"><li><a href="tour-packages.html#ooty">Ooty</a></li><li><a href="tour-packages.html#kodaikanal">Kodaikanal</a></li><li><a href="tour-packages.html#munnar">Munnar</a></li><li><a href="tour-packages.html#valparai">Valparai</a></li></ul>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="footer-title">Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:+919944165207"><i class="fa-solid fa-phone"></i><span>+91 99441 65207</span></a>
+            <a href="tel:+919994467675"><i class="fa-solid fa-phone-volume"></i><span>+91 99944 67675</span></a>
+            <a href="mailto:ravigtoursandtravels@gmail.com"><i class="fa-solid fa-envelope"></i><span>ravigtoursandtravels@gmail.com</span></a>
+            <span><i class="fa-solid fa-location-dot"></i><span>Thudiyalur, Coimbatore – 641029</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-current-year></span> Ravi G Tours and Travels. All rights reserved.</span><span>Designed &amp; curated by <a href="https://marcinmind.in" target="_blank" rel="noopener">Marc in Mind Technologies</a></span></div>
     </div>
-    <br><br>
   </footer>
-
-  <!-- Bottom floating bar -->
-  <div class="bottom-floating" role="group" aria-label="Quick actions">
-
-    <a class="bf-btn call" href="tel:+919944165207">
-      <i class="fa fa-phone"></i> Call
-    </a>
-
-    <a class="bf-btn wa" href="#" id="floatWhatsApp">
-      <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
-
+  <div class="floating-actions" aria-label="Quick contact actions">
+    <a class="float-call" href="tel:+919944165207"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+    <a class="float-whatsapp" href="https://wa.me/919944165207" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
   </div>
-<script src="ravig.js"></script>
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-  <script>
-  (function(){
-    const el = document.getElementById("heroTitle");
-    if(!el) return;
-
-    // Smooth tilt settings
-    const maxTilt = 10;      // degrees
-    const maxMove = 10;      // px (depth feel)
-    let rafId = null;
-
-    function setVars(xp, yp){
-      // xp/yp: 0..1
-      el.style.setProperty("--mx", (xp*100).toFixed(1) + "%");
-      el.style.setProperty("--my", (yp*100).toFixed(1) + "%");
-    }
-
-    function onMove(e){
-      const r = el.getBoundingClientRect();
-      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-
-      const px = (clientX - r.left) / r.width;   // 0..1
-      const py = (clientY - r.top) / r.height;   // 0..1
-
-      const tiltY = (px - 0.5) * (maxTilt * 2);
-      const tiltX = (0.5 - py) * (maxTilt * 2);
-
-      const moveX = (px - 0.5) * (maxMove * 2);
-      const moveY = (py - 0.5) * (maxMove * 2);
-
-      if(rafId) cancelAnimationFrame(rafId);
-      rafId = requestAnimationFrame(() => {
-        // Stop idle float while interacting
-        el.style.animation = "none";
-        el.style.transform = `translate(${moveX}px, ${moveY}px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-        setVars(px, py);
-      });
-    }
-
-    function reset(){
-      if(rafId) cancelAnimationFrame(rafId);
-      rafId = requestAnimationFrame(() => {
-        el.style.transform = "translate(0,0) rotateX(0deg) rotateY(0deg)";
-        setVars(0.5, 0.35);
-        // Restore idle float
-        el.style.animation = "";
-      });
-    }
-
-    // Desktop
-    el.addEventListener("mousemove", onMove);
-    el.addEventListener("mouseleave", reset);
-
-    // Mobile (touch)
-    el.addEventListener("touchmove", onMove, {passive:true});
-    el.addEventListener("touchend", reset);
-
-    // Initial shine position
-    setVars(0.5, 0.35);
-  })();
-</script>
-<script>
-(function(){
-  // ---------- Grab elements ----------
-  const pickupDT = document.getElementById('pickupDT');
-  const dropDT   = document.getElementById('dropDT');
-  const accom    = document.getElementById('accom');
-  const accomLbl = document.getElementById('accomLabel');
-  const form     = document.getElementById('bookingForm');
-  const quickWA  = document.getElementById('quickWA');
-  const galleryInner = document.getElementById('galleryInner');
-  const header = document.querySelector('.site-header');
-
-  // If critical elements missing, stop (prevents console errors)
-  if(!pickupDT || !form){
-    console.warn("Booking script: pickupDT or bookingForm not found.");
-    return;
-  }
-
-  // ---------- Helpers ----------
-  function pad2(n){ return String(n).padStart(2,'0'); }
-  const val = (id) => (document.getElementById(id)?.value || "").trim();
-
-  // datetime-local value => Date
-  function parseLocalDT(valStr){
-    if(!valStr) return null;
-    const [dPart, tPart] = valStr.split('T');
-    if(!dPart || !tPart) return null;
-    const [y,m,d] = dPart.split('-').map(Number);
-    const [hh,mm] = tPart.split(':').map(Number);
-    return new Date(y, (m-1), d, hh, mm, 0, 0);
-  }
-
-  // Date => "DD Mon YYYY, hh:mm AM/PM"
-  function format12h(d){
-    if(!d) return '';
-    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    let h = d.getHours();
-    const min = d.getMinutes();
-    const ampm = h >= 12 ? "PM" : "AM";
-    h = h % 12; if(h === 0) h = 12;
-    return `${pad2(d.getDate())} ${months[d.getMonth()]} ${d.getFullYear()}, ${h}:${pad2(min)} ${ampm}`;
-  }
-
-  // ---------- Accommodation label ----------
-  if(accom && accomLbl){
-    const syncAccom = () => accomLbl.textContent = accom.checked ? 'Yes' : 'No';
-    accom.addEventListener('change', syncAccom);
-    syncAccom();
-  }
-
-  // ---------- Disable past pickup date/time ----------
-  function setMinNow(){
-    const now = new Date();
-    const minVal =
-      `${now.getFullYear()}-${pad2(now.getMonth()+1)}-${pad2(now.getDate())}T${pad2(now.getHours())}:${pad2(now.getMinutes())}`;
-    pickupDT.min = minVal;
-  }
-  setMinNow();
-
-  // ---------- Drop date/time cannot be before pickup ----------
-  function syncDropMin(){
-    if(!dropDT) return;
-
-    const p = parseLocalDT(pickupDT.value);
-    if(!p){
-      dropDT.min = '';
-      return;
-    }
-
-    dropDT.min =
-      `${p.getFullYear()}-${pad2(p.getMonth()+1)}-${pad2(p.getDate())}T${pad2(p.getHours())}:${pad2(p.getMinutes())}`;
-
-    const d = parseLocalDT(dropDT.value);
-    if(d && d.getTime() < p.getTime()){
-      dropDT.value = '';
-    }
-  }
-  pickupDT.addEventListener('change', syncDropMin);
-  if(dropDT) dropDT.addEventListener('change', syncDropMin);
-
-  // ---------- WhatsApp message builder (SAFE: encode once) ----------
-  function buildWhatsAppText() {
-    const name  = val("name");
-    const phone = val("phone");
-    const pickup = val("pickup");
-    const drop   = val("drop");
-    const intermediate = val("intermediate");
-    const vehicle = (document.getElementById("vehicle")?.value || "").trim();
-    const accomNeeded = document.getElementById("accom")?.checked ? "Yes" : "No";
-
-    const pDT = parseLocalDT(pickupDT.value);
-    const dDT = dropDT ? parseLocalDT(dropDT.value) : null;
-
-    let msg = `🌟 *New Trip Booking Request* 🌟\n\n`;
-    msg += `Hello Ravi G Tours and Travels 👋\n`;
-    msg += `I would like to book a trip. Please find my details below:\n\n`;
-
-    msg += `👤 *Name:* ${name || "-"}\n`;
-    msg += `📞 *Phone:* ${phone || "-"}\n`;
-    msg += `📍 *Pickup Location:* ${pickup || "-"}\n`;
-    msg += `🏁 *Drop Location:* ${drop || "-"}\n`;
-
-    if (intermediate) {
-      msg += `🗺️ *Intermediate Locations / Places to Visit:* ${intermediate}\n`;
-    }
-
-    msg += `🗓️ *Pickup Date & Time:* ${format12h(pDT) || "-"}\n`;
-
-    if (dDT) {
-      msg += `⏰ *Drop Date & Time:* ${format12h(dDT)}\n`;
-    }
-
-    msg += `🚖 *Vehicle Type:* ${vehicle || "-"}\n`;
-    msg += `🏨 *Accommodation Needed:* ${accomNeeded === "Yes" ? "Yes ✅" : "No ❌"}\n\n`;
-
-    msg += `Kindly share the fare and booking confirmation details. Thank you! 😊`;
-
-    return encodeURIComponent(msg);
-  }
-
-  // ---------- Open WhatsApp ----------
-  function openWA(){
-    const waNumber = "919944165207"; // change if needed
-    const url = `https://wa.me/${waNumber}?text=${buildWhatsAppText()}`;
-    window.open(url, "_blank");
-  }
-
-  // ---------- Form submit => WhatsApp ----------
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-
-    if(!pickupDT.value){
-      pickupDT.focus();
-      return;
-    }
-
-    // ensure pickup not in past (60s grace)
-    const p = parseLocalDT(pickupDT.value);
-    if(p && p.getTime() < Date.now() - 60000){
-      alert("Pickup date/time cannot be in the past.");
-      return;
-    }
-
-    // ensure drop >= pickup if set
-    if(dropDT && dropDT.value){
-      const d = parseLocalDT(dropDT.value);
-      if(d && p && d.getTime() < p.getTime()){
-        alert("Drop date/time cannot be before pickup date/time.");
-        return;
-      }
-    }
-
-    openWA();
-  });
-
-  // ---------- Bottom WhatsApp quick button ----------
-  if(quickWA){
-    quickWA.addEventListener('click', function(e){
-      e.preventDefault();
-      openWA();
-    });
-  }
-
-  // ---------- Build Gallery carousel slides (1..17) ----------
-  // ---------- Build Gallery carousel slides (1..32) ----------
-  if(galleryInner){
-    const total = 32;
-    const perSlideDesktop = 4;
-    const perSlideMobile = 2;
-
-    const isMobile = window.matchMedia("(max-width: 576px)").matches;
-    const perSlide = isMobile ? perSlideMobile : perSlideDesktop;
-
-    let index = 1;
-    let first = true;
-
-    while(index <= total){
-      const item = document.createElement('div');
-      item.className = 'carousel-item' + (first ? ' active' : '');
-
-      const row = document.createElement('div');
-      row.className = 'gallery-row';
-
-      for(let k=0; k<perSlide && index<=total; k++, index++){
-        const img = document.createElement('img');
-        img.src = `images/customer/${index}.jpeg`;   // ✅ jpeg
-        img.alt = `Customer ${index}`;
-        row.appendChild(img);
-      }
-
-      item.appendChild(row);
-      galleryInner.appendChild(item);
-      first = false;
-    }
-  }
-
-  // ---------- Hide header on scroll ----------
-  if(header){
-    let lastY = window.scrollY;
-    window.addEventListener('scroll', () => {
-      const y = window.scrollY;
-      if (y > lastY && y > 120) header.classList.add('hide-header');
-      else header.classList.remove('hide-header');
-      lastY = y;
-    }, { passive:true });
-  }
-})();
-</script>
-
-
-</body>
-</html>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="ravig.js"></script>
+  <script src="main.js"></script>
+</body></html>
