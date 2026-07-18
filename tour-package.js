@@ -3,12 +3,15 @@ const packagesByDays = {
     "Coimbatore Local – 100km": {
       "km": "100 km",
       "prices": {
-        "Sedan (4+1)": 2800,
-        "Innova (7+1)": 3800,
-        "Crysta (7+1)": 4500,
+        "Sedan (4+1)": 3000,
+        "Ertiga (6+1)": 3500,
+        "Innova (7+1)": 4000,
+        "Crysta (7+1)": 4800,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 5500,
-        "Tempo Traveller 18-Seater": 6000,
-        "Urbania 12-Seater/16-Seater": 9000
+        "Tempo Traveller 18-Seater": 6500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 0,
       "itinerary": [
@@ -20,11 +23,14 @@ const packagesByDays = {
       "km": "250 km",
       "prices": {
         "Sedan (4+1)": 4500,
-        "Innova (7+1)": 6000,
-        "Crysta (7+1)": 7400,
-        "Tempo Traveller 14-Seater": 8500,
-        "Tempo Traveller 18-Seater": 9500,
-        "Urbania 12-Seater/16-Seater": 14000
+        "Ertiga (6+1)": 5500,
+        "Innova (7+1)": 6100,
+        "Crysta (7+1)": 7350,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 8000,
+        "Tempo Traveller 18-Seater": 10000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 0,
       "itinerary": [
@@ -36,11 +42,14 @@ const packagesByDays = {
       "km": "350 km",
       "prices": {
         "Sedan (4+1)": 6500,
-        "Innova (7+1)": 8500,
-        "Crysta (7+1)": 9500,
-        "Tempo Traveller 14-Seater": 11500,
-        "Tempo Traveller 18-Seater": 12500,
-        "Urbania 12-Seater/16-Seater": 18000
+        "Ertiga (6+1)": 7800,
+        "Innova (7+1)": 8800,
+        "Crysta (7+1)": 10300,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 11700,
+        "Tempo Traveller 18-Seater": 14000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 0,
       "itinerary": [
@@ -51,12 +60,15 @@ const packagesByDays = {
     "Coimbatore → TopSlip – 300km": {
       "km": "300 km",
       "prices": {
-        "Sedan (4+1)": 5000,
+        "Sedan (4+1)": 5100,
+        "Ertiga (6+1)": 6100,
         "Innova (7+1)": 7000,
-        "Crysta (7+1)": 8500,
-        "Tempo Traveller 14-Seater": 11000,
-        "Tempo Traveller 18-Seater": 12000,
-        "Urbania 12-Seater/16-Seater": 17000
+        "Crysta (7+1)": 8200,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 9500,
+        "Tempo Traveller 18-Seater": 11000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 0,
       "itinerary": [
@@ -68,11 +80,14 @@ const packagesByDays = {
       "km": "300 km",
       "prices": {
         "Sedan (4+1)": 5500,
-        "Innova (7+1)": 8000,
+        "Ertiga (6+1)": 6700,
+        "Innova (7+1)": 7500,
         "Crysta (7+1)": 9500,
-        "Tempo Traveller 14-Seater": 11500,
-        "Tempo Traveller 18-Seater": 13000,
-        "Urbania 12-Seater/16-Seater": 18000
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 11000,
+        "Tempo Traveller 18-Seater": 14000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 0,
       "itinerary": [
@@ -86,11 +101,14 @@ const packagesByDays = {
       "km": "350 km",
       "prices": {
         "Sedan (4+1)": 7500,
-        "Innova (7+1)": 11000,
-        "Crysta (7+1)": 12500,
+        "Ertiga (6+1)": 9000,
+        "Innova (7+1)": 10000,
+        "Crysta (7+1)": 12000,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 15000,
         "Tempo Traveller 18-Seater": 17000,
-        "Urbania 12-Seater/16-Seater": 25000
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 1,
       "itinerary": [
@@ -102,12 +120,15 @@ const packagesByDays = {
     "Coimbatore → Kodaikanal – 500km": {
       "km": "500 km",
       "prices": {
-        "Sedan (4+1)": 9000,
-        "Innova (7+1)": 12500,
-        "Crysta (7+1)": 14500,
-        "Tempo Traveller 14-Seater": 18000,
-        "Tempo Traveller 18-Seater": 20000,
-        "Urbania 12-Seater/16-Seater": 29500
+        "Sedan (4+1)": 9100,
+        "Ertiga (6+1)": 11400,
+        "Innova (7+1)": 12300,
+        "Crysta (7+1)": 14700,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 17000,
+        "Tempo Traveller 18-Seater": 20400,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 1,
       "itinerary": [
@@ -119,12 +140,15 @@ const packagesByDays = {
     "Coimbatore → Valparai – 350km": {
       "km": "350 km",
       "prices": {
-        "Sedan (4+1)": 8000,
-        "Innova (7+1)": 11000,
-        "Crysta (7+1)": 13500,
-        "Tempo Traveller 14-Seater": 15000,
-        "Tempo Traveller 18-Seater": 18000,
-        "Urbania 12-Seater/16-Seater": 26000
+        "Sedan (4+1)": 7400,
+        "Ertiga (6+1)": 9250,
+        "Innova (7+1)": 10000,
+        "Crysta (7+1)": 12100,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 13800,
+        "Tempo Traveller 18-Seater": 16600,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 1,
       "itinerary": [
@@ -136,12 +160,15 @@ const packagesByDays = {
     "Coimbatore → Munnar – 500km": {
       "km": "500 km",
       "prices": {
-        "Sedan (4+1)": 9500,
-        "Innova (7+1)": 12500,
+        "Sedan (4+1)": 9400,
+        "Ertiga (6+1)": 11700,
+        "Innova (7+1)": 12600,
         "Crysta (7+1)": 15000,
-        "Tempo Traveller 14-Seater": 19000,
-        "Tempo Traveller 18-Seater": 21000,
-        "Urbania 12-Seater/16-Seater": 31000
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 17500,
+        "Tempo Traveller 18-Seater": 20900,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 1,
       "itinerary": [
@@ -153,12 +180,15 @@ const packagesByDays = {
     "Coimbatore → Mysore – 550km": {
       "km": "550 km",
       "prices": {
-        "Sedan (4+1)": 11000,
-        "Innova (7+1)": 15000,
-        "Crysta (7+1)": 18000,
-        "Tempo Traveller 14-Seater": 22000,
-        "Tempo Traveller 18-Seater": 24000,
-        "Urbania 12-Seater/16-Seater": 34000
+        "Sedan (4+1)": 10600,
+        "Ertiga (6+1)": 13050,
+        "Innova (7+1)": 14000,
+        "Crysta (7+1)": 16500,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 22900,
+        "Tempo Traveller 18-Seater": 26500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 1,
       "itinerary": [
@@ -167,22 +197,105 @@ const packagesByDays = {
       ],
       "id": "mysore-2d"
     },
-    "Coimbatore → Cochin – 500km": {
-      "km": "500 km",
-      "prices": {
-        "Sedan (4+1)": 10000,
-        "Innova (7+1)": 13500,
-        "Crysta (7+1)": 15000,
-        "Tempo Traveller 14-Seater": 18000,
-        "Tempo Traveller 18-Seater": 20000,
-        "Urbania 12-Seater/16-Seater": 30000
-      },
+    "Coimbatore → Malampuzha Dam → Guruvayur – 400km": {
+      "id": "malampuzha-guruvayur-2d",
+      "km": "400 km",
       "nights": 1,
+      "prices": {
+        "Sedan (4+1)": 9400,
+        "Ertiga (6+1)": 11400,
+        "Innova (7+1)": 12200,
+        "Crysta (7+1)": 14400,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 16700,
+        "Tempo Traveller 18-Seater": 19700,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
       "itinerary": [
-        "Day 1: Fort Kochi Beach, Chinese Fishing Nets, Mattancherry Palace, Jew Town, Marine Drive — Overnight Stay",
-        "Day 2: Lulu Mall, Hill Palace Museum, Cherai Beach, Local shopping — Return Coimbatore"
-      ],
-      "id": "cochin-2d"
+        "Day 1: Coimbatore to Punnathur Kotta, Mammiyur Sri Mahadeva Temple and Malampuzha Dam. Stay at Guruvayur.",
+        "Day 2: Guruvayur Krishnar Temple, Chavakkad Beach and back to Coimbatore."
+      ]
+    },
+    "Coimbatore → Sabarimalai – 700km": {
+      "id": "sabarimalai-2d",
+      "km": "700 km",
+      "nights": 1,
+      "prices": {
+        "Sedan (4+1)": 13100,
+        "Ertiga (6+1)": 16000,
+        "Innova (7+1)": 17100,
+        "Crysta (7+1)": 19900,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 22100,
+        "Tempo Traveller 18-Seater": 26300,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
+      "itinerary": [
+        "Day 1: Coimbatore to Pamba, Sabarimalai. Stay at Sabarimalai.",
+        "Day 2: Sabarimalai, Erumeli and back to Coimbatore."
+      ]
+    },
+    "Coimbatore → Rameshwaram – 900km": {
+      "id": "rameshwaram-2d",
+      "km": "900 km",
+      "nights": 1,
+      "prices": {
+        "Sedan (4+1)": 14600,
+        "Ertiga (6+1)": 18100,
+        "Innova (7+1)": 19400,
+        "Crysta (7+1)": 22600,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 26200,
+        "Tempo Traveller 18-Seater": 31200,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
+      "itinerary": [
+        "Day 1: Coimbatore to Rameshwaram Temple. Stay at Rameswaram.",
+        "Day 2: Dhanushkodi, APJ Memorial Museum, Pambam Bridge back to Coimbatore."
+      ]
+    },
+    "Coimbatore → Thiruchendur – 900km": {
+      "id": "thiruchendur-2d",
+      "km": "900 km",
+      "nights": 1,
+      "prices": {
+        "Sedan (4+1)": 14100,
+        "Ertiga (6+1)": 17600,
+        "Innova (7+1)": 18900,
+        "Crysta (7+1)": 22100,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 25200,
+        "Tempo Traveller 18-Seater": 30200,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
+      "itinerary": [
+        "Day 1: Coimbatore to Thiruchendur Temple. Stay at Thiruchendur.",
+        "Day 2: Temple Visit back to Coimbatore."
+      ]
+    },
+    "Coimbatore → Thiruvannamalai – 700km": {
+      "id": "thiruvannamalai-2d",
+      "km": "700 km",
+      "nights": 1,
+      "prices": {
+        "Sedan (4+1)": 12600,
+        "Ertiga (6+1)": 15500,
+        "Innova (7+1)": 16600,
+        "Crysta (7+1)": 19400,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 22100,
+        "Tempo Traveller 18-Seater": 26300,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
+      "itinerary": [
+        "Day 1: Coimbatore to Thiruvannamalai, Thiruvannamalai Girivalam. Stay at Thiruvannamalai.",
+        "Day 2: Temple Darshan and back to Coimbatore."
+      ]
     }
   },
   "3": {
@@ -190,11 +303,14 @@ const packagesByDays = {
       "km": "350 km",
       "prices": {
         "Sedan (4+1)": 9500,
-        "Innova (7+1)": 13500,
+        "Ertiga (6+1)": 12000,
+        "Innova (7+1)": 13000,
         "Crysta (7+1)": 16000,
-        "Tempo Traveller 14-Seater": 18500,
-        "Tempo Traveller 18-Seater": 21500,
-        "Urbania 12-Seater/16-Seater": 32000
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 18000,
+        "Tempo Traveller 18-Seater": 21000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 2,
       "itinerary": [
@@ -207,12 +323,15 @@ const packagesByDays = {
     "Coimbatore → Kodaikanal – 550km": {
       "km": "550 km",
       "prices": {
-        "Sedan (4+1)": 11000,
+        "Sedan (4+1)": 11500,
+        "Ertiga (6+1)": 14000,
         "Innova (7+1)": 15500,
-        "Crysta (7+1)": 18000,
-        "Tempo Traveller 14-Seater": 22000,
-        "Tempo Traveller 18-Seater": 25000,
-        "Urbania 12-Seater/16-Seater": 37000
+        "Crysta (7+1)": 19000,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 21000,
+        "Tempo Traveller 18-Seater": 25500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 2,
       "itinerary": [
@@ -225,12 +344,15 @@ const packagesByDays = {
     "Coimbatore → Valparai & Athirapally – 500km": {
       "km": "500 km",
       "prices": {
-        "Sedan (4+1)": 11500,
-        "Innova (7+1)": 15500,
-        "Crysta (7+1)": 18000,
-        "Tempo Traveller 14-Seater": 21000,
-        "Tempo Traveller 18-Seater": 24500,
-        "Urbania 12-Seater/16-Seater": 36000
+        "Sedan (4+1)": 10900,
+        "Ertiga (6+1)": 13600,
+        "Innova (7+1)": 14700,
+        "Crysta (7+1)": 17800,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 20500,
+        "Tempo Traveller 18-Seater": 24600,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 2,
       "itinerary": [
@@ -244,11 +366,14 @@ const packagesByDays = {
       "km": "550 km",
       "prices": {
         "Sedan (4+1)": 12000,
+        "Ertiga (6+1)": 14500,
         "Innova (7+1)": 16000,
-        "Crysta (7+1)": 18500,
-        "Tempo Traveller 14-Seater": 22500,
-        "Tempo Traveller 18-Seater": 26500,
-        "Urbania 12-Seater/16-Seater": 38000
+        "Crysta (7+1)": 19500,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 21500,
+        "Tempo Traveller 18-Seater": 26000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 2,
       "itinerary": [
@@ -258,41 +383,68 @@ const packagesByDays = {
       ],
       "id": "munnar-3d"
     },
-    "Coimbatore → Madurai → Rameshwaram – 900km": {
-      "km": "900 km",
-      "prices": {
-        "Sedan (4+1)": 16000,
-        "Innova (7+1)": 21500,
-        "Crysta (7+1)": 24500,
-        "Tempo Traveller 14-Seater": 29000,
-        "Tempo Traveller 18-Seater": 32000,
-        "Urbania 12-Seater/16-Seater": 48000
-      },
+    "Coimbatore → Wayanad – 600km": {
+      "id": "wayanad-3d",
+      "km": "600 km",
       "nights": 2,
+      "prices": {
+        "Sedan (4+1)": 13500,
+        "Ertiga (6+1)": 16000,
+        "Innova (7+1)": 17500,
+        "Crysta (7+1)": 21000,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 24000,
+        "Tempo Traveller 18-Seater": 28000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
       "itinerary": [
-        "Day 1: Madurai — Meenakshi Amman Temple, Thirumalai Nayakar Palace, Alagar Temple, Gandhi Museum, Market — Overnight Stay",
-        "Day 2: Rameshwaram — Ramanathaswamy Temple, Agni Theertham, APJ House, Pamban Bridge, Dhanushkodi — Overnight Stay",
-        "Day 3: Return via Devipattinam / sightseeing — Return Coimbatore"
-      ],
-      "id": "madurai-rameshwaram-3d"
+        "Day 1: Coimbatore to Wayanad, Banasura Sagar Dam, Edakkal Cave, Kuruva Island. Stay at Wayanad.",
+        "Day 2: Muthunga Wildlife Sanctuary, Pakshipathalam Pazhassi Tourist place. Stay at Wayanad.",
+        "Day 3: Pookot Lake, Soochipara Waterfalls and back to Coimbatore."
+      ]
     },
-    "Coimbatore → Vagamon – 700km": {
-      "km": "700 km",
-      "prices": {
-        "Sedan (4+1)": 14500,
-        "Innova (7+1)": 18500,
-        "Crysta (7+1)": 21500,
-        "Tempo Traveller 14-Seater": 29000,
-        "Tempo Traveller 18-Seater": 32500,
-        "Urbania 12-Seater/16-Seater": 48000
-      },
+    "Coimbatore → Mysore → Coorg – 850km": {
+      "id": "mysroe-coorg-3d",
+      "km": "850 km",
       "nights": 2,
+      "prices": {
+        "Sedan (4+1)": 15700,
+        "Ertiga (6+1)": 19450,
+        "Innova (7+1)": 20900,
+        "Crysta (7+1)": 24700,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 31800,
+        "Tempo Traveller 18-Seater": 37300,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
       "itinerary": [
-        "Day 1: Vagamon Meadows, Kurisumala, Pine Forest, Suicide Point, Tea Estates — Overnight Stay",
-        "Day 2: Murugan Mala, Vagamon Lake, Thangalpara, Scenic Viewpoints, Adventure Park — Overnight Stay",
-        "Day 3: Return sightseeing & departure — Return Coimbatore"
-      ],
-      "id": "vagamon-3d"
+        "Day 1: Dubare Elephant camp, Golden Temple, Nisargadhama forest",
+        "Day 2: Abbey Falls, Coffer Plant, Raja seat and Mysore Halat.",
+        "Day 3: Mysore zoo, Rail Museum, Mysore Palace, Chamundeshwari Temple, Lalith Mahal Palace and back to Coimbatore"
+      ]
+    },
+    "Coimbatore → Navagraha Temple – 900km": {
+      "id": "navagraha-temple-3d",
+      "km": "900 km",
+      "nights": 2,
+      "prices": {
+        "Sedan (4+1)": 17500,
+        "Ertiga (6+1)": 21500,
+        "Innova (7+1)": 23000,
+        "Crysta (7+1)": 26500,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 32000,
+        "Tempo Traveller 18-Seater": 38000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
+      "itinerary": [
+        "Day 1: Coimbatore to Thanjavur, Brahadeshwara Temple, Tingalur (Chandran Temple), Alangudi (Guru Temple), Thirunangeswaram (Raaghu Temple). Stay at Mayiladuthurai.",
+        "Day 2: Suriyanar (Suriyan Temple), Kanjanoor (Sukkran Temple), Vaithesswaran (Sevvai Temple), Thiruvenkadu (Budhan Temple). Stay at Thirunallaru.",
+        "Day 3: Keezhperumpallam (Kethu Temple), Thirunallaru (Sani Bhagavan Temple) and back to Coimbatore."
+      ]
     }
   },
   "4": {
@@ -300,11 +452,14 @@ const packagesByDays = {
       "km": "400 km",
       "prices": {
         "Sedan (4+1)": 12500,
+        "Ertiga (6+1)": 15500,
         "Innova (7+1)": 16500,
-        "Crysta (7+1)": 20000,
+        "Crysta (7+1)": 20500,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 23500,
-        "Tempo Traveller 18-Seater": 26500,
-        "Urbania 12-Seater/16-Seater": 41000
+        "Tempo Traveller 18-Seater": 28000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 3,
       "itinerary": [
@@ -318,12 +473,15 @@ const packagesByDays = {
     "Coimbatore → Kodaikanal – 550km": {
       "km": "550 km",
       "prices": {
-        "Sedan (4+1)": 13500,
-        "Innova (7+1)": 18500,
-        "Crysta (7+1)": 21500,
-        "Tempo Traveller 14-Seater": 26000,
-        "Tempo Traveller 18-Seater": 29000,
-        "Urbania 12-Seater/16-Seater": 44000
+        "Sedan (4+1)": 13000,
+        "Ertiga (6+1)": 16500,
+        "Innova (7+1)": 18000,
+        "Crysta (7+1)": 22000,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 25000,
+        "Tempo Traveller 18-Seater": 30000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 3,
       "itinerary": [
@@ -334,81 +492,115 @@ const packagesByDays = {
       ],
       "id": "kodaikanal-4d"
     },
-    "Coimbatore → Munnar – 550km": {
-      "km": "550 km",
-      "prices": {
-        "Sedan (4+1)": 14500,
-        "Innova (7+1)": 19000,
-        "Crysta (7+1)": 22000,
-        "Tempo Traveller 14-Seater": 27000,
-        "Tempo Traveller 18-Seater": 30000,
-        "Urbania 12-Seater/16-Seater": 45000
-      },
+    "Coimbatore → Ooty → Mysore – 700km": {
+      "id": "ooty-mysore-4d",
+      "km": "700 km",
       "nights": 3,
-      "itinerary": [
-        "Day 1: Tea Gardens, Flower Garden, Hydel Park, Attukal Waterfalls, Viewpoints — Overnight Stay",
-        "Day 2: Eravikulam National Park, Mattupetty Dam, Echo Point, Kundala Lake, Elephant Ride — Overnight Stay",
-        "Day 3: Top Station, Gap Road Viewpoint, Tea Museum, Local explorations — Overnight Stay",
-        "Day 4: Shopping & departure — Return Coimbatore"
-      ],
-      "id": "munnar-4d"
-    },
-    "Coimbatore → Ooty → Mysore → Bangalore – 1100km": {
-      "km": "1100 km",
       "prices": {
-        "Sedan (4+1)": 21000,
-        "Innova (7+1)": 29000,
-        "Crysta (7+1)": 33000,
-        "Tempo Traveller 14-Seater": 42000,
-        "Tempo Traveller 18-Seater": 46000,
-        "Urbania 12-Seater/16-Seater": 64000
+        "Sedan (4+1)": 16000,
+        "Ertiga (6+1)": 20000,
+        "Innova (7+1)": 21500,
+        "Crysta (7+1)": 26000,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 32500,
+        "Tempo Traveller 18-Seater": 38000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
-      "nights": 3,
       "itinerary": [
-        "Day 1: Ooty — Lake, Botanical Garden, Doddabetta, Tea Factory — Overnight Stay",
-        "Day 2: Mysore — Palace, Chamundi Hills, Market, Zoo — Overnight Stay",
-        "Day 3: Bangalore — Cubbon Park, MG Road, Lalbagh, Shopping — Overnight Stay",
-        "Day 4: Return sightseeing & departure — Return Coimbatore"
-      ],
-      "id": "ooty-mysore-bangalore-4d"
+        "Day 1: Coimbatore to Coonoor, Sims Park, Dolphin's Nose, Lamb's Rock, to Ooty, Tea Garden. Stay at Ooty.",
+        "Day 2: Rose Garden, Botanical Garden, Lake (Boathouse), Doddabetta Peak, Tea Factory, Wax Museum, Karnataka Garden. Stay at Ooty.",
+        "Day 3: Checkout from hotel at Ooty, Pine tree forest, 9th Mile Shooting spot, Pykara Waterfalls, Mudumalai National Park or Bandipur Wildlife Safari, Mysore Palace. Stay at Mysore.",
+        "Day 4: Checkout from hotel at Mysore, Mysore Zoo, Chamundeshwari Temple and back to Coimbatore."
+      ]
     },
-    "Coimbatore → Kodaikanal → Madurai – 800km": {
+    "Coimbatore → Munnar → Thekkady – 800km": {
+      "id": "munnarthekkady-4d",
       "km": "800 km",
+      "nights": 3,
       "prices": {
         "Sedan (4+1)": 17000,
-        "Innova (7+1)": 22500,
-        "Crysta (7+1)": 26000,
-        "Tempo Traveller 14-Seater": 31000,
-        "Tempo Traveller 18-Seater": 34500,
-        "Urbania 12-Seater/16-Seater": 51000
+        "Ertiga (6+1)": 21000,
+        "Innova (7+1)": 23000,
+        "Crysta (7+1)": 27000,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 30500,
+        "Tempo Traveller 18-Seater": 36500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
-      "nights": 3,
       "itinerary": [
-        "Day 1: Kodaikanal sightseeing — Coaker’s Walk, Bryant Park, Kodai Lake — Overnight Stay",
-        "Day 2: Pine Forest, Pillar Rocks, Kurinji Temple, Vattakanal Viewpoint — Overnight Stay",
-        "Day 3: Madurai — Meenakshi Temple, Palace, Alagar Temple, Market — Overnight Stay",
-        "Day 4: Return sightseeing & departure — Return Coimbatore"
-      ],
-      "id": "kodaikanal-madurai-4d"
+        "Day 1: Coimbatore to Munnar, on the way sight-seeing at Lakkam Waterfalls and Eravikulam National Park. Stay at Munnar.",
+        "Day 2: Mattupatty Dam, Rose Garden, Echo Point, Tea plantation and Top Station. Stay at Munnar.",
+        "Day 3: Kalari and Kathakali Live performance Show, Spice Garden, Off Road Safari (Price excluded). Stay at Thekkady.",
+        "Day 4: Periyar Wildlife Sanctuary and local sightseeings and back to Coimbatore."
+      ]
     },
-    "Coimbatore → Mysore → Coorg – 1000 km": {
+    "Coimbatore → Coorg → Chikmagalur – 1100km": {
+      "id": "coorgchikmagalur-4d",
+      "km": "1100 km",
+      "nights": 3,
+      "prices": {
+        "Sedan (4+1)": 20200,
+        "Ertiga (6+1)": 25000,
+        "Innova (7+1)": 27500,
+        "Crysta (7+1)": 32500,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 40500,
+        "Tempo Traveller 18-Seater": 47500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
+      "itinerary": [
+        "Day 1: Coimbatore to Coorg. Pickup from Airport/Railway Station, scenic drive with optional stops, check-in and relax. Stay at Coorg.",
+        "Day 2: Abbey Falls, Raja’s Seat, Madikeri Fort, Omkareshwara Temple, Dubare Elephant Camp (optional), Cauvery Nisargadhama. Stay at Coorg.",
+        "Day 3: Coorg to Chikmagalur. Visit Mullayanagiri Peak, Baba Budangiri, Hirekolale Lake. Stay at Chikmagalur.",
+        "Day 4: Chikmagalur to Coimbatore. Visit Coffee Plantation (optional), return drop at Airport/Railway Station."
+      ]
+    },
+    "Coimbatore → Coorg → Wayanad – 900km": {
+      "id": "Coorgwayanad-4d",
+      "km": "900 km",
+      "nights": 3,
+      "prices": {
+        "Sedan (4+1)": 18500,
+        "Ertiga (6+1)": 23000,
+        "Innova (7+1)": 25000,
+        "Crysta (7+1)": 29500,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 36500,
+        "Tempo Traveller 18-Seater": 43000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
+      "itinerary": [
+        "Day 1: Coimbatore to Coorg. Pickup from Airport/Railway Station, scenic drive with refreshment stops, check-in and relax. Stay at Coorg.",
+        "Day 2: Abbey Falls, Raja’s Seat, Madikeri Fort, Omkareshwara Temple, Dubare Elephant Camp (optional), Cauvery Nisargadhama. Stay at Coorg.",
+        "Day 3: Coorg to Wayanad. Visit Edakkal Caves, Soochipara Falls / Meenmutty Falls (based on time). Stay at Wayanad.",
+        "Day 4: Wayanad to Coimbatore. Visit Pookode Lake, Lakkidi View Point and drop at Airport/Railway Station."
+      ]
+    },
+    "Coimbatore → Kodaikanal → Madurai → Rameswaram – 1000km": {
+      "id": "kodaikanal-madurai-rameswaram-4d",
       "km": "1000 km",
+      "nights": 3,
       "prices": {
         "Sedan (4+1)": 19000,
-        "Innova (7+1)": 26500,
+        "Ertiga (6+1)": 23500,
+        "Innova (7+1)": 25500,
         "Crysta (7+1)": 30500,
-        "Tempo Traveller 14-Seater": 39000,
-        "Tempo Traveller 18-Seater": 43000,
-        "Urbania 12-Seater/16-Seater": 61000
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 34500,
+        "Tempo Traveller 18-Seater": 41000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
-      "nights": 3,
       "itinerary": [
-        "Day 1: Mysore — Palace, Chamundi Hills, Zoo — Overnight Stay",
-        "Day 2: Coorg — Abbey Falls, Raja’s Seat, Coffee Plantations, Viewpoints — Overnight Stay",
-        "Day 3: Golden Temple, Mandalpatti Jeep Safari, Coorg Local — Overnight Stay",
-        "Day 4: Return sightseeing & departure — Return Coimbatore"
-      ],
-      "id": "mysore-coorg-4d"
+        "Day 1: Coimbatore to Palani Murugan Temple, Silver Cascade waterfalls, Kodaikanal Lake, Bryant Park, Coakers Walk, Chettiar Park, Kurinji Andavar Temple. Stay at Kodaikanal.",
+        "Day 2: Pine tree forest, Guna Cave, Pillar Rocks, Green Valley View, Moyer Point, Silent Valley. Stay at Kodaikanal.",
+        "Day 3: Checkout from hotel at Kodaikanal, Kodaikanal to Rameswaram, Temple Darshan, Local Sight Seeing. Stay at Rameswaram.",
+        "Day 4: Rameswaram to Madurai, Meenakshi Amman Temple and drop at Madurai Railway Station/Airport."
+      ]
     }
   },
   "5": {
@@ -416,11 +608,14 @@ const packagesByDays = {
       "km": "500 km",
       "prices": {
         "Sedan (4+1)": 15500,
-        "Innova (7+1)": 21000,
-        "Crysta (7+1)": 24500,
+        "Ertiga (6+1)": 19000,
+        "Innova (7+1)": 20500,
+        "Crysta (7+1)": 25500,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 29000,
-        "Tempo Traveller 18-Seater": 32000,
-        "Urbania 12-Seater/16-Seater": 50000
+        "Tempo Traveller 18-Seater": 34500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 4,
       "itinerary": [
@@ -432,35 +627,18 @@ const packagesByDays = {
       ],
       "id": "ooty-5d"
     },
-    "Coimbatore → Ooty → Wayanad – 800 km": {
-      "km": "800 km",
-      "prices": {
-        "Sedan (4+1)": 18500,
-        "Innova (7+1)": 25000,
-        "Crysta (7+1)": 29000,
-        "Tempo Traveller 14-Seater": 35000,
-        "Tempo Traveller 18-Seater": 39000,
-        "Urbania 12-Seater/16-Seater": 59000
-      },
-      "nights": 4,
-      "itinerary": [
-        "Day 1: Ooty sightseeing — Lake, Garden, Peaks, Tea Factory — Overnight Stay",
-        "Day 2: Coonoor — Sim’s Park, Lamb’s Rock, Dolphin’s Nose — Overnight Stay",
-        "Day 3: Wayanad — Pookode Lake, Lakkidi Viewpoint, Chain Tree — Overnight Stay",
-        "Day 4: Edakkal Caves, Soochipara Falls, Banasura Sagar Dam — Overnight Stay",
-        "Day 5: Return sightseeing & departure — Return Coimbatore"
-      ],
-      "id": "ooty-wayanad-5d"
-    },
     "Coimbatore → Ooty → Kodaikanal – 800 km": {
       "km": "800 km",
       "prices": {
-        "Sedan (4+1)": 18500,
-        "Innova (7+1)": 25000,
-        "Crysta (7+1)": 29000,
-        "Tempo Traveller 14-Seater": 35000,
-        "Tempo Traveller 18-Seater": 39000,
-        "Urbania 12-Seater/16-Seater": 59000
+        "Sedan (4+1)": 19000,
+        "Ertiga (6+1)": 23500,
+        "Innova (7+1)": 25500,
+        "Crysta (7+1)": 30500,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 34500,
+        "Tempo Traveller 18-Seater": 41500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 4,
       "itinerary": [
@@ -472,35 +650,18 @@ const packagesByDays = {
       ],
       "id": "ooty-kodaikanal-5d"
     },
-    "Coimbatore → Ooty → Munnar – 900 km": {
-      "km": "900 km",
-      "prices": {
-        "Sedan (4+1)": 19500,
-        "Innova (7+1)": 26500,
-        "Crysta (7+1)": 30500,
-        "Tempo Traveller 14-Seater": 36500,
-        "Tempo Traveller 18-Seater": 41000,
-        "Urbania 12-Seater/16-Seater": 61000
-      },
-      "nights": 4,
-      "itinerary": [
-        "Day 1: Ooty sightseeing — Lake, Garden, Peak, Tea Factory — Overnight Stay",
-        "Day 2: Coonoor — Sim’s Park, Dolphin’s Nose, Lamb’s Rock — Overnight Stay",
-        "Day 3: Munnar arrival — Tea Gardens, Blossom Park, Attukal Falls — Overnight Stay",
-        "Day 4: Eravikulam, Mattupetty, Echo Point, Kundala Lake — Overnight Stay",
-        "Day 5: Return sightseeing & departure — Return Coimbatore"
-      ],
-      "id": "ooty-munnar-5d"
-    },
     "Coimbatore → Kodaikanal → Madurai → Rameshwaram – 1200 km": {
       "km": "1200 km",
       "prices": {
-        "Sedan (4+1)": 23000,
-        "Innova (7+1)": 30500,
-        "Crysta (7+1)": 35500,
-        "Tempo Traveller 14-Seater": 42000,
-        "Tempo Traveller 18-Seater": 47000,
-        "Urbania 12-Seater/16-Seater": 68500
+        "Sedan (4+1)": 22500,
+        "Ertiga (6+1)": 28000,
+        "Innova (7+1)": 30000,
+        "Crysta (7+1)": 36000,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 41000,
+        "Tempo Traveller 18-Seater": 48500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "nights": 4,
       "itinerary": [
@@ -512,25 +673,74 @@ const packagesByDays = {
       ],
       "id": "kodaikanal-madurai-rameshwaram-5d"
     },
-    "Coimbatore → Ooty → Coorg → Mysore – 1200 km": {
+    "Coimbatore → Ooty → Mysore → Bangalore – 1200km": {
+      "id": "ooty-mysore-bangalore-5d",
       "km": "1200 km",
+      "nights": 4,
+      "prices": {
+        "Sedan (4+1)": 24000,
+        "Ertiga (6+1)": 29500,
+        "Innova (7+1)": 32000,
+        "Crysta (7+1)": 37500,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 46000,
+        "Tempo Traveller 18-Seater": 54500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
+      "itinerary": [
+        "Day 1: Coimbatore to Coonoor & Ooty. Pickup from Coimbatore, visit Sim’s Park, Lamb’s Rock, Dolphin’s Nose, Tea Gardens, then transfer to Ooty and check-in. Stay at Ooty.",
+        "Day 2: Ooty sightseeing. Botanical Garden, Rose Garden, Ooty Lake (Boathouse), Thread Garden, Doddabetta Peak, Tea Factory & Museum, Wax Museum. Stay at Ooty.",
+        "Day 3: Ooty to Mysore via Pykara. Visit Pykara Lake, Pykara Falls, drive via Mudumalai & Bandipur forest route, check-in. Stay at Mysore.",
+        "Day 4: Mysore sightseeing. Mysore Palace, Chamundi Hills, Mysore Zoo, Brindavan Gardens, St. Philomena’s Church. Stay at Mysore.",
+        "Day 5: Mysore to Bangalore. Visit Tipu Sultan’s Palace, Lalbagh Botanical Garden, Vidhana Soudha (outside view) and drop at Coimbatore / Bangalore"
+      ]
+    },
+    "Coimbatore → Kodaikanal → Munnar – 800km": {
+      "id": "kodaikanal-munnar-5d",
+      "km": "800 km",
+      "nights": 4,
+      "prices": {
+        "Sedan (4+1)": 18500,
+        "Ertiga (6+1)": 23000,
+        "Innova (7+1)": 25000,
+        "Crysta (7+1)": 30000,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 34000,
+        "Tempo Traveller 18-Seater": 40500,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
+      },
+      "itinerary": [
+        "Day 1: Coimbatore to Munnar. Scenic hill drive via Valara Falls and Cheeyappara Falls, check-in and relax. Stay at Munnar.",
+        "Day 2: Munnar sightseeing. Mattupetty Dam, Echo Point, Kundala Lake, Tea Museum, Eravikulam National Park (Rajamalai). Stay at Munnar.",
+        "Day 3: Munnar to Kodaikanal. Scenic inter-state hill drive, check-in and evening leisure / lake visit. Stay at Kodaikanal.",
+        "Day 4: Kodaikanal sightseeing. Pillar Rocks, Bryant Park, Green Valley View, Kurinji Andavar Temple, Silver Cascade Falls, Guna Cave, Pine Forest, Coaker’s Walk. Stay at Kodaikanal.",
+        "Day 5: Kodaikanal to Coimbatore. Optional shopping / lake visit and drop at Coimbatore."
+      ]
+    },
+    "Coimbatore → Munnar → Varkala → Alleppey – 1100km": {
+      "id": "munnar-varkala-alleppey-5d",
+      "km": "1100 km",
+      "nights": 4,
       "prices": {
         "Sedan (4+1)": 22500,
-        "Innova (7+1)": 32000,
-        "Crysta (7+1)": 36000,
-        "Tempo Traveller 14-Seater": 46000,
-        "Tempo Traveller 18-Seater": 51000,
-        "Urbania 12-Seater/16-Seater": 72500
+        "Ertiga (6+1)": 28000,
+        "Innova (7+1)": 30000,
+        "Crysta (7+1)": 35500,
+        "Hycross (7+1)": null,
+        "Tempo Traveller 14-Seater": 40500,
+        "Tempo Traveller 18-Seater": 48000,
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
-      "nights": 4,
       "itinerary": [
-        "Day 1: Ooty sightseeing — Garden, Lake, Peak, Tea Factory — Overnight Stay",
-        "Day 2: Coonoor — Sim’s Park, Lamb’s Rock, Tea Gardens — Overnight Stay",
-        "Day 3: Coorg — Abbey Falls, Raja’s Seat, Coffee Plantations — Overnight Stay",
-        "Day 4: Mysore — Palace, Zoo, Chamundi Hill, Brindavan Garden — Overnight Stay",
-        "Day 5: Return sightseeing & departure — Return Coimbatore"
-      ],
-      "id": "ooty-coorg-mysore-5d"
+        "Day 1: Coimbatore to Munnar. Scenic hill drive via Valara Falls and Cheeyappara Falls, check-in and relax. Stay at Munnar.",
+        "Day 2: Munnar sightseeing. Mattupetty Dam, Echo Point, Kundala Lake, Tea Museum, Eravikulam National Park (Rajamalai). Stay at Munnar.",
+        "Day 3: Munnar to Varkala. Transfer, visit Varkala Beach, Cliff, Janardanaswamy Temple and leisure time at beach. Stay at Varkala.",
+        "Day 4: Varkala to Alleppey. Houseboat check-in, backwater cruise with meals and overnight stay in houseboat. Stay at Alleppey Houseboat.",
+        "Day 5: Alleppey to Coimbatore. Check-out and return drop at Coimbatore."
+      ]
     }
   },
   "6": {
@@ -540,11 +750,14 @@ const packagesByDays = {
       "nights": 5,
       "prices": {
         "Sedan (4+1)": 24000,
+        "Ertiga (6+1)": 29500,
         "Innova (7+1)": 32000,
         "Crysta (7+1)": 38000,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 43500,
         "Tempo Traveller 18-Seater": 52000,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Isha Yoga Center, Coonoor – Sim’s Park, Lamb’s Rock, Dolphin’s Nose and Tea Gardens — Overnight Stay in Ooty",
@@ -561,11 +774,14 @@ const packagesByDays = {
       "nights": 5,
       "prices": {
         "Sedan (4+1)": 25500,
+        "Ertiga (6+1)": 32500,
         "Innova (7+1)": 34000,
         "Crysta (7+1)": 40500,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 49000,
         "Tempo Traveller 18-Seater": 58000,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Palani Murugan Temple, Silver Cascade and Kodaikanal arrival — Overnight Stay in Kodaikanal",
@@ -582,11 +798,14 @@ const packagesByDays = {
       "nights": 5,
       "prices": {
         "Sedan (4+1)": 28500,
+        "Ertiga (6+1)": 35500,
         "Innova (7+1)": 38500,
         "Crysta (7+1)": 45500,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 54500,
         "Tempo Traveller 18-Seater": 64500,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Coonoor sightseeing and transfer to Ooty — Overnight Stay in Ooty",
@@ -603,11 +822,14 @@ const packagesByDays = {
       "nights": 5,
       "prices": {
         "Sedan (4+1)": 25500,
+        "Ertiga (6+1)": 32000,
         "Innova (7+1)": 34500,
         "Crysta (7+1)": 41500,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 47000,
         "Tempo Traveller 18-Seater": 56500,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Coimbatore to Munnar, Lakkam Waterfalls and Eravikulam National Park — Overnight Stay in Munnar",
@@ -624,11 +846,14 @@ const packagesByDays = {
       "nights": 5,
       "prices": {
         "Sedan (4+1)": 23000,
+        "Ertiga (6+1)": 28500,
         "Innova (7+1)": 31000,
         "Crysta (7+1)": 37000,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 45500,
         "Tempo Traveller 18-Seater": 54000,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Coonoor sightseeing and transfer to Ooty — Overnight Stay in Ooty",
@@ -647,11 +872,14 @@ const packagesByDays = {
       "nights": 6,
       "prices": {
         "Sedan (4+1)": 27000,
+        "Ertiga (6+1)": 33500,
         "Innova (7+1)": 36000,
         "Crysta (7+1)": 43500,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 48500,
         "Tempo Traveller 18-Seater": 58500,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Coonoor sightseeing and transfer to Ooty — Overnight Stay in Ooty",
@@ -669,11 +897,14 @@ const packagesByDays = {
       "nights": 6,
       "prices": {
         "Sedan (4+1)": 29000,
+        "Ertiga (6+1)": 36000,
         "Innova (7+1)": 39000,
         "Crysta (7+1)": 46500,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 52000,
         "Tempo Traveller 18-Seater": 62500,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Coonoor sightseeing and transfer to Ooty — Overnight Stay in Ooty",
@@ -691,11 +922,14 @@ const packagesByDays = {
       "nights": 6,
       "prices": {
         "Sedan (4+1)": 30000,
+        "Ertiga (6+1)": 37500,
         "Innova (7+1)": 41000,
         "Crysta (7+1)": 48000,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 58000,
         "Tempo Traveller 18-Seater": 69000,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Coonoor sightseeing and transfer to Ooty — Overnight Stay in Ooty",
@@ -713,11 +947,14 @@ const packagesByDays = {
       "nights": 6,
       "prices": {
         "Sedan (4+1)": 31500,
+        "Ertiga (6+1)": 39000,
         "Innova (7+1)": 42500,
         "Crysta (7+1)": 50500,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 60500,
         "Tempo Traveller 18-Seater": 71500,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Coimbatore to Kodaikanal, Lake and Coaker’s Walk — Overnight Stay in Kodaikanal",
@@ -735,11 +972,14 @@ const packagesByDays = {
       "nights": 6,
       "prices": {
         "Sedan (4+1)": 30000,
+        "Ertiga (6+1)": 37500,
         "Innova (7+1)": 40500,
         "Crysta (7+1)": 48000,
+        "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 55000,
         "Tempo Traveller 18-Seater": 65500,
-        "Urbania 12-Seater/16-Seater": null
+        "Urbania 12-Seater/16-Seater": null,
+        "Coach 21-Seater": null
       },
       "itinerary": [
         "Day 1: Coimbatore to Munnar, Lakkam Waterfalls and Eravikulam National Park — Overnight Stay in Munnar",
@@ -851,11 +1091,14 @@ document.addEventListener("DOMContentLoaded", () => {
   function vehicleDisplay(vehicle) {
     const map = {
       "Sedan (4+1)": { name: "SEDAN", type: "Etios, Dzire - 4 Seater" },
+      "Ertiga (6+1)": { name: "ERTIGA", type: "6 Seater" },
       "Innova (7+1)": { name: "INNOVA", type: "7 Seater" },
       "Crysta (7+1)": { name: "INNOVA CRYSTA", type: "7 Seater" },
+      "Hycross (7+1)": { name: "INNOVA HYCROSS", type: "7 Seater" },
       "Tempo Traveller 14-Seater": { name: "TEMPOTRAVELLER 14", type: "12 - 14 Seater" },
       "Tempo Traveller 18-Seater": { name: "TEMPOTRAVELLER 18", type: "16 - 18 Seater" },
-      "Urbania 12-Seater/16-Seater": { name: "URBANIA", type: "12 - 17 Seater" }
+      "Urbania 12-Seater/16-Seater": { name: "URBANIA", type: "12 - 17 Seater" },
+      "Coach 21-Seater": { name: "COACH", type: "21 Seater" }
     };
     return map[vehicle] || { name: vehicle.toUpperCase(), type: "Private vehicle" };
   }
@@ -930,15 +1173,72 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("bookingFormTour").addEventListener("submit", event => {
     event.preventDefault();
+
     const value = id => document.getElementById(id).value.trim();
     const phone = value("bookPhone").replace(/\D/g, "");
+
     if (phone.length !== 10) {
       alert("Please enter a valid 10-digit mobile number.");
       return;
     }
+
     const pkg = getPackage();
-    const message = `*Tour Package Enquiry — Ravi G Tours & Travels*\n\n📦 Package: ${routeKey}\n🔗 Package ID: ${pkg.id}\n🚘 Vehicle: ${value("bookVehicle")}\n💰 Tariff: ₹${Number(value("bookPrice")).toLocaleString("en-IN")}\n🏨 Accommodation: ${withHotel ? "Yes" : "No"}\n\n👤 Name: ${value("bookName")}\n📞 Phone: ${phone}\n📍 Pickup: ${value("pickupLocation")}\n📅 Pickup: ${value("pickupDateTime")}\n🏁 Drop: ${value("dropLocation")}\n\n🧭 Itinerary:\n${pkg.itinerary.join("\n")}\n\nPlease confirm availability and final fare.`;
-    window.open(`https://wa.me/919944165207?text=${encodeURIComponent(message)}`, "_blank");
+
+    // Hotel is valid only when the package has overnight stays
+    const hasHotel = withHotel && pkg.nights > 0;
+
+    const hotelTypeElement = document.getElementById("hotelType");
+    const occupancyElement = document.getElementById("occupancy");
+
+    const hotelCategory =
+      hotelTypeElement.options[hotelTypeElement.selectedIndex].text;
+
+    const occupancy =
+      occupancyElement.options[occupancyElement.selectedIndex].text;
+
+    const rooms = roomCount();
+    const hotelCost = hasHotel ? hotelExtra(pkg) : 0;
+
+    // bookPrice already contains vehicle tariff + hotel tariff
+    const totalTariff = Number(value("bookPrice"));
+    const vehicleTariff = totalTariff - hotelCost;
+
+    const accommodationMessage = hasHotel
+      ? `Yes
+  ⭐ Hotel Category: ${hotelCategory}
+  🛏️ Occupancy: ${occupancy}
+  🚪 Room Count: ${rooms}
+  🌙 Nights: ${pkg.nights}  `
+      : "No";
+
+    const message =
+  `*Tour Package Enquiry — Ravi G Tours & Travels*
+
+  📦 Package: ${routeKey}
+  🔗 Package ID: ${pkg.id}
+
+  🚘 Vehicle: ${value("bookVehicle")}
+  🚖 Vehicle Tariff: ₹${vehicleTariff.toLocaleString("en-IN")}
+
+  🏨 Accommodation: ${accommodationMessage}
+
+  💰 *Total Package Tariff: ₹${totalTariff.toLocaleString("en-IN")}*
+
+  👤 Name: ${value("bookName")}
+  📞 Phone: ${phone}
+  📍 Pickup: ${value("pickupLocation")}
+  📅 Pickup: ${value("pickupDateTime")}
+  🏁 Drop: ${value("dropLocation")}
+
+  🧭 *Itinerary:*
+  ${pkg.itinerary.join("\n")}
+
+  Please confirm availability and final fare.`;
+
+    window.open(
+      `https://wa.me/919944165207?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
   });
 
   function selectFromHash() {
