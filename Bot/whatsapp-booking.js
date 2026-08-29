@@ -61,7 +61,7 @@ function initChat(){
 
   botMessage(
     `${getGreeting()} 👋`,
-    `Welcome to Ravi G Tours and Travels Domestic Trip Booking. Share your travel details below.`,
+    `Welcome to Ravi G Tours and Travels. Share your travel details below.`,
     ""
   );
 
