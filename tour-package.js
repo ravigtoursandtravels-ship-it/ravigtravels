@@ -899,7 +899,7 @@ const packagesByDays = {
         "Sedan (4+1)": 30000,
         "Ertiga (6+1)": 36500,
         "Innova (7+1)": 40500,
-        "Crysta (7+1)": 45000,
+        "Crysta (7+1)": 48000,
         "Hycross (7+1)": null,
         "Tempo Traveller 14-Seater": 54000,
         "Tempo Traveller 18-Seater": 64500,
