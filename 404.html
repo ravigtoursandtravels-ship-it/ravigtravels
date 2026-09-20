@@ -9,7 +9,6 @@
 
 <script>
 (function () {
-
     const redirects = {
         "/services": "/services.html",
         "/hourlypackage": "/hourly-package.html",
@@ -18,16 +17,18 @@
         "/termsandconditions": "/terms-and-conditions.html"
     };
 
-    const path = window.location.pathname.replace(/\/+$/, "") || "/";
+    const path = window.location.pathname
+        .replace(/\/+$/, "") || "/";
 
-    if (redirects[path]) {
+    const target = redirects[path];
+
+    if (target) {
         window.location.replace(
-            redirects[path] +
+            target +
             window.location.search +
             window.location.hash
         );
     }
-
 })();
 </script>
 
