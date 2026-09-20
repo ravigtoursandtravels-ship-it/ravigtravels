@@ -2,30 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
-  <script>
-    (function () {
-      const redirects = {
+  <title>Page Redirect</title>
+</head>
+<body>
+<script>
+(function () {
+    const redirects = {
         "/services": "/services.html",
         "/hourlypackage": "/hourly-package.html",
         "/tourpackages": "/tour-packages.html",
         "/aboutus": "/about-us.html",
         "/termsandconditions": "/terms-and-conditions.html"
-      };
+    };
 
-      const path = window.location.pathname.replace(/\/+$/, "") || "/";
+    const path = window.location.pathname.replace(/\/+$/, "") || "/";
 
-      if (redirects[path]) {
-        window.location.replace(redirects[path] + window.location.search + window.location.hash);
-      } else {
-        window.location.replace("/");
-      }
-    })();
-  </script>
-</head>
-<body>
-  <p>Redirecting...</p>
+    if (redirects[path]) {
+        window.location.replace(
+            redirects[path] +
+            window.location.search +
+            window.location.hash
+        );
+    }
+})();
+</script>
+
+<p>Page not found.</p>
 </body>
 </html>
