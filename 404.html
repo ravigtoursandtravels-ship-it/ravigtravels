@@ -6,10 +6,12 @@
   <title>Page Redirect</title>
 </head>
 <body>
+
 <script>
 (function () {
+
     const redirects = {
-        "https://www.ravigtravels.com/services": "https://www.ravigtravels.com/services.html",
+        "/services": "/services.html",
         "/hourlypackage": "/hourly-package.html",
         "/tourpackages": "/tour-packages.html",
         "/aboutus": "/about-us.html",
@@ -25,9 +27,11 @@
             window.location.hash
         );
     }
+
 })();
 </script>
 
 <p>Page not found.</p>
+
 </body>
 </html>
