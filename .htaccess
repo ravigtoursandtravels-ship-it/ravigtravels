@@ -1,0 +1,35 @@
+RewriteEngine On
+
+# =========================================================
+# RAVI G TRAVELS - CLEAN URL CONFIGURATION
+# =========================================================
+
+# Redirect old .html URLs to clean URLs
+RewriteCond %{THE_REQUEST} \s/+services\.html(?:[?\s]) [NC]
+RewriteRule ^services\.html$ /services [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+hourly-package\.html(?:[?\s]) [NC]
+RewriteRule ^hourly-package\.html$ /hourly-package [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+tour-packages\.html(?:[?\s]) [NC]
+RewriteRule ^tour-packages\.html$ /tour-packages [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+about-us\.html(?:[?\s]) [NC]
+RewriteRule ^about-us\.html$ /about-us [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+terms-and-conditions\.html(?:[?\s]) [NC]
+RewriteRule ^terms-and-conditions\.html$ /terms-and-conditions [R=301,L]
+
+# Internally rewrite clean URLs to the actual .html files
+RewriteRule ^services/?$ services.html [L]
+RewriteRule ^hourly-package/?$ hourly-package.html [L]
+RewriteRule ^tour-packages/?$ tour-packages.html [L]
+RewriteRule ^about-us/?$ about-us.html [L]
+RewriteRule ^terms-and-conditions/?$ terms-and-conditions.html [L]
+
+# Redirect index.html to homepage
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Prevent directory listing
+Options -Indexes
